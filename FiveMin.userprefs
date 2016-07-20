@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="Droid/FiveMin.Droid.csproj" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Versus.Portable/Versus.Portable/Entities/VsEntity.cs">
+    <Files>
+      <File FileName="Droid/Fragments/LoginFragment.cs" Line="1" Column="1" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Versus.Portable/Versus.Portable/Data/FirebaseManager.cs" Line="1" Column="1" />
+      <File FileName="Droid/Fragments/CategoriesFragment.cs" Line="1" Column="1" />
+      <File FileName="Droid/Fragments/EndingSoonFragment.cs" Line="1" Column="1" />
+      <File FileName="Versus.WPF/MainWindow.xaml.cs" Line="1" Column="1" />
+      <File FileName="Versus.WPF/MainWindow.xaml" Line="1" Column="1" />
+      <File FileName="Versus.Portable/Versus.Portable/Entities/FiveMinVideo.cs" Line="5" Column="30" />
+      <File FileName="Versus.Portable/Versus.Portable/Entities/VsEntity.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.FiveMin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8E30F8B-5C8C-4128-87C6-71D480D5F7A3" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
+</Properties>

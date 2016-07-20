@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">FiveMin</string>
+
+	<!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: {0}</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+
+    <!-- Google Play Services error for Toast -->
+    <string name="play_services_error_fmt">Google Play Services Error: {0}</string>
+
+    <!-- Button labels -->
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+	<string name="app_store_url">https://play.google.com/store/apps/details?id=com.cryptocodes.FiveMin</string>
+	<string name="share_global_message_subject">FiveMin App</string>
+	<string name="share_global_message_text">Challenge your friends using #FiveMin!</string>
+
+	<string name="share_competition_message_subject">I casted my vote, how about you?</string>
+	<string name="share_competition_message_text">I just voted in {0} for {1}, vote now!</string>
+
+	<string name="no_internet_message">No internet connection!</string>
+</resources>

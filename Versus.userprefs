@@ -1,0 +1,52 @@
+﻿<Properties StartupItem="Droid/Versus.Droid.csproj" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties Status">
+    <Files>
+      <File FileName="Droid/Fragments/LoginFragment.cs" Line="43" Column="13" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="3" />
+      <File FileName="Versus.Portable/Versus.Portable/Data/FirebaseManager.cs" Line="194" Column="10" />
+      <File FileName="Droid/Fragments/CompetitionsFragment.cs" Line="68" Column="22" />
+      <File FileName="Droid/Fragments/CategoriesFragment.cs" Line="50" Column="63" />
+      <File FileName="Droid/Fragments/EndingSoonFragment.cs" Line="53" Column="18" />
+      <File FileName="Droid/Fragments/TrendingCompetitionsFragment.cs" Line="90" Column="39" />
+      <File FileName="versus Status" />
+      <File FileName="Properties Status" />
+      <File FileName="Droid Status" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Versus" expanded="True">
+            <Node name="Versus.Droid" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Assets" expanded="True" />
+              <Node name="Fragments" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="AndroidManifest.xml" selected="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="menu" expanded="True" />
+                <Node name="mipmap-hdpi" expanded="True" />
+                <Node name="mipmap-mdpi" expanded="True" />
+                <Node name="mipmap-xhdpi" expanded="True" />
+                <Node name="mipmap-xxhdpi" expanded="True" />
+                <Node name="mipmap-xxxhdpi" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Versus.Portable" expanded="True">
+              <Node name="Data" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Versus.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Versus.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8E30F8B-5C8C-4128-87C6-71D480D5F7A3" />
+</Properties>

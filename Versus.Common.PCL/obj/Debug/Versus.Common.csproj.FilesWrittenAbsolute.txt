@@ -1,0 +1,12 @@
+/Users/yonifra/versus/Versus.Common.PCL/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/Versus.Common.PCL.dll.mdb
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/Versus.Common.PCL.dll
+/Users/yonifra/versus/Versus.Common.PCL/obj/Debug/Versus.Common.PCL.dll
+/Users/yonifra/versus/Versus.Common.PCL/obj/Debug/Versus.Common.PCL.dll.mdb
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/Microsoft.Threading.Tasks.dll
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/Microsoft.Threading.Tasks.Extensions.dll
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/FireSharp.dll
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/System.Net.Http.dll
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/System.Net.Http.Primitives.dll
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/System.Net.Http.Extensions.dll
+/Users/yonifra/versus/Versus.Common.PCL/bin/Debug/Newtonsoft.Json.dll

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <AdditionalAndroidResourcePaths>
+    <AdditionalAndroidResourcePath>/Users/yonifra/.local/share/Xamarin/Xamarin.GooglePlayServices.Basement/8.4.0/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/yonifra/.local/share/Xamarin/Xamarin.GooglePlayServices.Base/8.4.0/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/yonifra/.local/share/Xamarin/Xamarin.GooglePlayServices.Plus/8.4.0/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/yonifra/.local/share/Xamarin/Xamarin.Android.Support.v7.CardView/23.4.0.0/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/yonifra/.local/share/Xamarin/Xamarin.Android.Support.v7.RecyclerView/23.4.0.0/embedded</AdditionalAndroidResourcePath>
+  </AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>
+    <AdditionalJavaLibraryReference>/Users/yonifra/.local/share/Xamarin/Xamarin.GooglePlayServices.Basement/8.4.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/yonifra/.local/share/Xamarin/Xamarin.GooglePlayServices.Base/8.4.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/yonifra/.local/share/Xamarin/Xamarin.GooglePlayServices.Plus/8.4.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/yonifra/.local/share/Xamarin/Xamarin.Android.Support.v7.CardView/23.4.0.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/yonifra/.local/share/Xamarin/Xamarin.Android.Support.v7.RecyclerView/23.4.0.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+  </AdditionalJavaLibraryReferences>
+  <AdditionalNativeLibraryReferences />
+</Paths>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="Personalized" android:id="@+id/nav_personalizedGroup">
+		<menu>
+			<item android:id="@+id/nav_profile" android:title="My profile" android:icon="@mipmap/ic_person_black_48dp" />
+			<item android:id="@+id/nav_favs" android:title="My favorites" android:icon="@mipmap/ic_star_black_48dp" />
+		</menu>
+	</item>
+	
+	<group android:checkableBehavior="single">
+		<item android:id="@+id/nav_categories" android:title="Categories" android:icon="@mipmap/ic_view_list_black_48dp" />
+		<item android:id="@+id/nav_trending" android:title="Trending competitions" android:icon="@mipmap/ic_trending_up_black_48dp" />
+		<item android:id="@+id/nav_endingSoon" android:title="Ending soon" android:icon="@mipmap/ic_alarm_black_48dp" />
+	</group>
+
+	<item android:title="More..." android:id="@+id/nav_crossAppGroup">
+		<menu>
+			<item android:id="@+id/nav_logoutLogin" android:title="Login" />
+<!--			<item android:id="@+id/nav_settings" android:title="Settings" />-->
+			<item android:id="@+id/nav_about" android:title="About" />
+		</menu>
+	</item>
+</menu>

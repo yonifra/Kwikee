@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Connectivity.Plugin/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Refractored.FloatingActionButton/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/PullToRefresharp/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Xamarin.Auth.Android/library_project_imports/res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Connectivity.Plugin/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Refractored.FloatingActionButton/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/PullToRefresharp/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Xamarin.Auth.Android/library_project_imports/assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Connectivity.Plugin.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Refractored.FloatingActionButton.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/PullToRefresharp.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/yonifra/5min/Droid/obj/Debug/__library_projects__/Xamarin.Auth.Android.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>
