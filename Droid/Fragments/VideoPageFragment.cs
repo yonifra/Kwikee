@@ -9,12 +9,13 @@ using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
+using Android;
 
 namespace FiveMin.Droid.Fragments
 {
     public class VideoPageFragment : Android.Support.V4.App.Fragment
     {
-        private VsEntity _selectedEntity;
+        private FiveMinVideo _video;
         private TextView _leftVotesTextView;
         private TextView _rightVotesTextView;
 
@@ -23,10 +24,10 @@ namespace FiveMin.Droid.Fragments
             RetainInstance = true;
         }
 
-        private void UpdateUiForSelectedEntity (TextView entityName, TextView entityDescription)
+        private void UpdateUiForSelectedEntity (TextView videoName, TextView videoDescription)
         {
-            entityName.Text = _selectedEntity.Name;
-            entityDescription.Text = _selectedEntity.Description;
+            videoName.Text = _video.Name;
+            videoDescription.Text = _video.Description;
         }
 
         public override Android.Views.View OnCreateView (Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Android.OS.Bundle savedInstanceState)
@@ -34,7 +35,7 @@ namespace FiveMin.Droid.Fragments
             base.OnCreateView (inflater, container, savedInstanceState);
 
             //var view = inflater.Inflate(Resource.Layout.fragment_categories, container, false);
-            var view = inflater.Inflate (Resource.Layout.fragment_competitionDetails, null);
+            var view = inflater.Inflate (Resource.Layout.fragment_videoPage, null);
             PopulateDataAsync (view);
 
             return view;
@@ -45,7 +46,7 @@ namespace FiveMin.Droid.Fragments
             var setShareIntent = new Intent (Intent.ActionSend);
             setShareIntent.SetType ("text/plain");
             setShareIntent.PutExtra (Intent.ExtraSubject, GetString (Resource.String.share_competition_message_subject));
-            setShareIntent.PutExtra (Intent.ExtraText, "I just voted in " + Competition.Name + " for " + _selectedEntity.Name +". How about you? #FiveMin");
+            setShareIntent.PutExtra (Intent.ExtraText, "I just watched "+ _video.Name +". Wanna learn too? #FiveMin");
 
             return setShareIntent;
         }
@@ -87,7 +88,7 @@ namespace FiveMin.Droid.Fragments
                     votingButton.Click += (sender, args) =>
                     {
                         var index = _selectedEntity == entity1 ? 1 : 2;
-                        FirebaseManager.Instance.UpdateVote (index, Competition.Name);
+                        FirebaseManager.Instance.UpdateVote (index, Video.Name);
                         switch (index)
                         {
                         case 1:
@@ -126,7 +127,7 @@ namespace FiveMin.Droid.Fragments
             }
         }
 
-        public FiveMinVideo Video { get; set; }
+        public FiveMinVideo Video { get { return _video; } set{ _video = value;} }
     }
 }
 

@@ -1,10 +1,18 @@
-﻿namespace FiveMin.Portable.Entities
+﻿using System.Collections.Generic;
+
+namespace FiveMin.Portable.Entities
 {
-    public class Category
+    public class Category : BaseEntity
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
         public string BackdropUrl { get; set; }
         public string SmallIconUrl { get; set; }
+        public List<FiveMinVideo> Videos { get; set; }
+        public uint NumOfVideos
+        {
+            get
+            {
+                return Videos != null ? (uint)Videos.Count : 0;
+            }
+        }
     }
 }

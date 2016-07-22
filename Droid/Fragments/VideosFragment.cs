@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Android;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Util;
@@ -28,7 +29,7 @@ namespace FiveMin.Droid.Fragments
         {
             base.OnCreateView (inflater, container, savedInstanceState);
 
-            _view = inflater.Inflate (Resource.Layout.fragment_competitions, null);
+            _view = inflater.Inflate (Resource.Layout.fragment_videos, null);
 
             LoadDataToGridAsync ();
 
@@ -41,10 +42,10 @@ namespace FiveMin.Droid.Fragments
             {
                 await GetAllCategoriesAsync (SelectedCategory);
 
-                var competitionsListView = _view.FindViewById<ListView> (Resource.Id.competitionsListView);
-                competitionsListView.Adapter = new VideosListAdapter (Activity, _videos);
+                var videosListView = _view.FindViewById<ListView> (Resource.Id.videosListView);
+                videosListView.Adapter = new VideosListAdapter (Activity, _videos);
 
-                competitionsListView.ItemClick += (sender, e) =>
+                videosListView.ItemClick += (sender, e) =>
                 {
                     var index = e.Position;
 
@@ -58,7 +59,7 @@ namespace FiveMin.Droid.Fragments
                         if (competition != null)
                         {
                             // Put the name of the selected category into the intent
-                            var fragment = new VideoPageFragment { Competition = competition };
+                            var fragment = new VideoPageFragment { Video = competition };
 
                             Activity.SupportFragmentManager.BeginTransaction ()
                                 .Replace (Resource.Id.content_frame, fragment)

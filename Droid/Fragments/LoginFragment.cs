@@ -2,7 +2,6 @@
 using System;
 using Android.App;
 using Android.Content;
-using Android.Gms.Auth.Api.SignIn;
 using Android.Gms.Common;
 using Android.Gms.Common.Apis;
 using Android.Gms.Plus;

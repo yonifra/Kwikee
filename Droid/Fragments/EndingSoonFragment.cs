@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Android;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Util;
@@ -67,12 +68,12 @@ namespace FiveMin.Droid.Fragments
                     if (lv != null)
                     {
                         var competitionListAdapter = lv.Adapter as VideosListAdapter;
-                        var competition = competitionListAdapter?.Videos [index];
+                        var video = competitionListAdapter?.Videos [index];
 
-                        if (competition != null)
+                        if (video != null)
                         {
                             // Put the name of the selected category into the intent
-                            var fragment = new VideoPageFragment { Competition = competition };
+                            var fragment = new VideoPageFragment { Video = video };
 
                             Activity.SupportFragmentManager.BeginTransaction ()
                                 .Replace (Resource.Id.content_frame, fragment)
@@ -89,7 +90,7 @@ namespace FiveMin.Droid.Fragments
         private async Task GetEndingCompetitionsAsync ()
         {
             Log.Debug (LOG_TAG, "Fetching ending soon competitions");
-            var ending = await FirebaseManager.Instance.GetEndingSoonCompetitions ();
+            var ending = await FirebaseManager.Instance.GetNewestVideos ();
 
             if (ending != null)
             {

@@ -140,8 +140,8 @@
     </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\layout\CompetitionListItemLayout.axml" />
-    <AndroidResource Include="Resources\layout\fragment_competitions.axml" />
-    <AndroidResource Include="Resources\layout\fragment_competitionDetails.axml" />
+    <AndroidResource Include="Resources\layout\fragment_videos.axml" />
+    <AndroidResource Include="Resources\layout\fragment_videoPage.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
     <AndroidResource Include="Resources\layout\toolbar.axml" />

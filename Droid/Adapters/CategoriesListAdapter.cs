@@ -6,6 +6,7 @@ using Android.Widget;
 using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Entities;
+using Android;
 
 namespace FiveMin.Droid.Adapters
 {

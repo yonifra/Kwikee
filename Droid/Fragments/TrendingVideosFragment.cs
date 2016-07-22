@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Android;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Util;
@@ -72,7 +73,7 @@ namespace FiveMin.Droid.Fragments
                         if (video != null)
                         {
                             // Put the name of the selected category into the intent
-                            var fragment = new VideoPageFragment { Competition = video };
+                            var fragment = new VideoPageFragment { Video = video };
 
                             Activity.SupportFragmentManager.BeginTransaction ()
                                 .Replace (Resource.Id.content_frame, fragment)
@@ -93,7 +94,7 @@ namespace FiveMin.Droid.Fragments
         private async Task GetTrendingCompetitionsAsync ()
         {
                 Log.Debug (LOG_TAG, "Fetching trending competitions");
-            var trending = await FirebaseManager.Instance.GetTrendingCompetitions ();
+            var trending = await FirebaseManager.Instance.GetTrendingVideos ();
 
             _trendingCompetitions = trending.Values;
         }

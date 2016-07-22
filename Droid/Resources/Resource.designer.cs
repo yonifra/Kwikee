@@ -2326,9 +2326,6 @@ namespace Versus.Droid
 			// aapt resource value: 0x7f0a006e
 			public const int compNameTextView = 2131361902;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int competitionsListView = 2131361920;
-			
 			// aapt resource value: 0x7f0a004f
 			public const int contentPanel = 2131361871;
 			
@@ -2716,6 +2713,9 @@ namespace Versus.Droid
 			// aapt resource value: 0x7f0a002b
 			public const int useLogo = 2131361835;
 			
+			// aapt resource value: 0x7f0a0080
+			public const int videosListView = 2131361920;
+			
 			// aapt resource value: 0x7f0a0000
 			public const int view_offset_helper = 2131361792;
 			
@@ -2893,10 +2893,10 @@ namespace Versus.Droid
 			public const int fragment_categories = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int fragment_competitionDetails = 2130968614;
+			public const int fragment_videoPage = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int fragment_competitions = 2130968615;
+			public const int fragment_videos = 2130968615;
 			
 			// aapt resource value: 0x7f040028
 			public const int login_fragment = 2130968616;

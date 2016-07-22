@@ -10,7 +10,7 @@ using Android;
 
 namespace FiveMin.Droid.Adapters
 {
-    internal class CompetitionAdapterWrapper : Java.Lang.Object
+    internal class VideoAdapterWrapper : Java.Lang.Object
     {
         public TextView Name { get; set; }
         public TextView Description { get; set; }
@@ -38,10 +38,10 @@ namespace FiveMin.Droid.Adapters
             if (view == null)
                 return null;
 
-            var wrapper = view.Tag as CompetitionAdapterWrapper;
+            var wrapper = view.Tag as VideoAdapterWrapper;
             if (wrapper == null)
             {
-                wrapper = new CompetitionAdapterWrapper
+                wrapper = new VideoAdapterWrapper
                 {
                     Name = view.FindViewById<TextView> (Resource.Id.compNameTextView),
                     Description = view.FindViewById<TextView> (Resource.Id.compDescriptionTextView),

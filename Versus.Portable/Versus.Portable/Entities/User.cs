@@ -9,6 +9,8 @@ namespace FiveMin.Portable.Entities
         public DateTime JoinedDate { get; set; }
         public List<FiveMinVideo> FavoriteVideos { get; set; }
         public List<User> Friends { get; set; }
+        public List<FiveMinVideo> WatchLater { get; set; }
+        public List<Category> FavoriteCategories { get; set; }
         public Tuple<int, int> LikesDislikes { get; set; }
 
         public User(string username)
