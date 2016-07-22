@@ -6,3 +6,11 @@
 /Users/yonifra/5min/Versus.Portable/Versus.Portable/bin/Release/Versus.Portable.dll.config
 /Users/yonifra/5min/Versus.Portable/Versus.Portable/bin/Release/Versus.Portable.dll.mdb
 /Users/yonifra/5min/Versus.Portable/Versus.Portable/bin/Release/Versus.Portable.dll
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/obj/Release/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/bin/Release/Versus.Portable.dll.config
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/bin/Release/Versus.Portable.dll.mdb
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/bin/Release/Versus.Portable.dll
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/obj/Release/Versus.Portable.dll
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/obj/Release/Versus.Portable.dll.mdb
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/bin/Release/FireSharp.dll
+/Users/yonifra/shortie/Versus.Portable/Versus.Portable/bin/Release/Newtonsoft.Json.dll

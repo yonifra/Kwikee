@@ -7,10 +7,10 @@ using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Connectivity.Plugin;
 using FiveMin.Droid.Adapters;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
+using Plugin.Connectivity;
 
 namespace FiveMin.Droid.Fragments
 {
