@@ -80,13 +80,13 @@ namespace FiveMin.Droid.Fragments
                 if (string.IsNullOrEmpty (categoryName))
                 {
                     Log.Debug (LOG_TAG, "Could not resolve category name");
-                    var all = await FirebaseManager.Instance.GetAllCompetitions ();
+                    var all = await FirebaseManager.Instance.GetAllVideos ();
                     _videos = all.Values;
                 }
                 else
                 {
                     Log.Debug (LOG_TAG, "Found category " + categoryName);
-                    _videos = await FirebaseManager.Instance.GetCompetitions (categoryName);
+                    _videos = await FirebaseManager.Instance.GetVideos (categoryName);
                 }
             }
             else

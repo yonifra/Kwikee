@@ -68,7 +68,7 @@ namespace FiveMin.Portable.Data
         {
             if (_newestVideos == null || (_videos == null || shouldRefresh))
             {
-                await GetAllCompetitions (shouldRefresh);
+                await GetAllVideos (shouldRefresh);
                 _newestVideos = new Dictionary<string, FiveMinVideo> ();
             }
 
@@ -109,7 +109,7 @@ namespace FiveMin.Portable.Data
         /// </summary>
         /// <param name="shouldRefresh">Indicates if we want to force an update of the competitions list</param>
         /// <returns>Dictionary of competitions and their keys</returns>
-        public async Task<Dictionary<string, FiveMinVideo>> GetAllCompetitions(bool shouldRefresh = false)
+        public async Task<Dictionary<string, FiveMinVideo>> GetAllVideos(bool shouldRefresh = false)
         {
             // if we want to force the update, or the competitions dictionary have not yet been initialized, update it!
             if (shouldRefresh || _videos == null)
@@ -131,7 +131,7 @@ namespace FiveMin.Portable.Data
         {
             if (_trendingVideos == null || (_videos == null || shouldRefresh))
             {
-                await GetAllCompetitions (shouldRefresh);
+                await GetAllVideos (shouldRefresh);
                 _trendingVideos = new Dictionary<string, FiveMinVideo> ();
             }
 
@@ -148,9 +148,9 @@ namespace FiveMin.Portable.Data
         /// <param name="categoryName">Name of the category we wish to get all competitions for</param>
         /// <param name="refreshBefore">Indicates whether to refresh the cache before fetching the competition</param>
         /// <returns>An enumerable of all competitions related to that category</returns>
-        public async Task<IEnumerable<FiveMinVideo>> GetCompetitions(string categoryName, bool refreshBefore = false)
+        public async Task<IEnumerable<FiveMinVideo>> GetVideos(string categoryName, bool refreshBefore = false)
         {
-            var dict = await GetAllCompetitions(refreshBefore);
+            var dict = await GetAllVideos(refreshBefore);
 
             return dict.Values.Where(c => c.Name == categoryName);
         }
@@ -158,14 +158,14 @@ namespace FiveMin.Portable.Data
         /// <summary>
         /// Gets a specific competitions by name
         /// </summary>
-        /// <param name="competitionName">The name of the competition to look for</param>
+        /// <param name="videoName">The name of the competition to look for</param>
         /// <param name="refreshBefore">Indicates whether we want to refresh the cache before searching</param>
         /// <returns>The VsCompetition entity we found</returns>
-        public async Task<FiveMinVideo> GetCompetition(string competitionName, bool refreshBefore = false)
+        public async Task<FiveMinVideo> GetVideo(string videoName, bool refreshBefore = false)
         {
-            var dict = await GetAllCompetitions(refreshBefore);
+            var dict = await GetAllVideos(refreshBefore);
 
-            return dict.Values.FirstOrDefault(c => string.Equals(c.Name, competitionName, StringComparison.CurrentCultureIgnoreCase));
+            return dict.Values.FirstOrDefault(c => string.Equals(c.Name, videoName, StringComparison.CurrentCultureIgnoreCase));
         }
 
         public async Task<Dictionary<string, Category>> GetAllCategories(bool shouldRefresh = false)

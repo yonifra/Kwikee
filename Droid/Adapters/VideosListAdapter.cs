@@ -33,7 +33,7 @@ namespace FiveMin.Droid.Adapters
             if (position < 0)
                 return null;
 
-            var view = convertView ?? _context.LayoutInflater.Inflate (Resource.Layout.CompetitionListItemLayout, parent, false);
+            var view = convertView ?? _context.LayoutInflater.Inflate (Resource.Layout.VideoListItemLayout, parent, false);
 
             if (view == null)
                 return null;
@@ -50,16 +50,16 @@ namespace FiveMin.Droid.Adapters
                 view.Tag = wrapper;
             }
 
-            var competition = _videos.ElementAt (position);
+            var video = _videos.ElementAt (position);
 
-            wrapper.Backdrop.SetBackgroundResource (Resource.Color.Transparent);
-            wrapper.Name.Text = competition.Name;
-            wrapper.Description.Text = competition.Description;
+            wrapper.Backdrop.SetBackgroundResource (Resource.Color.button_material_light);
+            wrapper.Name.Text = video.Name;
+            wrapper.Description.Text = video.Description;
 
             FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description });
 
             // Load the image asynchonously
-            Picasso.With (_context).Load (competition.BackdropUrl).Into (wrapper.Backdrop);
+            Picasso.With (_context).Load (video.ImageUrl).Into (wrapper.Backdrop);
 
             return view;
         }

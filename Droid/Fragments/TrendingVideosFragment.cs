@@ -18,13 +18,13 @@ namespace FiveMin.Droid.Fragments
     public class TrendingVideosFragment : Android.Support.V4.App.Fragment
     {
         private const string LOG_TAG = "TRENDING_VIDEOS_FRAGMENT";
-        private IEnumerable<FiveMinVideo> _trendingCompetitions;
+        private IEnumerable<FiveMinVideo> _trendingVideos;
         private View _view;
 
         public TrendingVideosFragment ()
         {
             RetainInstance = true;
-            _trendingCompetitions = new List<FiveMinVideo> ();
+            _trendingVideos = new List<FiveMinVideo> ();
         }
 
         public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -44,7 +44,7 @@ namespace FiveMin.Droid.Fragments
             {
                 await GetTrendingCompetitionsAsync ();
 
-                if (_trendingCompetitions != null && _trendingCompetitions.Any ())
+                if (_trendingVideos != null && _trendingVideos.Any ())
                 {
                     var textView = view.FindViewById<TextView> (Resource.Id.noTrendingCompetitionsMessage);
                     textView.Visibility = ViewStates.Invisible;
@@ -55,11 +55,11 @@ namespace FiveMin.Droid.Fragments
                     return;
                 }
 
-                var competitionsListView = view.FindViewById<ListView> (Resource.Id.trendingCompetitionsListView);
-                competitionsListView.Visibility = ViewStates.Visible;
-                competitionsListView.Adapter = new VideosListAdapter (Activity, _trendingCompetitions);
+                var videosListView = view.FindViewById<ListView> (Resource.Id.trendingCompetitionsListView);
+                videosListView.Visibility = ViewStates.Visible;
+                videosListView.Adapter = new VideosListAdapter (Activity, _trendingVideos);
 
-                competitionsListView.ItemClick += (sender, e) =>
+                videosListView.ItemClick += (sender, e) =>
                 {
                     var index = e.Position;
 
@@ -96,7 +96,7 @@ namespace FiveMin.Droid.Fragments
                 Log.Debug (LOG_TAG, "Fetching trending competitions");
             var trending = await FirebaseManager.Instance.GetTrendingVideos ();
 
-            _trendingCompetitions = trending.Values;
+            _trendingVideos = trending.Values;
         }
     }
 }

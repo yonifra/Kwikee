@@ -6,7 +6,7 @@
     <ProjectGuid>{5CE58BAA-DBDA-49FC-8111-86C049302D53}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Versus.Droid</RootNamespace>
+    <RootNamespace>FiveMin.Droid</RootNamespace>
     <AssemblyName>Versus.Droid</AssemblyName>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
@@ -139,7 +139,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\layout\CompetitionListItemLayout.axml" />
+    <AndroidResource Include="Resources\layout\VideoListItemLayout.axml" />
     <AndroidResource Include="Resources\layout\fragment_videos.axml" />
     <AndroidResource Include="Resources\layout\fragment_videoPage.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />

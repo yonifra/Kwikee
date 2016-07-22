@@ -53,71 +53,12 @@ namespace FiveMin.Droid.Fragments
 
         async void PopulateDataAsync (Android.Views.View view)
         {
-            var competition = await FirebaseManager.Instance.GetCompetition (Video.Name);
+            var video = await FirebaseManager.Instance.GetVideo (Video.Name);
             var parentView = view.FindViewById<FrameLayout> (Resource.Id.parentLayout);
 
-            if (competition != null)
+            if (video != null)
             {
-                var e1ImageButton = view.FindViewById<ImageButton> (Resource.Id.leftEntityButton);
-                var e2ImageButton = view.FindViewById<ImageButton> (Resource.Id.rightEntityButton);
-                var entityName = view.FindViewById<AppCompatTextView> (Resource.Id.entityName);
-                var votingButton = view.FindViewById<FloatingActionButton> (Resource.Id.votingButton);
-                var entityDescription = view.FindViewById<AppCompatTextView> (Resource.Id.entityDescription);
-                _leftVotesTextView = view.FindViewById<TextView> (Resource.Id.leftEntityVotes);
-                _rightVotesTextView = view.FindViewById<TextView> (Resource.Id.rightEntityVotes);
-
-                FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { entityName, entityDescription, _leftVotesTextView, _rightVotesTextView });
-
-                var entities = await FirebaseManager.Instance.GetAllEntities ();
-
-                var entity1 = entities.Values.FirstOrDefault (entity => string.Equals (entity.Name, competition.CompetitorName1, StringComparison.CurrentCultureIgnoreCase));
-                var entity2 = entities.Values.FirstOrDefault (entity => string.Equals (entity.Name, competition.CompetitorName2, StringComparison.CurrentCultureIgnoreCase));
-
-                if (entity1 != null && entity2 != null)
-                {
-                    _selectedEntity = entity1;
-
-                    _leftVotesTextView.Text = competition.CompetitorScore1.ToString ();
-                    _rightVotesTextView.Text = competition.CompetitorScore2.ToString ();
-
-                    // Load the image asynchonously
-                    Picasso.With (view.Context).Load (entity1.ImageUrl).Into (e1ImageButton);
-                    Picasso.With (view.Context).Load (entity2.ImageUrl).Into (e2ImageButton);
-                    UpdateUiForSelectedEntity (entityName, entityDescription);
-
-                    votingButton.Click += (sender, args) =>
-                    {
-                        var index = _selectedEntity == entity1 ? 1 : 2;
-                        FirebaseManager.Instance.UpdateVote (index, Video.Name);
-                        switch (index)
-                        {
-                        case 1:
-                            _leftVotesTextView.Text = (competition.CompetitorScore1).ToString ();
-                            break;
-                        case 2:
-                            _rightVotesTextView.Text = (competition.CompetitorScore2).ToString ();
-                            break;
-                        }
-                        Snackbar.Make (parentView, "Casted a vote for " + _selectedEntity.Name, Snackbar.LengthLong)
-                                .SetAction("Share", (v) =>
-                                {
-                                    StartActivity(CreateShareIntent ());
-                                })
-                                .Show ();
-                    };
-                }
-
-                e1ImageButton.Click += (sender, args) =>
-                {
-                    _selectedEntity = entity1;
-                    UpdateUiForSelectedEntity (entityName, entityDescription);
-                };
-
-                e2ImageButton.Click += (sender, args) =>
-                {
-                    _selectedEntity = entity2;
-                    UpdateUiForSelectedEntity (entityName, entityDescription);
-                };
+             //   FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { entityName, entityDescription, _leftVotesTextView, _rightVotesTextView });
 
                 var progressBar = view.FindViewById<ProgressBar> (Resource.Id.loadingCompetitionProgressBar);
                 var mainLayout = view.FindViewById<LinearLayout> (Resource.Id.mainCompetitionLayout);

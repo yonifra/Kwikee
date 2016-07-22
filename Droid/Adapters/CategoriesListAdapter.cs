@@ -33,7 +33,7 @@ namespace FiveMin.Droid.Adapters
             if (position < 0)
                 return null;
 
-            var view = convertView ?? _context.LayoutInflater.Inflate (Resource.Layout.CompetitionListItemLayout, parent, false);
+            var view = convertView ?? _context.LayoutInflater.Inflate (Resource.Layout.VideoListItemLayout, parent, false);
 
             if (view == null)
                 return null;
