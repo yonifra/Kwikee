@@ -65,7 +65,7 @@ namespace FiveMin.Droid.Fragments
                         if (categoriesListAdapter != null)
                         {
                             var category = categoriesListAdapter.Categories [index];
-                            var fragment = new VideosFragment { SelectedCategory = category.Name };
+                            var fragment = new VideosFragment { SelectedVideo = category.Name };
 
                             Activity.SupportFragmentManager.BeginTransaction ()
                                     .Replace (Resource.Id.content_frame, fragment)

@@ -6,7 +6,6 @@ using Android.Widget;
 using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Entities;
-using Android;
 
 namespace FiveMin.Droid.Adapters
 {
@@ -14,6 +13,7 @@ namespace FiveMin.Droid.Adapters
     {
         public TextView Name { get; set; }
         public TextView Description { get; set; }
+        public TextView Tags { get; set; }
         public ImageView Backdrop { get; set; }
     }
 
@@ -33,7 +33,7 @@ namespace FiveMin.Droid.Adapters
             if (position < 0)
                 return null;
 
-            var view = convertView ?? _context.LayoutInflater.Inflate (Resource.Layout.VideoListItemLayout, parent, false);
+            var view = convertView ?? _context.LayoutInflater.Inflate (Resource.Layout.category_listitem_layout, parent, false);
 
             if (view == null)
                 return null;
@@ -43,9 +43,10 @@ namespace FiveMin.Droid.Adapters
             {
                 wrapper = new CategoryAdapterWrapper
                 {
-                    Name = view.FindViewById<TextView> (Resource.Id.compNameTextView),
-                    Description = view.FindViewById<TextView> (Resource.Id.compDescriptionTextView),
-                    Backdrop = view.FindViewById<ImageView> (Resource.Id.compBackdropImageView)
+                    Name = view.FindViewById<TextView> (Resource.Id.catNameTextView),
+                    Description = view.FindViewById<TextView> (Resource.Id.catDescriptionTextView),
+                    Backdrop = view.FindViewById<ImageView> (Resource.Id.catBackdropImageView),
+                    Tags = view.FindViewById<TextView> (Resource.Id.catTagsTextView)
                 };
                 view.Tag = wrapper;
             }
@@ -55,11 +56,12 @@ namespace FiveMin.Droid.Adapters
             wrapper.Backdrop.SetBackgroundResource (Android.Resource.Color.Transparent);
             wrapper.Name.Text = category.Name;
             wrapper.Description.Text = category.Description;
+            wrapper.Tags.Text = category.Keywords.Aggregate ((a, b) => "#" + a + " #" + b);
 
-            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description });
+            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Tags });
 
             // Load the image asynchonously
-            Picasso.With (_context).Load (category.BackdropUrl).Into (wrapper.Backdrop);
+            Picasso.With (_context).Load (category.ImageUrl).Into (wrapper.Backdrop);
 
             return view;
         }

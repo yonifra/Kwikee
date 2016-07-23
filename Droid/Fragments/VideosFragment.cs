@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Android;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Util;
@@ -40,7 +39,7 @@ namespace FiveMin.Droid.Fragments
         {
             if (CrossConnectivity.Current.IsConnected)
             {
-                await GetAllCategoriesAsync (SelectedCategory);
+                await GetAllVideosAsync (SelectedVideo);
 
                 var videosListView = _view.FindViewById<ListView> (Resource.Id.videosListView);
                 videosListView.Adapter = new VideosListAdapter (Activity, _videos);
@@ -73,7 +72,7 @@ namespace FiveMin.Droid.Fragments
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show();
         }
 
-        private async Task GetAllCategoriesAsync (string categoryName)
+        private async Task GetAllVideosAsync (string categoryName)
         {
             if (CrossConnectivity.Current.IsConnected)
             {
@@ -93,7 +92,7 @@ namespace FiveMin.Droid.Fragments
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
-        public string SelectedCategory { get; set; }
+        public string SelectedVideo { get; set; }
     }
 }
 

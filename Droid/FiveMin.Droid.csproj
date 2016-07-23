@@ -193,6 +193,7 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_trending_up_black_48dp.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_person_black_48dp.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_star_black_48dp.png" />
+    <AndroidResource Include="Resources\layout\category_listitem_layout.axml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

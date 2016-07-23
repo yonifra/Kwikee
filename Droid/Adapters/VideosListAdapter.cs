@@ -15,6 +15,7 @@ namespace FiveMin.Droid.Adapters
         public TextView Name { get; set; }
         public TextView Description { get; set; }
         public ImageView Backdrop { get; set; }
+        public TextView Length { get; set; }
     }
 
     internal class VideosListAdapter : BaseAdapter
@@ -43,9 +44,10 @@ namespace FiveMin.Droid.Adapters
             {
                 wrapper = new VideoAdapterWrapper
                 {
-                    Name = view.FindViewById<TextView> (Resource.Id.compNameTextView),
-                    Description = view.FindViewById<TextView> (Resource.Id.compDescriptionTextView),
-                    Backdrop = view.FindViewById<ImageView> (Resource.Id.compBackdropImageView)
+                    Name = view.FindViewById<TextView> (Resource.Id.videoNameTextView),
+                    Description = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView),
+                    Backdrop = view.FindViewById<ImageView> (Resource.Id.videoBackdropImageView),
+                    Length = view.FindViewById<TextView>(Resource.Id.videoLengthTextView)
                 };
                 view.Tag = wrapper;
             }
@@ -56,7 +58,7 @@ namespace FiveMin.Droid.Adapters
             wrapper.Name.Text = video.Name;
             wrapper.Description.Text = video.Description;
 
-            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description });
+            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (video.ImageUrl).Into (wrapper.Backdrop);
