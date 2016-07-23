@@ -39,7 +39,7 @@ namespace FiveMin.Droid.Fragments
         {
             if (CrossConnectivity.Current.IsConnected)
             {
-                await GetAllVideosAsync (SelectedVideo);
+                await GetAllVideosAsync (SelectedCategoryName);
 
                 var videosListView = _view.FindViewById<ListView> (Resource.Id.videosListView);
                 videosListView.Adapter = new VideosListAdapter (Activity, _videos);
@@ -92,7 +92,7 @@ namespace FiveMin.Droid.Fragments
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
-        public string SelectedVideo { get; set; }
+        public string SelectedCategoryName { get; set; }
     }
 }
 

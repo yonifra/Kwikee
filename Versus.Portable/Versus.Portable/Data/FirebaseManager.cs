@@ -25,6 +25,8 @@ namespace FiveMin.Portable.Data
 
         // Competitions with more than the threshold vote counts will be considered "trending"
         const int THRESHOLD = 40;
+        private readonly TimeSpan ENDING_SOON_THRESHOLD = TimeSpan.FromDays (3);
+
 
         public static FirebaseManager Instance => _instance ?? (_instance = new FirebaseManager());
 
@@ -83,7 +85,7 @@ namespace FiveMin.Portable.Data
             // throw new NotImplementedException();
         }
 
-        private static async void UpdateVideo(FiveMinVideo value, string key)
+        private static async void UpdateCompetition(FiveMinVideo value, string key)
         {
            await _client.UpdateAsync($"{VideosName}/{key}", value);
         }
@@ -150,7 +152,7 @@ namespace FiveMin.Portable.Data
         {
             var dict = await GetAllVideos(refreshBefore);
 
-            return dict.Values.Where(c => c.Name == categoryName);
+            return dict.Values.Where(c => c.Categories.Contains(categoryName));
         }
 
         /// <summary>

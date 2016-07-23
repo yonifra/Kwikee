@@ -6,7 +6,6 @@ using Android.Widget;
 using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Entities;
-using Android;
 
 namespace FiveMin.Droid.Adapters
 {
@@ -16,6 +15,7 @@ namespace FiveMin.Droid.Adapters
         public TextView Description { get; set; }
         public ImageView Backdrop { get; set; }
         public TextView Length { get; set; }
+        public TextView Tags { get; set; }
     }
 
     internal class VideosListAdapter : BaseAdapter
@@ -47,7 +47,8 @@ namespace FiveMin.Droid.Adapters
                     Name = view.FindViewById<TextView> (Resource.Id.videoNameTextView),
                     Description = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView),
                     Backdrop = view.FindViewById<ImageView> (Resource.Id.videoBackdropImageView),
-                    Length = view.FindViewById<TextView>(Resource.Id.videoLengthTextView)
+                    Length = view.FindViewById<TextView>(Resource.Id.videoLengthTextView),
+                    Tags = view.FindViewById<TextView>(Resource.Id.videoTagsTextView)
                 };
                 view.Tag = wrapper;
             }
@@ -57,8 +58,9 @@ namespace FiveMin.Droid.Adapters
             wrapper.Backdrop.SetBackgroundResource (Resource.Color.button_material_light);
             wrapper.Name.Text = video.Name;
             wrapper.Description.Text = video.Description;
+            wrapper.Tags.Text = video.Keywords.Aggregate ((a, b) => "#" + a + " #" + b);
 
-            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length });
+            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length, wrapper.Tags });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (video.ImageUrl).Into (wrapper.Backdrop);

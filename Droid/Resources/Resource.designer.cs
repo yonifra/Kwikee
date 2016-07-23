@@ -2257,8 +2257,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0043
 			public const int action_mode_close_button = 2131361859;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int action_search = 2131361968;
+			// aapt resource value: 0x7f0a00b1
+			public const int action_search = 2131361969;
 			
 			// aapt resource value: 0x7f0a0044
 			public const int activity_chooser_view_content = 2131361860;
@@ -2476,8 +2476,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0094
 			public const int media_actions = 2131361940;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int menu_item_share = 2131361969;
+			// aapt resource value: 0x7f0a00b2
+			public const int menu_item_share = 2131361970;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int middle = 2131361842;
@@ -2488,32 +2488,32 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002c
 			public const int multiply = 2131361836;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int nav_about = 2131361967;
-			
-			// aapt resource value: 0x7f0a00aa
-			public const int nav_categories = 2131361962;
-			
-			// aapt resource value: 0x7f0a00ad
-			public const int nav_crossAppGroup = 2131361965;
-			
-			// aapt resource value: 0x7f0a00ac
-			public const int nav_endingSoon = 2131361964;
-			
-			// aapt resource value: 0x7f0a00a9
-			public const int nav_favs = 2131361961;
-			
-			// aapt resource value: 0x7f0a00ae
-			public const int nav_logoutLogin = 2131361966;
-			
-			// aapt resource value: 0x7f0a00a7
-			public const int nav_personalizedGroup = 2131361959;
-			
-			// aapt resource value: 0x7f0a00a8
-			public const int nav_profile = 2131361960;
+			// aapt resource value: 0x7f0a00b0
+			public const int nav_about = 2131361968;
 			
 			// aapt resource value: 0x7f0a00ab
-			public const int nav_trending = 2131361963;
+			public const int nav_categories = 2131361963;
+			
+			// aapt resource value: 0x7f0a00ae
+			public const int nav_crossAppGroup = 2131361966;
+			
+			// aapt resource value: 0x7f0a00ad
+			public const int nav_endingSoon = 2131361965;
+			
+			// aapt resource value: 0x7f0a00aa
+			public const int nav_favs = 2131361962;
+			
+			// aapt resource value: 0x7f0a00af
+			public const int nav_logoutLogin = 2131361967;
+			
+			// aapt resource value: 0x7f0a00a8
+			public const int nav_personalizedGroup = 2131361960;
+			
+			// aapt resource value: 0x7f0a00a9
+			public const int nav_profile = 2131361961;
+			
+			// aapt resource value: 0x7f0a00ac
+			public const int nav_trending = 2131361964;
 			
 			// aapt resource value: 0x7f0a0090
 			public const int nav_view = 2131361936;
@@ -2722,11 +2722,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00a5
 			public const int videoDescriptionTextView = 2131361957;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int videoLengthTextView = 2131361958;
+			// aapt resource value: 0x7f0a00a7
+			public const int videoLengthTextView = 2131361959;
 			
 			// aapt resource value: 0x7f0a00a4
 			public const int videoNameTextView = 2131361956;
+			
+			// aapt resource value: 0x7f0a00a6
+			public const int videoTagsTextView = 2131361958;
 			
 			// aapt resource value: 0x7f0a0081
 			public const int videosListView = 2131361921;
