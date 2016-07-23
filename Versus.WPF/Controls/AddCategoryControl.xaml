@@ -17,8 +17,8 @@
             <TextBlock Text="Description" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,5,0" />
             <TextBox Text="{Binding NewCategory.Description}" />
 
-            <TextBlock Text="Small Icon URL" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,5,0" />
-            <TextBox Text="{Binding NewCategory.SmallIconUrl}" />
+            <TextBlock Text="Keywords (comma-separated)" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,5,0" />
+            <TextBox Text="{Binding NewCategory.Keywords, UpdateSourceTrigger=LostFocus}" />
 
             <TextBlock Text="Backdrop URL" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,5,0" />
             <TextBox Text="{Binding NewCategory.BackdropUrl}" />

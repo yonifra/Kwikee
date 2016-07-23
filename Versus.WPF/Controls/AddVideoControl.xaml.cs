@@ -1,11 +1,11 @@
 ﻿namespace FiveMin.WPF.Controls
 {
     /// <summary>
-    /// Interaction logic for AddCompetitionControl.xaml
+    /// Interaction logic for AddVideoControl.xaml
     /// </summary>
-    public partial class AddEntityControl
+    public partial class AddVideoControl
     {
-        public AddEntityControl()
+        public AddVideoControl()
         {
             InitializeComponent();
         }

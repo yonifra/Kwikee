@@ -1,0 +1,9 @@
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\bin\Debug\Versus.Portable.dll.config
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\bin\Debug\Versus.Portable.dll
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\bin\Debug\Versus.Portable.pdb
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\bin\Debug\FireSharp.dll
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\obj\Debug\FiveMin.Portable.csprojResolveAssemblyReference.cache
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\obj\Debug\Versus.Portable.dll
+C:\Users\yonif\Source\Repos\Shortie\Versus.Portable\Versus.Portable\obj\Debug\Versus.Portable.pdb

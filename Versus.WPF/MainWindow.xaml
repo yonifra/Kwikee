@@ -1,9 +1,9 @@
 ﻿<Window x:Class="FiveMin.WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:entities="clr-namespace:FiveMin.Portable.Entities;assembly=FiveMin.Portable"
         xmlns:viewModels="clr-namespace:FiveMin.WPF.ViewModels"
         xmlns:controls="clr-namespace:FiveMin.WPF.Controls"
+        xmlns:entities1="clr-namespace:FiveMin.Portable.Entities;assembly=Versus.Portable"
         Title="FiveMin Editor" Height="450" Width="625">
     <Window.DataContext>
         <viewModels:MainViewModel />
@@ -16,47 +16,17 @@
         </Grid.RowDefinitions>
 
         <TabControl>
-            <TabItem Header="Entities">
+            <TabItem Header="Videos">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <controls:AddEntityControl />
-                    <ListView Grid.Row="1" x:Name="EntitiesList" ToolTip="Entities" HorizontalContentAlignment="Stretch" ItemsSource="{Binding Entities}">
+                    <controls:AddVideoControl />
+                    <ListView Grid.Row="1" x:Name="VideosList" ToolTip="Videos" HorizontalContentAlignment="Stretch" ItemsSource="{Binding Videos}" Grid.ColumnSpan="2">
                         <ListView.ItemTemplate>
-                            <DataTemplate DataType="{x:Type entities:VsEntity}">
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock>
-                                        <TextBlock.ToolTip>
-                                            <Image Source="{Binding ImageUrl}" />
-                                        </TextBlock.ToolTip>
-                                
-                                         <Run Text="{Binding Name}" FontWeight="Bold" />
-                                    </TextBlock>
-                                    <TextBlock Text="{Binding Description}" />
-                                    <TextBlock>
-                                    <Run Text="Competition:" />
-                                    <Run Text="{Binding Competition}" />
-                                    </TextBlock>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Competitions">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-
-                    <controls:AddCompetitionControl />
-                    <ListView Grid.Row="1" x:Name="CompetitionsList" ToolTip="Competitions" HorizontalContentAlignment="Stretch" ItemsSource="{Binding Competitions}" Grid.ColumnSpan="2">
-                        <ListView.ItemTemplate>
-                            <DataTemplate DataType="{x:Type entities:VsCompetition}">
+                            <DataTemplate DataType="{x:Type entities1:FiveMinVideo}">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition />
@@ -89,7 +59,7 @@
                     <controls:AddCategoryControl />
                     <ListView Grid.Row="1" x:Name="CategoriesList" ToolTip="Categories" HorizontalContentAlignment="Stretch" ItemsSource="{Binding Categories}">
                         <ListView.ItemTemplate>
-                            <DataTemplate DataType="{x:Type entities:Category}">
+                            <DataTemplate DataType="{x:Type entities1:Category}">
                                 <Grid HorizontalAlignment="Stretch">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition />

@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using FiveMin.Portable.Data;
@@ -9,40 +11,32 @@ namespace FiveMin.WPF.ViewModels
     public class MainViewModel : ViewModelBase
     {
         private RelayCommand _editCommand;
-        private ObservableCollection<VsCompetition> _competitions;
+        private ObservableCollection<FiveMinVideo> _videos;
         private ObservableCollection<Category> _categories;
-        private ObservableCollection<VsEntity> _entities;
-        private CompetitionViewModel _newCompetition;
-        private RelayCommand _addCompetition;
-        private EntityViewModel _newEntity;
+        private VideoViewModel _newVideo;
+        private RelayCommand _addVideo;
         private CategoryViewModel _newCategory;
-        private RelayCommand _addEntity;
         private RelayCommand _addCategory;
         private RelayCommand _refreshCommand;
         private Category _selectedCategory;
-        private VsCompetition _selectedCompetition;
-        private VsEntity _entity1;
-        private VsEntity _entity2;
+        private FiveMinVideo _selectedVideo;
         private string _consoleText;
 
         public MainViewModel()
         {
             InitializeCollections();
 
-            AddCompetition = new RelayCommand(AddCompetitionExecute);
-            AddEntity = new RelayCommand(AddEntityExecute);
+            AddVideo = new RelayCommand(AddVideoExecute);
             AddCategory = new RelayCommand(AddCategoryExecute);
             RefreshCommand = new RelayCommand(RefreshAll);
-            NewCompetition = new CompetitionViewModel();
-            NewEntity = new EntityViewModel();
+            NewVideo = new VideoViewModel();
             NewCategory = new CategoryViewModel();
         }
         
         private void RefreshAll()
         {
-            PopulateCompetitions();
+            PopulateVideos();
             PopulateCategories();
-            PopulateEntities();
         }
 
         private async void AddCategoryExecute()
@@ -52,9 +46,11 @@ namespace FiveMin.WPF.ViewModels
                 var category = new Category
                 {
                     Name = NewCategory.Name,
-                    SmallIconUrl = NewCategory.SmallIconUrl,
                     Description = NewCategory.Description,
-                    BackdropUrl = NewCategory.BackdropUrl
+                    ImageUrl = NewCategory.BackdropUrl,
+                    DateAdded = DateTime.Now,
+                    IsWatched = false,
+                    Keywords = NewCategory.KeywordsFormatted
                 };
 
                 await FirebaseManager.Instance.AddCategory(category);
@@ -64,50 +60,32 @@ namespace FiveMin.WPF.ViewModels
                 NewCategory = new CategoryViewModel();
             }
         }
-
-        private async void AddEntityExecute()
+        
+        private async void AddVideoExecute()
         {
-            if (NewEntity != null)
+            if (NewVideo != null)
             {
-                var entity = new VsEntity
+                var video = new FiveMinVideo
                 {
-                    Name = NewEntity.Name,
-                    ImageUrl = NewEntity.ImageUrl,
-                    Description = NewEntity.Description,
-                    WikiLink = NewEntity.WikiLink
+                    Name = NewVideo.Name,
+                    Categories = new List<string> { SelectedCategory.Name },
+                    Description = NewVideo.Description,
+                    ImageUrl =  NewVideo.BackdropUrl,
+                    DateAdded =  DateTime.Now,
+                    Likes = 0,
+                    Dislikes = 0,
+                    WatchCount = 0,
+                    IsWatched = false,
+                    VideoUrl = NewVideo.VideoUrl,
+                    Keywords = NewVideo.KeywordsFormatted,
+                    Length = NewVideo.LengthFormatted
                 };
 
-                await FirebaseManager.Instance.AddEntity(entity);
+                await FirebaseManager.Instance.AddVideo(video);
 
-                Entities.Add(entity);
+                Videos.Add(video);
 
-                NewEntity = new EntityViewModel();
-            }
-        }
-
-        private async void AddCompetitionExecute()
-        {
-            if (NewCompetition != null)
-            {
-                var competition = new VsCompetition
-                {
-                    Name = NewCompetition.Name,
-                    Category = SelectedCategory.Name,
-                    Description = NewCompetition.Description,
-                    BackdropUrl = NewCompetition.BackdropUrl,
-                    EndingDate = NewCompetition.EndingDate,
-                    CompetitorName1 = Entity1.Name,
-                    CompetitorName2 = Entity2.Name,
-                    CompetitorScore1 = 0,
-                    CompetitorScore2 = 0,
-                    StartedBy = NewCompetition.StartedBy
-                };
-
-                await FirebaseManager.Instance.AddCompetition(competition);
-
-                Competitions.Add(competition);
-
-                NewCompetition = new CompetitionViewModel();
+                NewVideo = new VideoViewModel();
             }
         }
 
@@ -121,46 +99,29 @@ namespace FiveMin.WPF.ViewModels
             }
         }
 
-        public VsEntity Entity1
-        {
-            get { return _entity1; }
-            set
-            {
-                _entity1 = value;
-                RaisePropertyChanged();
-            }
-        }
-
-        public VsEntity Entity2
-        {
-            get { return _entity2; }
-            set
-            {
-                _entity2 = value;
-                RaisePropertyChanged();
-            }
-        }
-
         private void InitializeCollections()
         {
-            _competitions = new ObservableCollection<VsCompetition>();
+            _videos = new ObservableCollection<FiveMinVideo>();
             _categories = new ObservableCollection<Category>();
-            _entities = new ObservableCollection<VsEntity>();
 
             RefreshAll();
         }
 
-        private async void PopulateCompetitions()
+        private async void PopulateVideos()
         {
-            if (_competitions != null)
+            if (_videos != null)
             {
-                _competitions.Clear();
+                _videos.Clear();
 
-                var competitions = await FirebaseManager.Instance.GetAllCompetitions();
+                var videos = await FirebaseManager.Instance.GetAllVideos();
 
-                foreach (var c in competitions)
+                // Videos will be null if no video has yet to be added
+                if (videos != null)
                 {
-                    Competitions.Add(c.Value);
+                    foreach (var c in videos)
+                    {
+                        Videos.Add(c.Value);
+                    }
                 }
             }
         }
@@ -173,28 +134,16 @@ namespace FiveMin.WPF.ViewModels
 
                 var categories = await FirebaseManager.Instance.GetAllCategories();
 
-                foreach (var c in categories)
+                if (categories != null)
                 {
-                    Categories.Add(c.Value);
+                    foreach (var c in categories)
+                    {
+                        Categories.Add(c.Value);
+                    }
                 }
             }
         }
-
-        private async void PopulateEntities()
-        {
-            if (_entities != null)
-            {
-                _entities.Clear();
-
-                var entities = await FirebaseManager.Instance.GetAllEntities();
-
-                foreach (var c in entities)
-                {
-                    Entities.Add(c.Value);
-                }
-            }
-        }
-
+      
         public RelayCommand EditCommand
         {
             get { return _editCommand; }
@@ -205,22 +154,22 @@ namespace FiveMin.WPF.ViewModels
             }
         }
 
-        public ObservableCollection<VsCompetition> Competitions
+        public ObservableCollection<FiveMinVideo> Videos
         {
-            get { return _competitions; }
+            get { return _videos; }
             set
             {
-                _competitions = value;
+                _videos = value;
                 RaisePropertyChanged();
             }
         }
 
-        public VsCompetition SelectedCompetition
+        public FiveMinVideo SelectedVideo
         {
-            get { return _selectedCompetition; }
+            get { return _selectedVideo; }
             set
             {
-                _selectedCompetition = value;
+                _selectedVideo = value;
                 RaisePropertyChanged();
             }
         }
@@ -234,37 +183,17 @@ namespace FiveMin.WPF.ViewModels
                 RaisePropertyChanged();
             }
         }
-
-        public ObservableCollection<VsEntity> Entities
+        
+        public VideoViewModel NewVideo
         {
-            get { return _entities; }
+            get { return _newVideo; }
             set
             {
-                _entities = value;
+                _newVideo = value;
                 RaisePropertyChanged();
             }
         }
-
-        public CompetitionViewModel NewCompetition
-        {
-            get { return _newCompetition; }
-            set
-            {
-                _newCompetition = value;
-                RaisePropertyChanged();
-            }
-        }
-
-        public EntityViewModel NewEntity
-        {
-            get { return _newEntity; }
-            set
-            {
-                _newEntity = value;
-                RaisePropertyChanged();
-            }
-        }
-
+        
         public RelayCommand RefreshCommand
         {
             get { return _refreshCommand; }
@@ -285,12 +214,12 @@ namespace FiveMin.WPF.ViewModels
             }
         }
 
-        public RelayCommand AddCompetition
+        public RelayCommand AddVideo
         {
-            get { return _addCompetition; }
+            get { return _addVideo; }
             set
             {
-                _addCompetition = value;
+                _addVideo = value;
                 RaisePropertyChanged();
             }
         }
@@ -304,17 +233,7 @@ namespace FiveMin.WPF.ViewModels
                 RaisePropertyChanged();
             }
         }
-
-        public RelayCommand AddEntity
-        {
-            get { return _addEntity; }
-            set
-            {
-                _addEntity = value;
-                RaisePropertyChanged();
-            }
-        }
-
+        
         public RelayCommand AddCategory
         {
             get { return _addCategory; }

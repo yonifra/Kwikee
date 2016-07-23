@@ -66,8 +66,8 @@
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -119,25 +119,17 @@
     <Compile Include="Controls\AddCategoryControl.xaml.cs">
       <DependentUpon>AddCategoryControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\AddEntityControl.xaml.cs">
-      <DependentUpon>AddEntityControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\AddCompetitionControl.xaml.cs">
-      <DependentUpon>AddCompetitionControl.xaml</DependentUpon>
+    <Compile Include="Controls\AddVideoControl.xaml.cs">
+      <DependentUpon>AddVideoControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\CategoryViewModel.cs" />
-    <Compile Include="ViewModels\CompetitionViewModel.cs" />
-    <Compile Include="ViewModels\EntityViewModel.cs" />
+    <Compile Include="ViewModels\VideoViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Page Include="Controls\AddCategoryControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\AddEntityControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Controls\AddCompetitionControl.xaml">
+    <Page Include="Controls\AddVideoControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -227,9 +219,9 @@
     <Resource Include="Themes\Metro\HowToApplyTheme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Versus.Portable\Versus.Portable\Versus.Portable.csproj">
+    <ProjectReference Include="..\Versus.Portable\Versus.Portable\FiveMin.Portable.csproj">
       <Project>{d6b90f97-9f49-45db-8801-26c2d72738bc}</Project>
-      <Name>Versus.Portable</Name>
+      <Name>FiveMin.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,13 +1,16 @@
-﻿using GalaSoft.MvvmLight;
+﻿using System.Collections.Generic;
+using System.Linq;
+using GalaSoft.MvvmLight;
 
 namespace FiveMin.WPF.ViewModels
 {
     public class CategoryViewModel : ViewModelBase
     {
-        private string _smallIconUrl;
         private string _backdropUrl;
         private string _description;
         private string _name;
+        private string _keywords;
+        private List<string> _keywordsFormatted;
 
         public string Name
         {
@@ -39,14 +42,22 @@ namespace FiveMin.WPF.ViewModels
             }
         }
 
-        public string SmallIconUrl
+        public string Keywords
         {
-            get { return _smallIconUrl; }
+            get { return _keywords; }
             set
             {
-                _smallIconUrl = value;
+                _keywords = value;
+                if (!string.IsNullOrWhiteSpace(_keywords))
+                {
+                    _keywordsFormatted = _keywords.Split(',').ToList();
+                }
+
                 RaisePropertyChanged();
             }
         }
+
+        public List<string> KeywordsFormatted => _keywordsFormatted; 
+        
     }
 }

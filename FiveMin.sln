@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.WPF", "Versus.WPF\Versus.WPF.csproj", "{050F544F-0933-47D8-AC32-FEAFB36673D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveMin.WPF", "Versus.WPF\FiveMin.WPF.csproj", "{050F544F-0933-47D8-AC32-FEAFB36673D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveMin.Droid", "Droid\FiveMin.Droid.csproj", "{5CE58BAA-DBDA-49FC-8111-86C049302D53}"
 EndProject
