@@ -13,9 +13,9 @@
     <!-- Button labels -->
     <string name="sign_out">Sign Out</string>
     <string name="disconnect">Disconnect</string>
-	<string name="app_store_url">https://play.google.com/store/apps/details?id=com.cryptocodes.FiveMin</string>
+	<string name="app_store_url">https://play.google.com/store/apps/details?id=com.cryptocodes.fivemin</string>
 	<string name="share_global_message_subject">FiveMin App</string>
-	<string name="share_global_message_text">Challenge your friends using #FiveMin!</string>
+	<string name="share_global_message_text">Have a few spare minutes? Try #FiveMin and learn!</string>
 
 	<string name="share_competition_message_subject">I casted my vote, how about you?</string>
 	<string name="share_competition_message_text">I just voted in {0} for {1}, vote now!</string>

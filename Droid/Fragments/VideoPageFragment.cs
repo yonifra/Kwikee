@@ -16,8 +16,6 @@ namespace FiveMin.Droid.Fragments
     public class VideoPageFragment : Android.Support.V4.App.Fragment
     {
         private FiveMinVideo _video;
-        private TextView _leftVotesTextView;
-        private TextView _rightVotesTextView;
 
         public VideoPageFragment ()
         {
@@ -34,7 +32,6 @@ namespace FiveMin.Droid.Fragments
         {
             base.OnCreateView (inflater, container, savedInstanceState);
 
-            //var view = inflater.Inflate(Resource.Layout.fragment_categories, container, false);
             var view = inflater.Inflate (Resource.Layout.fragment_videoPage, null);
             PopulateDataAsync (view);
 
@@ -54,17 +51,33 @@ namespace FiveMin.Droid.Fragments
         async void PopulateDataAsync (Android.Views.View view)
         {
             var video = await FirebaseManager.Instance.GetVideo (Video.Name);
-            var parentView = view.FindViewById<FrameLayout> (Resource.Id.parentLayout);
-
+          
             if (video != null)
             {
              //   FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { entityName, entityDescription, _leftVotesTextView, _rightVotesTextView });
 
-                var progressBar = view.FindViewById<ProgressBar> (Resource.Id.loadingCompetitionProgressBar);
-                var mainLayout = view.FindViewById<LinearLayout> (Resource.Id.mainCompetitionLayout);
+                var progressBar = view.FindViewById<ProgressBar> (Resource.Id.loadingVideoProgressBar);
+                var mainLayout = view.FindViewById<LinearLayout> (Resource.Id.mainVideoLayout);
 
                 progressBar.Visibility = Android.Views.ViewStates.Gone;
                 mainLayout.Visibility = Android.Views.ViewStates.Visible;
+
+                var videoNameTv = view.FindViewById<TextView> (Resource.Id.videoNameTextView);
+                var videoDescTv = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView);
+                var videoView = view.FindViewById<VideoView> (Resource.Id.videoView);
+
+                videoNameTv.Text = video.Name;
+                videoDescTv.Text = video.Description;
+
+                if (!string.IsNullOrEmpty (video.VideoUrl))
+                {
+                    var uri = Android.Net.Uri.Parse (video.VideoUrl);
+                    videoView.SetVideoURI (uri);
+                    videoView.Start ();
+                }
+
+                FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { videoNameTv, videoDescTv });
+
             }
         }
 
