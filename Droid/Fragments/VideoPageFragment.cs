@@ -75,7 +75,7 @@ namespace FiveMin.Droid.Fragments
                 videoNameTv.Text = video.Name;
                 videoDescTv.Text = video.Description;
                 // TODO: Remove this!
-                if (!string.IsNullOrEmpty (video.VideoUrl))
+                if (!string.IsNullOrEmpty (video.VideoId))
                 {
                     var metrics = Resources.DisplayMetrics;
                 }

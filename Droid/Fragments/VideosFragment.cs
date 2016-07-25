@@ -61,7 +61,9 @@ namespace FiveMin.Droid.Fragments
                         {
                             // Put the name of the selected category into the intent
                             var intent = new Intent (_view.Context, typeof (VideoActivity));
-                            intent.PutExtra ("VideoId", video.VideoUrl);
+                            intent.PutExtra ("VideoId", video.VideoId);
+                            intent.PutExtra ("VideoName", video.Name);
+                            intent.PutExtra ("VideoDescription", video.Description);
                             StartActivity (intent);
                             //var fragment = new VideoPageFragment { Video = video };
 

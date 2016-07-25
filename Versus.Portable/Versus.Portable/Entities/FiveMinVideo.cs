@@ -6,7 +6,7 @@ namespace FiveMin.Portable.Entities
     public class FiveMinVideo : BaseEntity
     {
         public TimeSpan Length { get; set; }
-        public string VideoUrl { get; set; }
+        public string VideoId { get; set; }
         public uint Likes { get; set; }
         public uint Dislikes { get; set; }
         public uint WatchCount { get; set; }
