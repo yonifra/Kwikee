@@ -90,3 +90,6 @@
 /Users/yonifra/shortie/Droid/bin/Debug/Xamarin.Android.Support.Design.dll
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll.mdb
+/Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll
+/Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll.mdb
+/Users/yonifra/shortie/Droid/obj/Debug/res/layout/video_page_layout.xml

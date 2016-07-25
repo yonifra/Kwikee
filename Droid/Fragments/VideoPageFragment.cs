@@ -13,10 +13,11 @@ using Android;
 using Android.Webkit;
 using Android.Views;
 using System.Text.RegularExpressions;
+using Google.YouTube.Player;
 
 namespace FiveMin.Droid.Fragments
 {
-    public class VideoPageFragment : Android.Support.V4.App.Fragment
+    public class VideoPageFragment : Android.Support.V4.App.Fragment, IYouTubePlayerProvider
     {
         private FiveMinVideo _video;
         int _displayWidth;
@@ -69,18 +70,14 @@ namespace FiveMin.Droid.Fragments
 
                 var videoNameTv = view.FindViewById<TextView> (Resource.Id.videoNameTextView);
                 var videoDescTv = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView);
-                var videoView = view.FindViewById<WebView> (Resource.Id.videoView);
+             //   var videoView = view.FindViewById<WebView> (Resource.Id.videoView);
 
                 videoNameTv.Text = video.Name;
                 videoDescTv.Text = video.Description;
-
+                // TODO: Remove this!
                 if (!string.IsNullOrEmpty (video.VideoUrl))
                 {
                     var metrics = Resources.DisplayMetrics;
-                    //fix video screen height and width
-                    _displayWidth = (ConvertPixelsToDp (metrics.WidthPixels) + 200);
-                    _displayHeight = (ConvertPixelsToDp (metrics.HeightPixels)) / (2);
-                    PlayInWebView (view, video.VideoUrl);
                 }
 
                 FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { videoNameTv, videoDescTv });
@@ -88,55 +85,11 @@ namespace FiveMin.Droid.Fragments
             }
         }
 
-        void PlayInWebView (View v, string videoUrl)
+
+
+        public void Initialize (string p0, IYouTubePlayerOnInitializedListener p1)
         {
-
-            string id = FnGetVideoID (videoUrl);
-
-            if (!string.IsNullOrEmpty (id))
-            {
-                videoUrl = string.Format ("http://youtube.com/embed/{0}", id);
-            }
-            else
-            {
-                Snackbar.Make (v, "Video url is not in correct format", Snackbar.LengthLong).Show ();
-                return;
-            }
-
-            string html = @"<html><body><iframe width=""videoWidth"" height=""videoHeight"" src=""strUrl""></iframe></body></html>";
-            var myWebView = v.FindViewById<WebView> (Resource.Id.videoView);
-            var settings = myWebView.Settings;
-            settings.JavaScriptEnabled = true;
-            settings.UseWideViewPort = true;
-            settings.LoadWithOverviewMode = true;
-            settings.JavaScriptCanOpenWindowsAutomatically = true;
-            settings.DomStorageEnabled = true;
-            settings.SetRenderPriority (WebSettings.RenderPriority.High);
-            settings.BuiltInZoomControls = false;
-
-            settings.JavaScriptCanOpenWindowsAutomatically = true;
-            myWebView.SetWebChromeClient (new WebChromeClient ());
-            settings.AllowFileAccess = true;
-            settings.SetPluginState (WebSettings.PluginState.On);
-            string strYouTubeURL = html.Replace ("videoWidth", _displayWidth.ToString ()).Replace ("videoHeight", _displayHeight.ToString ()).Replace ("strUrl", videoUrl);
-
-            myWebView.LoadDataWithBaseURL (null, strYouTubeURL, "text/html", "UTF-8", null);
-
-        }
-
-        int ConvertPixelsToDp (float pixelValue)
-        {
-            var dp = (int)((pixelValue) / Resources.DisplayMetrics.Density);
-            return dp;
-        }
-
-        static string FnGetVideoID (string strVideoURL)
-        {
-            const string regExpPattern = @"youtu(?:\.be|be\.com)/(?:.*v(?:/|=)|(?:.*/)?)([a-zA-Z0-9-_]+)";
-            //for Vimeo: vimeo\.com/(?:.*#|.*/videos/)?([0-9]+)
-            var regEx = new Regex (regExpPattern);
-            var match = regEx.Match (strVideoURL);
-            return match.Success ? match.Groups [1].Value : null;
+            throw new NotImplementedException ();
         }
 
         public FiveMinVideo Video { get { return _video; } set{ _video = value;} }

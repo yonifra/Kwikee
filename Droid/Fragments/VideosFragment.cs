@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Android.Content;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
@@ -52,18 +54,21 @@ namespace FiveMin.Droid.Fragments
 
                     if (lv != null)
                     {
-                        var competitionListAdapter = lv.Adapter as VideosListAdapter;
-                        var competition = competitionListAdapter?.Videos [index];
+                        var videosListAdapter = lv.Adapter as VideosListAdapter;
+                        var video = videosListAdapter?.Videos [index];
 
-                        if (competition != null)
+                        if (video != null)
                         {
                             // Put the name of the selected category into the intent
-                            var fragment = new VideoPageFragment { Video = competition };
+                            var intent = new Intent (_view.Context, typeof (VideoActivity));
+                            intent.PutExtra ("VideoId", video.VideoUrl);
+                            StartActivity (intent);
+                            //var fragment = new VideoPageFragment { Video = video };
 
-                            Activity.SupportFragmentManager.BeginTransaction ()
-                                .Replace (Resource.Id.content_frame, fragment)
-                                .AddToBackStack (fragment.Tag)
-                                .Commit ();
+                            //Activity.SupportFragmentManager.BeginTransaction ()
+                            //    .Replace (Resource.Id.content_frame, fragment)
+                            //    .AddToBackStack (fragment.Tag)
+                            //    .Commit ();
                         }
                     }
                 };

@@ -2722,9 +2722,6 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00a0
 			public const int videoTagsTextView = 2131361952;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int videoView = 2131361913;
-			
 			// aapt resource value: 0x7f0a007d
 			public const int videosListView = 2131361917;
 			
@@ -2739,6 +2736,9 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0a0038
 			public const int wrap_content = 2131361848;
+			
+			// aapt resource value: 0x7f0a0079
+			public const int youtube_fragment = 2131361913;
 			
 			static Id()
 			{
@@ -2959,7 +2959,10 @@ namespace FiveMin.Droid
 			public const int trending_fragment = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int VideoListItemLayout = 2130968633;
+			public const int video_page_layout = 2130968633;
+			
+			// aapt resource value: 0x7f04003a
+			public const int VideoListItemLayout = 2130968634;
 			
 			static Layout()
 			{
@@ -3182,6 +3185,9 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0b003c
 			public const int disconnect = 2131427388;
+			
+			// aapt resource value: 0x7f0b0043
+			public const int error_player = 2131427395;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int library_name = 2131427378;

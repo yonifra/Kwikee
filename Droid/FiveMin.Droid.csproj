@@ -126,6 +126,9 @@
     <Compile Include="Fragments\LoginFragment.cs" />
     <Compile Include="Fragments\TrendingVideosFragment.cs" />
     <Compile Include="Fragments\EndingSoonFragment.cs" />
+    <Compile Include="Activities\VideoActivity.cs" />
+    <Compile Include="Activities\YouTubeFailureRecoveryActivity.cs" />
+    <Compile Include="DeveloperKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -194,6 +197,7 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_person_black_48dp.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_star_black_48dp.png" />
     <AndroidResource Include="Resources\layout\category_listitem_layout.axml" />
+    <AndroidResource Include="Resources\layout\video_page_layout.axml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

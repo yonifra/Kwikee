@@ -14,7 +14,8 @@
             android:name="com.google.android.youtube.player.YouTubePlayerFragment"
             android:id="@+id/youtube_fragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
