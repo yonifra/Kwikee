@@ -1667,6 +1667,9 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f070067
 			public const int cardview_default_radius = 2131165287;
 			
+			// aapt resource value: 0x7f070071
+			public const int description_font_size = 2131165297;
+			
 			// aapt resource value: 0x7f070008
 			public const int design_appbar_elevation = 2131165192;
 			
@@ -1781,8 +1784,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f07006d
 			public const int fastscroll_thumb_width = 2131165293;
 			
+			// aapt resource value: 0x7f070073
+			public const int g_top_margin = 2131165299;
+			
 			// aapt resource value: 0x7f070070
-			public const int g_top_margin = 2131165296;
+			public const int header_font_size = 2131165296;
 			
 			// aapt resource value: 0x7f07005c
 			public const int highlight_alpha_material_colored = 2131165276;
@@ -1810,6 +1816,9 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f070061
 			public const int notification_subtext_size = 2131165281;
+			
+			// aapt resource value: 0x7f070072
+			public const int tags_font_size = 2131165298;
 			
 			static Dimension()
 			{

@@ -250,6 +250,10 @@
       <Project>{D6B90F97-9F49-45DB-8801-26C2D72738BC}</Project>
       <Name>FiveMin.Portable</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Downloads\YouTubeAndroidPlayer-master\v1.2.1\YouTubeApi\YouTubeApi.csproj">
+      <Project>{A4CA43B8-7140-4483-96BA-6AFC8E935470}</Project>
+      <Name>YouTubeApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

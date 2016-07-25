@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveMin.iOS", "iOS\FiveMin.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveMin.Portable", "Versus.Portable\Versus.Portable\FiveMin.Portable.csproj", "{D6B90F97-9F49-45DB-8801-26C2D72738BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeApi", "..\Downloads\YouTubeAndroidPlayer-master\v1.2.1\YouTubeApi\YouTubeApi.csproj", "{A4CA43B8-7140-4483-96BA-6AFC8E935470}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Versus\Versus.projitems*{00dc1aa2-a1a4-43ea-a8d8-a5034455e12d}*SharedItemsImports = 4
@@ -98,6 +100,24 @@ Global
 		{D6B90F97-9F49-45DB-8801-26C2D72738BC}.Release|iPhone.Build.0 = Release|Any CPU
 		{D6B90F97-9F49-45DB-8801-26C2D72738BC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{D6B90F97-9F49-45DB-8801-26C2D72738BC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Release|iPhone.Build.0 = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A4CA43B8-7140-4483-96BA-6AFC8E935470}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
