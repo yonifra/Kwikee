@@ -76,7 +76,7 @@ namespace FiveMin.WPF.ViewModels
                     Dislikes = 0,
                     WatchCount = 0,
                     IsWatched = false,
-                    VideoUrl = NewVideo.VideoUrl,
+                    VideoId = NewVideo.VideoUrl,
                     Keywords = NewVideo.KeywordsFormatted,
                     Length = NewVideo.LengthFormatted
                 };
