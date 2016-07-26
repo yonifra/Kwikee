@@ -6,6 +6,7 @@ using Android.Widget;
 using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Entities;
+using FiveMin.Portable.Helpers;
 
 namespace FiveMin.Droid.Adapters
 {
@@ -55,10 +56,10 @@ namespace FiveMin.Droid.Adapters
 
             wrapper.Backdrop.SetBackgroundResource (Android.Resource.Color.Transparent);
             wrapper.Name.Text = category.Name;
-            wrapper.Description.Text = category.Description;
-            wrapper.Tags.Text = category.Keywords.Aggregate ((a, b) => "#" + a + " #" + b);
+            wrapper.Description.Text = StringHelper.TrimText(category.Description, 100);
+            wrapper.Tags.Text = StringHelper.TagsFormatter (category.Keywords);
 
-          //  FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Tags });
+            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Tags });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (category.ImageUrl).Into (wrapper.Backdrop);
