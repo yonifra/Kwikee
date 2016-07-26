@@ -6,6 +6,7 @@ using Android.Widget;
 using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Entities;
+using System;
 
 namespace FiveMin.Droid.Adapters
 {
@@ -57,10 +58,19 @@ namespace FiveMin.Droid.Adapters
 
             wrapper.Backdrop.SetBackgroundResource (Resource.Color.button_material_light);
             wrapper.Name.Text = video.Name;
-            wrapper.Description.Text = video.Description;
+
+            var desc = video.Description;
+
+            if (desc.Length > 80)
+            {
+                desc = desc.Substring (0, 80) + "...";
+            }
+
+            wrapper.Description.Text = desc;
+            wrapper.Length.Text = video.Length.ToString ("g");
             wrapper.Tags.Text = video.Keywords.Aggregate ((a, b) => "#" + a + " #" + b);
 
-            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length, wrapper.Tags });
+        //    FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length, wrapper.Tags });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (video.ImageUrl).Into (wrapper.Backdrop);

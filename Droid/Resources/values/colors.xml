@@ -3,6 +3,8 @@
 	<color name="primary">#2196F3</color>
 	<color name="primaryDark">#1976D2</color>
 	<color name="accent">#2196F3</color>
+	<color name="tags_highlight">#384992</color>
+	<color name="list_item_background">#68000000</color>
 	<color name="fab_primary_pressed">#1976D2</color>
 	<color name="fab_color_ripple">#2196F3</color>
 </resources>

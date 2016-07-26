@@ -58,7 +58,7 @@ namespace FiveMin.Droid.Adapters
             wrapper.Description.Text = category.Description;
             wrapper.Tags.Text = category.Keywords.Aggregate ((a, b) => "#" + a + " #" + b);
 
-            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Tags });
+          //  FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Tags });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (category.ImageUrl).Into (wrapper.Backdrop);
