@@ -17,6 +17,8 @@ namespace FiveMin.Droid.Adapters
         public ImageView Backdrop { get; set; }
         public TextView Length { get; set; }
         public TextView Tags { get; set; }
+        public TextView WatchCount { get; set; }
+        public TextView LikeDislikeDifference { get; set; }
     }
 
     internal class VideosListAdapter : BaseAdapter
@@ -49,7 +51,9 @@ namespace FiveMin.Droid.Adapters
                     Description = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView),
                     Backdrop = view.FindViewById<ImageView> (Resource.Id.videoBackdropImageView),
                     Length = view.FindViewById<TextView>(Resource.Id.videoLengthTextView),
-                    Tags = view.FindViewById<TextView>(Resource.Id.videoTagsTextView)
+                    Tags = view.FindViewById<TextView>(Resource.Id.videoTagsTextView),
+                    WatchCount = view.FindViewById<TextView>(Resource.Id.videoWatchCountTextView),
+                    LikeDislikeDifference = view.FindViewById<TextView>(Resource.Id.videoLikesDiffTextView)
                 };
                 view.Tag = wrapper;
             }
@@ -61,8 +65,12 @@ namespace FiveMin.Droid.Adapters
             wrapper.Description.Text = StringHelper.TrimText(video.Description, 90);
             wrapper.Tags.Text = StringHelper.TagsFormatter (video.Keywords);
             wrapper.Length.Text = StringHelper.TimeSpanFormatter (video.Length);
+            wrapper.WatchCount.Text = video.WatchCount.ToString ("N0");
+            wrapper.LikeDislikeDifference.Text = (video.Likes - video.Dislikes).ToString ("N0");
 
-            FontsHelper.ApplyTypeface (_context.Assets, new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length, wrapper.Tags });
+
+            FontsHelper.ApplyTypeface (_context.Assets, 
+                                       new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length, wrapper.Tags, wrapper.WatchCount, wrapper.LikeDislikeDifference });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (video.ImageUrl).Into (wrapper.Backdrop);

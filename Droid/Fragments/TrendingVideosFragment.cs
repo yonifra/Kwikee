@@ -51,7 +51,7 @@ namespace FiveMin.Droid.Fragments
                 }
                 else
                 {
-                    Snackbar.Make (_view, "No trending competitions found", Snackbar.LengthShort).Show ();
+                    Snackbar.Make (_view, "No trending videos found", Snackbar.LengthShort).Show ();
                     return;
                 }
 
