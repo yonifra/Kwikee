@@ -8,7 +8,7 @@ namespace FiveMin.Portable.Helpers
     {
         public static string TimeSpanFormatter (TimeSpan ts)
         {
-            return string.Format ("{0:D}:{1:D2}", ts.Minutes, ts.Seconds);
+            return string.Format ("{0:D}:{1:D2}", ts.Hours, ts.Minutes);
         }
 
         public static string TagsFormatter (List<string> stringsList)
