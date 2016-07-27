@@ -85,9 +85,52 @@ namespace FiveMin.Portable.Data
             // throw new NotImplementedException();
         }
 
-        private static async void UpdateCompetition(FiveMinVideo value, string key)
+        private async void UpdateVideo(FiveMinVideo value)
         {
-           await _client.UpdateAsync($"{VideosName}/{key}", value);
+            var key = GetKeyForVideo (value);
+            await _client.UpdateAsync($"{VideosName}/{key}", value);
+        }
+
+        public void UpdateLikesDislikesCount (FiveMinVideo v, bool isIncrement, bool isLikes)
+        {
+            if (isLikes)
+            {
+                if (isIncrement)
+                {
+                    v.Likes++;
+                }
+                else
+                {
+                    v.Likes--;
+                }
+            }
+            else
+            {
+                if (isIncrement)
+                {
+                    v.Dislikes++;
+                }
+                else
+                {
+                    v.Dislikes--;
+                }
+            }
+
+            UpdateVideo (v);
+        }
+
+        public void UpdateWatchCount (FiveMinVideo v)
+        {
+            if (v != null)
+            {
+                v.WatchCount++;
+                UpdateVideo (v);
+            }
+        }
+
+        public string GetKeyForVideo (FiveMinVideo v)
+        {
+            return _videos.FirstOrDefault (vid => vid.Value == v).Key;
         }
 
         public async Task<bool> AddVideo(FiveMinVideo video)

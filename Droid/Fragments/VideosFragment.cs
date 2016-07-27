@@ -59,6 +59,8 @@ namespace FiveMin.Droid.Fragments
 
                         if (video != null)
                         {
+                            FirebaseManager.Instance.UpdateWatchCount (video);
+
                             // Put the name of the selected category into the intent
                             var intent = new Intent (_view.Context, typeof (VideoActivity));
                             intent.PutExtra ("VideoId", video.VideoId);
