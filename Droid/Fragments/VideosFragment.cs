@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Android.Content;
 using Android.OS;
 using Android.Support.Design.Widget;
+using Android.Support.V4.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
@@ -19,6 +20,7 @@ namespace FiveMin.Droid.Fragments
         private const string LOG_TAG = "VIDEOS_FRAGMENT";
         private IEnumerable<FiveMinVideo> _videos;
         private View _view;
+        private SwipeRefreshLayout _refreshLayout;
 
         public VideosFragment ()
         {
@@ -32,6 +34,9 @@ namespace FiveMin.Droid.Fragments
 
             _view = inflater.Inflate (Resource.Layout.fragment_videos, null);
 
+            _refreshLayout = _view.FindViewById<SwipeRefreshLayout> (Resource.Id.swipeRefreshLayout);
+            _refreshLayout.Refresh += (o, e) => { LoadDataToGridAsync (); };
+
             LoadDataToGridAsync ();
 
             return _view;
@@ -43,39 +48,15 @@ namespace FiveMin.Droid.Fragments
             {
                 await GetAllVideosAsync (SelectedCategoryName);
 
-                var videosListView = _view.FindViewById<ListView> (Resource.Id.videosListView);
-                videosListView.Adapter = new VideosListAdapter (Activity, _videos);
+                var listView = _view.FindViewById<ListView> (Resource.Id.videosListView);
 
-                videosListView.ItemClick += (sender, e) =>
-                {
-                    var index = e.Position;
+                listView.ItemClick -= OnListItemClick;
 
-                    var lv = (sender as ListView);
+                listView.Adapter = new VideosListAdapter (Activity, _videos);
 
-                    if (lv != null)
-                    {
-                        var videosListAdapter = lv.Adapter as VideosListAdapter;
-                        var video = videosListAdapter?.Videos [index];
+                listView.ItemClick += OnListItemClick;
 
-                        if (video != null)
-                        {
-                            FirebaseManager.Instance.UpdateWatchCount (video);
-
-                            // Put the name of the selected category into the intent
-                            var intent = new Intent (_view.Context, typeof (VideoActivity));
-                            intent.PutExtra ("VideoId", video.VideoId);
-                            intent.PutExtra ("VideoName", video.Name);
-                            intent.PutExtra ("VideoDescription", video.Description);
-                            StartActivity (intent);
-                            //var fragment = new VideoPageFragment { Video = video };
-
-                            //Activity.SupportFragmentManager.BeginTransaction ()
-                            //    .Replace (Resource.Id.content_frame, fragment)
-                            //    .AddToBackStack (fragment.Tag)
-                            //    .Commit ();
-                        }
-                    }
-                };
+                _refreshLayout.Refreshing = false;
             }
             else
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show();
@@ -101,7 +82,34 @@ namespace FiveMin.Droid.Fragments
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
-        public string SelectedCategoryName { get; set; }
+        public string SelectedCategoryName { get;set; }
+
+        void OnListItemClick (object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var index = e.Position;
+
+            var lv = (sender as ListView);
+
+            if (lv != null)
+            {
+                var videosListAdapter = lv.Adapter as VideosListAdapter;
+                var video = videosListAdapter?.Videos [index];
+
+                if (video != null)
+                {
+                    FirebaseManager.Instance.UpdateWatchCount (video);
+
+                    // Put the name of the selected category into the intent
+                    var intent = new Intent (_view.Context, typeof (VideoActivity));
+                    intent.PutExtra ("VideoId", video.VideoId);
+                    intent.PutExtra ("VideoName", video.Name);
+                    intent.PutExtra ("VideoDescription", video.Description);
+                    StartActivity (intent);
+                }
+            }
+        }
+
+        
     }
 }
 
