@@ -26,55 +26,6 @@ namespace FiveMin.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::PullToRefresharp.Resource.Attribute.contentViewId = global::FiveMin.Droid.Resource.Attribute.contentViewId;
-			global::PullToRefresharp.Resource.Attribute.fastScrollThumbWidth = global::FiveMin.Droid.Resource.Attribute.fastScrollThumbWidth;
-			global::PullToRefresharp.Resource.Attribute.headerIconDrawable = global::FiveMin.Droid.Resource.Attribute.headerIconDrawable;
-			global::PullToRefresharp.Resource.Attribute.headerId = global::FiveMin.Droid.Resource.Attribute.headerId;
-			global::PullToRefresharp.Resource.Attribute.headerTextColor = global::FiveMin.Droid.Resource.Attribute.headerTextColor;
-			global::PullToRefresharp.Resource.Attribute.ptrHeaderBackground = global::FiveMin.Droid.Resource.Attribute.ptrHeaderBackground;
-			global::PullToRefresharp.Resource.Attribute.pullDownProgressIndicatorId = global::FiveMin.Droid.Resource.Attribute.pullDownProgressIndicatorId;
-			global::PullToRefresharp.Resource.Attribute.pullDownTension = global::FiveMin.Droid.Resource.Attribute.pullDownTension;
-			global::PullToRefresharp.Resource.Attribute.pullEnabled = global::FiveMin.Droid.Resource.Attribute.pullEnabled;
-			global::PullToRefresharp.Resource.Attribute.pullToRefreshText = global::FiveMin.Droid.Resource.Attribute.pullToRefreshText;
-			global::PullToRefresharp.Resource.Attribute.refreshingText = global::FiveMin.Droid.Resource.Attribute.refreshingText;
-			global::PullToRefresharp.Resource.Attribute.releaseToRefreshText = global::FiveMin.Droid.Resource.Attribute.releaseToRefreshText;
-			global::PullToRefresharp.Resource.Attribute.snapbackDuration = global::FiveMin.Droid.Resource.Attribute.snapbackDuration;
-			global::PullToRefresharp.Resource.Color.ptrsharp_sb_gradient_end = global::FiveMin.Droid.Resource.Color.ptrsharp_sb_gradient_end;
-			global::PullToRefresharp.Resource.Color.ptrsharp_sb_gradient_start = global::FiveMin.Droid.Resource.Color.ptrsharp_sb_gradient_start;
-			global::PullToRefresharp.Resource.Color.ptrsharp_sb_header_text = global::FiveMin.Droid.Resource.Color.ptrsharp_sb_header_text;
-			global::PullToRefresharp.Resource.Color.ptrsharp_sb_header_text_shadow = global::FiveMin.Droid.Resource.Color.ptrsharp_sb_header_text_shadow;
-			global::PullToRefresharp.Resource.Dimension.fastscroll_thumb_width = global::FiveMin.Droid.Resource.Dimension.fastscroll_thumb_width;
-			global::PullToRefresharp.Resource.Drawable.progress_medium_holo = global::FiveMin.Droid.Resource.Drawable.progress_medium_holo;
-			global::PullToRefresharp.Resource.Drawable.ptrsharp_serious_business_gradient = global::FiveMin.Droid.Resource.Drawable.ptrsharp_serious_business_gradient;
-			global::PullToRefresharp.Resource.Drawable.serious_business_arrow = global::FiveMin.Droid.Resource.Drawable.serious_business_arrow;
-			global::PullToRefresharp.Resource.Drawable.serious_business_arrow2 = global::FiveMin.Droid.Resource.Drawable.serious_business_arrow2;
-			global::PullToRefresharp.Resource.Drawable.spinner_20_inner_holo = global::FiveMin.Droid.Resource.Drawable.spinner_20_inner_holo;
-			global::PullToRefresharp.Resource.Drawable.spinner_20_outer_holo = global::FiveMin.Droid.Resource.Drawable.spinner_20_outer_holo;
-			global::PullToRefresharp.Resource.Id.header = global::FiveMin.Droid.Resource.Id.header;
-			global::PullToRefresharp.Resource.Id.header_container = global::FiveMin.Droid.Resource.Id.header_container;
-			global::PullToRefresharp.Resource.Id.icon = global::FiveMin.Droid.Resource.Id.icon;
-			global::PullToRefresharp.Resource.Id.pullDownProgressIndicator = global::FiveMin.Droid.Resource.Id.pullDownProgressIndicator;
-			global::PullToRefresharp.Resource.Id.text = global::FiveMin.Droid.Resource.Id.text;
-			global::PullToRefresharp.Resource.Layout.ptrsharp_header = global::FiveMin.Droid.Resource.Layout.ptrsharp_header;
-			global::PullToRefresharp.Resource.String.library_name = global::FiveMin.Droid.Resource.String.library_name;
-			global::PullToRefresharp.Resource.String.ptrsharp_pull_to_refresh = global::FiveMin.Droid.Resource.String.ptrsharp_pull_to_refresh;
-			global::PullToRefresharp.Resource.String.ptrsharp_refreshing = global::FiveMin.Droid.Resource.String.ptrsharp_refreshing;
-			global::PullToRefresharp.Resource.String.ptrsharp_release_to_refresh = global::FiveMin.Droid.Resource.String.ptrsharp_release_to_refresh;
-			global::PullToRefresharp.Resource.Style.HoloProgressMedium = global::FiveMin.Droid.Resource.Style.HoloProgressMedium;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_contentViewId = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_contentViewId;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_fastScrollThumbWidth = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_fastScrollThumbWidth;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_headerIconDrawable = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_headerIconDrawable;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_headerId = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_headerId;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_headerTextColor = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_headerTextColor;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_ptrHeaderBackground = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_ptrHeaderBackground;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_pullDownProgressIndicatorId = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_pullDownProgressIndicatorId;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_pullDownTension = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_pullDownTension;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_pullEnabled = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_pullEnabled;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_pullToRefreshText = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_pullToRefreshText;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_refreshingText = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_refreshingText;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_releaseToRefreshText = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_releaseToRefreshText;
-			global::PullToRefresharp.Resource.Styleable.PullToRefresharpWrapper_snapbackDuration = global::FiveMin.Droid.Resource.Styleable.PullToRefresharpWrapper_snapbackDuration;
 			global::com.refractored.fab.Resource.Attribute.fab_colorDisabled = global::FiveMin.Droid.Resource.Attribute.fab_colorDisabled;
 			global::com.refractored.fab.Resource.Attribute.fab_colorNormal = global::FiveMin.Droid.Resource.Attribute.fab_colorNormal;
 			global::com.refractored.fab.Resource.Attribute.fab_colorPressed = global::FiveMin.Droid.Resource.Attribute.fab_colorPressed;
@@ -461,9 +412,6 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f01000c
 			public const int contentScrim = 2130771980;
 			
-			// aapt resource value: 0x7f010120
-			public const int contentViewId = 2130772256;
-			
 			// aapt resource value: 0x7f0100dd
 			public const int controlBackground = 2130772189;
 			
@@ -572,26 +520,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f01011e
 			public const int fab_size = 2130772254;
 			
-			// aapt resource value: 0x7f01012b
-			public const int fastScrollThumbWidth = 2130772267;
-			
 			// aapt resource value: 0x7f010063
 			public const int gapBetweenBars = 2130772067;
 			
 			// aapt resource value: 0x7f010077
 			public const int goIcon = 2130772087;
 			
-			// aapt resource value: 0x7f010129
-			public const int headerIconDrawable = 2130772265;
-			
-			// aapt resource value: 0x7f01011f
-			public const int headerId = 2130772255;
-			
 			// aapt resource value: 0x7f010021
 			public const int headerLayout = 2130772001;
-			
-			// aapt resource value: 0x7f010128
-			public const int headerTextColor = 2130772264;
 			
 			// aapt resource value: 0x7f01003a
 			public const int height = 2130772026;
@@ -782,21 +718,6 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f01004a
 			public const int progressBarStyle = 2130772042;
 			
-			// aapt resource value: 0x7f010127
-			public const int ptrHeaderBackground = 2130772263;
-			
-			// aapt resource value: 0x7f010121
-			public const int pullDownProgressIndicatorId = 2130772257;
-			
-			// aapt resource value: 0x7f010123
-			public const int pullDownTension = 2130772259;
-			
-			// aapt resource value: 0x7f01012a
-			public const int pullEnabled = 2130772266;
-			
-			// aapt resource value: 0x7f010124
-			public const int pullToRefreshText = 2130772260;
-			
 			// aapt resource value: 0x7f01007d
 			public const int queryBackground = 2130772093;
 			
@@ -808,12 +729,6 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0100ed
 			public const int ratingBarStyle = 2130772205;
-			
-			// aapt resource value: 0x7f010126
-			public const int refreshingText = 2130772262;
-			
-			// aapt resource value: 0x7f010125
-			public const int releaseToRefreshText = 2130772261;
 			
 			// aapt resource value: 0x7f010106
 			public const int reverseLayout = 2130772230;
@@ -850,9 +765,6 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f01005b
 			public const int singleChoiceItemLayout = 2130772059;
-			
-			// aapt resource value: 0x7f010122
-			public const int snapbackDuration = 2130772258;
 			
 			// aapt resource value: 0x7f010105
 			public const int spanCount = 2130772229;
@@ -1117,32 +1029,32 @@ namespace FiveMin.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f090064
-			public const int abc_background_cache_hint_selector_material_dark = 2131296356;
+			// aapt resource value: 0x7f090060
+			public const int abc_background_cache_hint_selector_material_dark = 2131296352;
 			
-			// aapt resource value: 0x7f090065
-			public const int abc_background_cache_hint_selector_material_light = 2131296357;
+			// aapt resource value: 0x7f090061
+			public const int abc_background_cache_hint_selector_material_light = 2131296353;
 			
-			// aapt resource value: 0x7f090066
-			public const int abc_color_highlight_material = 2131296358;
+			// aapt resource value: 0x7f090062
+			public const int abc_color_highlight_material = 2131296354;
 			
 			// aapt resource value: 0x7f090009
 			public const int abc_input_method_navigation_guard = 2131296265;
 			
+			// aapt resource value: 0x7f090063
+			public const int abc_primary_text_disable_only_material_dark = 2131296355;
+			
+			// aapt resource value: 0x7f090064
+			public const int abc_primary_text_disable_only_material_light = 2131296356;
+			
+			// aapt resource value: 0x7f090065
+			public const int abc_primary_text_material_dark = 2131296357;
+			
+			// aapt resource value: 0x7f090066
+			public const int abc_primary_text_material_light = 2131296358;
+			
 			// aapt resource value: 0x7f090067
-			public const int abc_primary_text_disable_only_material_dark = 2131296359;
-			
-			// aapt resource value: 0x7f090068
-			public const int abc_primary_text_disable_only_material_light = 2131296360;
-			
-			// aapt resource value: 0x7f090069
-			public const int abc_primary_text_material_dark = 2131296361;
-			
-			// aapt resource value: 0x7f09006a
-			public const int abc_primary_text_material_light = 2131296362;
-			
-			// aapt resource value: 0x7f09006b
-			public const int abc_search_url_text = 2131296363;
+			public const int abc_search_url_text = 2131296359;
 			
 			// aapt resource value: 0x7f09000a
 			public const int abc_search_url_text_normal = 2131296266;
@@ -1153,14 +1065,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f09000c
 			public const int abc_search_url_text_selected = 2131296268;
 			
-			// aapt resource value: 0x7f09006c
-			public const int abc_secondary_text_material_dark = 2131296364;
+			// aapt resource value: 0x7f090068
+			public const int abc_secondary_text_material_dark = 2131296360;
 			
-			// aapt resource value: 0x7f09006d
-			public const int abc_secondary_text_material_light = 2131296365;
+			// aapt resource value: 0x7f090069
+			public const int abc_secondary_text_material_light = 2131296361;
 			
-			// aapt resource value: 0x7f09005f
-			public const int accent = 2131296351;
+			// aapt resource value: 0x7f09005b
+			public const int accent = 2131296347;
 			
 			// aapt resource value: 0x7f09000d
 			public const int accent_material_dark = 2131296269;
@@ -1219,8 +1131,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f09004f
 			public const int common_action_bar_splitter = 2131296335;
 			
-			// aapt resource value: 0x7f09006e
-			public const int common_google_signin_btn_text_dark = 2131296366;
+			// aapt resource value: 0x7f09006a
+			public const int common_google_signin_btn_text_dark = 2131296362;
 			
 			// aapt resource value: 0x7f090050
 			public const int common_google_signin_btn_text_dark_default = 2131296336;
@@ -1234,8 +1146,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090051
 			public const int common_google_signin_btn_text_dark_pressed = 2131296337;
 			
-			// aapt resource value: 0x7f09006f
-			public const int common_google_signin_btn_text_light = 2131296367;
+			// aapt resource value: 0x7f09006b
+			public const int common_google_signin_btn_text_light = 2131296363;
 			
 			// aapt resource value: 0x7f090054
 			public const int common_google_signin_btn_text_light_default = 2131296340;
@@ -1249,8 +1161,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090055
 			public const int common_google_signin_btn_text_light_pressed = 2131296341;
 			
-			// aapt resource value: 0x7f090070
-			public const int common_plus_signin_btn_text_dark = 2131296368;
+			// aapt resource value: 0x7f09006c
+			public const int common_plus_signin_btn_text_dark = 2131296364;
 			
 			// aapt resource value: 0x7f090047
 			public const int common_plus_signin_btn_text_dark_default = 2131296327;
@@ -1264,8 +1176,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090048
 			public const int common_plus_signin_btn_text_dark_pressed = 2131296328;
 			
-			// aapt resource value: 0x7f090071
-			public const int common_plus_signin_btn_text_light = 2131296369;
+			// aapt resource value: 0x7f09006d
+			public const int common_plus_signin_btn_text_light = 2131296365;
 			
 			// aapt resource value: 0x7f09004b
 			public const int common_plus_signin_btn_text_light_default = 2131296331;
@@ -1318,14 +1230,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f09001e
 			public const int dim_foreground_material_light = 2131296286;
 			
-			// aapt resource value: 0x7f090063
-			public const int fab_color_ripple = 2131296355;
+			// aapt resource value: 0x7f09005f
+			public const int fab_color_ripple = 2131296351;
 			
 			// aapt resource value: 0x7f090058
 			public const int fab_material_blue_500 = 2131296344;
 			
-			// aapt resource value: 0x7f090062
-			public const int fab_primary_pressed = 2131296354;
+			// aapt resource value: 0x7f09005e
+			public const int fab_primary_pressed = 2131296350;
 			
 			// aapt resource value: 0x7f09001f
 			public const int foreground_material_dark = 2131296287;
@@ -1345,8 +1257,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090024
 			public const int hint_foreground_material_light = 2131296292;
 			
-			// aapt resource value: 0x7f090061
-			public const int list_item_background = 2131296353;
+			// aapt resource value: 0x7f09005d
+			public const int list_item_background = 2131296349;
 			
 			// aapt resource value: 0x7f090025
 			public const int material_blue_grey_800 = 2131296293;
@@ -1384,11 +1296,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090030
 			public const int material_grey_900 = 2131296304;
 			
-			// aapt resource value: 0x7f09005d
-			public const int primary = 2131296349;
+			// aapt resource value: 0x7f090059
+			public const int primary = 2131296345;
 			
-			// aapt resource value: 0x7f09005e
-			public const int primaryDark = 2131296350;
+			// aapt resource value: 0x7f09005a
+			public const int primaryDark = 2131296346;
 			
 			// aapt resource value: 0x7f090031
 			public const int primary_dark_material_dark = 2131296305;
@@ -1414,18 +1326,6 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090038
 			public const int primary_text_disabled_material_light = 2131296312;
 			
-			// aapt resource value: 0x7f09005a
-			public const int ptrsharp_sb_gradient_end = 2131296346;
-			
-			// aapt resource value: 0x7f090059
-			public const int ptrsharp_sb_gradient_start = 2131296345;
-			
-			// aapt resource value: 0x7f09005b
-			public const int ptrsharp_sb_header_text = 2131296347;
-			
-			// aapt resource value: 0x7f09005c
-			public const int ptrsharp_sb_header_text_shadow = 2131296348;
-			
 			// aapt resource value: 0x7f090039
 			public const int ripple_material_dark = 2131296313;
 			
@@ -1450,11 +1350,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090040
 			public const int switch_thumb_disabled_material_light = 2131296320;
 			
-			// aapt resource value: 0x7f090072
-			public const int switch_thumb_material_dark = 2131296370;
+			// aapt resource value: 0x7f09006e
+			public const int switch_thumb_material_dark = 2131296366;
 			
-			// aapt resource value: 0x7f090073
-			public const int switch_thumb_material_light = 2131296371;
+			// aapt resource value: 0x7f09006f
+			public const int switch_thumb_material_light = 2131296367;
 			
 			// aapt resource value: 0x7f090041
 			public const int switch_thumb_normal_material_dark = 2131296321;
@@ -1462,8 +1362,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f090042
 			public const int switch_thumb_normal_material_light = 2131296322;
 			
-			// aapt resource value: 0x7f090060
-			public const int tags_highlight = 2131296352;
+			// aapt resource value: 0x7f09005c
+			public const int tags_highlight = 2131296348;
 			
 			static Color()
 			{
@@ -1658,11 +1558,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f07001e
 			public const int abc_text_size_title_material_toolbar = 2131165214;
 			
-			// aapt resource value: 0x7f07006e
-			public const int activity_horizontal_margin = 2131165294;
+			// aapt resource value: 0x7f07006d
+			public const int activity_horizontal_margin = 2131165293;
 			
-			// aapt resource value: 0x7f07006f
-			public const int activity_vertical_margin = 2131165295;
+			// aapt resource value: 0x7f07006e
+			public const int activity_vertical_margin = 2131165294;
 			
 			// aapt resource value: 0x7f070065
 			public const int cardview_compat_inset_shadow = 2131165285;
@@ -1673,8 +1573,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f070067
 			public const int cardview_default_radius = 2131165287;
 			
-			// aapt resource value: 0x7f070071
-			public const int description_font_size = 2131165297;
+			// aapt resource value: 0x7f070070
+			public const int description_font_size = 2131165296;
 			
 			// aapt resource value: 0x7f070008
 			public const int design_appbar_elevation = 2131165192;
@@ -1787,14 +1687,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f070068
 			public const int fab_size_normal = 2131165288;
 			
-			// aapt resource value: 0x7f07006d
-			public const int fastscroll_thumb_width = 2131165293;
+			// aapt resource value: 0x7f070072
+			public const int g_top_margin = 2131165298;
 			
-			// aapt resource value: 0x7f070073
-			public const int g_top_margin = 2131165299;
-			
-			// aapt resource value: 0x7f070070
-			public const int header_font_size = 2131165296;
+			// aapt resource value: 0x7f07006f
+			public const int header_font_size = 2131165295;
 			
 			// aapt resource value: 0x7f07005c
 			public const int highlight_alpha_material_colored = 2131165276;
@@ -1823,8 +1720,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f070061
 			public const int notification_subtext_size = 2131165281;
 			
-			// aapt resource value: 0x7f070072
-			public const int tags_font_size = 2131165298;
+			// aapt resource value: 0x7f070071
+			public const int tags_font_size = 2131165297;
 			
 			static Dimension()
 			{
@@ -2193,26 +2090,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f020075
 			public const int nav_header_background = 2130837621;
 			
-			// aapt resource value: 0x7f02007c
-			public const int notification_template_icon_bg = 2130837628;
-			
 			// aapt resource value: 0x7f020076
-			public const int progress_medium_holo = 2130837622;
-			
-			// aapt resource value: 0x7f020077
-			public const int ptrsharp_serious_business_gradient = 2130837623;
-			
-			// aapt resource value: 0x7f020078
-			public const int serious_business_arrow = 2130837624;
-			
-			// aapt resource value: 0x7f020079
-			public const int serious_business_arrow2 = 2130837625;
-			
-			// aapt resource value: 0x7f02007a
-			public const int spinner_20_inner_holo = 2130837626;
-			
-			// aapt resource value: 0x7f02007b
-			public const int spinner_20_outer_holo = 2130837627;
+			public const int notification_template_icon_bg = 2130837622;
 			
 			static Drawable()
 			{
@@ -2227,8 +2106,8 @@ namespace FiveMin.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a008e
-			public const int action0 = 2131361934;
+			// aapt resource value: 0x7f0a0093
+			public const int action0 = 2131361939;
 			
 			// aapt resource value: 0x7f0a005e
 			public const int action_bar = 2131361886;
@@ -2254,8 +2133,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a005f
 			public const int action_context_bar = 2131361887;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int action_divider = 2131361938;
+			// aapt resource value: 0x7f0a0097
+			public const int action_divider = 2131361943;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2272,11 +2151,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0043
 			public const int action_mode_close_button = 2131361859;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int action_search = 2131361966;
+			// aapt resource value: 0x7f0a00b0
+			public const int action_search = 2131361968;
 			
 			// aapt resource value: 0x7f0a0044
 			public const int activity_chooser_view_content = 2131361860;
+			
+			// aapt resource value: 0x7f0a0081
+			public const int addToFavorite = 2131361921;
 			
 			// aapt resource value: 0x7f0a003f
 			public const int adjust_height = 2131361855;
@@ -2302,8 +2184,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0054
 			public const int buttonPanel = 2131361876;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int cancel_action = 2131361935;
+			// aapt resource value: 0x7f0a0094
+			public const int cancel_action = 2131361940;
 			
 			// aapt resource value: 0x7f0a006d
 			public const int catBackdropImageView = 2131361901;
@@ -2332,8 +2214,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0056
 			public const int checkbox = 2131361878;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int chronometer = 2131361941;
+			// aapt resource value: 0x7f0a009a
+			public const int chronometer = 2131361946;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int clip_horizontal = 2131361820;
@@ -2347,8 +2229,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a004f
 			public const int contentPanel = 2131361871;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int content_frame = 2131361932;
+			// aapt resource value: 0x7f0a0091
+			public const int content_frame = 2131361937;
 			
 			// aapt resource value: 0x7f0a0053
 			public const int custom = 2131361875;
@@ -2368,17 +2250,20 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0026
 			public const int disableHome = 2131361830;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int disconnect_button = 2131361927;
+			// aapt resource value: 0x7f0a008c
+			public const int disconnect_button = 2131361932;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int drawer_layout = 2131361929;
+			// aapt resource value: 0x7f0a007d
+			public const int dislikeButton = 2131361917;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int editTextPassword = 2131361921;
+			// aapt resource value: 0x7f0a008e
+			public const int drawer_layout = 2131361934;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int editTextUsername = 2131361920;
+			// aapt resource value: 0x7f0a0086
+			public const int editTextPassword = 2131361926;
+			
+			// aapt resource value: 0x7f0a0085
+			public const int editTextUsername = 2131361925;
 			
 			// aapt resource value: 0x7f0a0060
 			public const int edit_query = 2131361888;
@@ -2386,8 +2271,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0016
 			public const int end = 2131361814;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int end_padder = 2131361946;
+			// aapt resource value: 0x7f0a009f
+			public const int end_padder = 2131361951;
 			
 			// aapt resource value: 0x7f0a0073
 			public const int endingSoonCompetitionsListView = 2131361907;
@@ -2407,6 +2292,9 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0055
 			public const int expanded_menu = 2131361877;
 			
+			// aapt resource value: 0x7f0a007a
+			public const int favButton = 2131361914;
+			
 			// aapt resource value: 0x7f0a001e
 			public const int fill = 2131361822;
 			
@@ -2418,12 +2306,6 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0a0022
 			public const int @fixed = 2131361826;
-			
-			// aapt resource value: 0x7f0a009c
-			public const int header = 2131361948;
-			
-			// aapt resource value: 0x7f0a009b
-			public const int header_container = 2131361947;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int home = 2131361797;
@@ -2443,8 +2325,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0046
 			public const int image = 2131361862;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int info = 2131361945;
+			// aapt resource value: 0x7f0a009e
+			public const int info = 2131361950;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int item_touch_helper_previous_elevation = 2131361802;
@@ -2455,11 +2337,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a003e
 			public const int light = 2131361854;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int line1 = 2131361939;
+			// aapt resource value: 0x7f0a007c
+			public const int likeButton = 2131361916;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int line3 = 2131361943;
+			// aapt resource value: 0x7f0a0098
+			public const int line1 = 2131361944;
+			
+			// aapt resource value: 0x7f0a009c
+			public const int line3 = 2131361948;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int listMode = 2131361828;
@@ -2467,20 +2352,20 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0048
 			public const int list_item = 2131361864;
 			
-			// aapt resource value: 0x7f0a007c
-			public const int loadingVideoProgressBar = 2131361916;
+			// aapt resource value: 0x7f0a0080
+			public const int loadingVideoProgressBar = 2131361920;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int loginButton = 2131361922;
+			// aapt resource value: 0x7f0a0087
+			public const int loginButton = 2131361927;
 			
 			// aapt resource value: 0x7f0a0078
 			public const int mainVideoLayout = 2131361912;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int media_actions = 2131361937;
+			// aapt resource value: 0x7f0a0096
+			public const int media_actions = 2131361942;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int menu_item_share = 2131361967;
+			// aapt resource value: 0x7f0a00b1
+			public const int menu_item_share = 2131361969;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int middle = 2131361842;
@@ -2491,35 +2376,35 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002c
 			public const int multiply = 2131361836;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int nav_about = 2131361965;
-			
-			// aapt resource value: 0x7f0a00a8
-			public const int nav_categories = 2131361960;
-			
-			// aapt resource value: 0x7f0a00ab
-			public const int nav_crossAppGroup = 2131361963;
+			// aapt resource value: 0x7f0a00af
+			public const int nav_about = 2131361967;
 			
 			// aapt resource value: 0x7f0a00aa
-			public const int nav_endingSoon = 2131361962;
+			public const int nav_categories = 2131361962;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int nav_favs = 2131361959;
+			// aapt resource value: 0x7f0a00ad
+			public const int nav_crossAppGroup = 2131361965;
 			
 			// aapt resource value: 0x7f0a00ac
-			public const int nav_logoutLogin = 2131361964;
-			
-			// aapt resource value: 0x7f0a00a5
-			public const int nav_personalizedGroup = 2131361957;
-			
-			// aapt resource value: 0x7f0a00a6
-			public const int nav_profile = 2131361958;
+			public const int nav_endingSoon = 2131361964;
 			
 			// aapt resource value: 0x7f0a00a9
-			public const int nav_trending = 2131361961;
+			public const int nav_favs = 2131361961;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int nav_view = 2131361933;
+			// aapt resource value: 0x7f0a00ae
+			public const int nav_logoutLogin = 2131361966;
+			
+			// aapt resource value: 0x7f0a00a7
+			public const int nav_personalizedGroup = 2131361959;
+			
+			// aapt resource value: 0x7f0a00a8
+			public const int nav_profile = 2131361960;
+			
+			// aapt resource value: 0x7f0a00ab
+			public const int nav_trending = 2131361963;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int nav_view = 2131361938;
 			
 			// aapt resource value: 0x7f0a0036
 			public const int never = 2131361846;
@@ -2530,8 +2415,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0074
 			public const int noEndingSoonCompetitionsMessage = 2131361908;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int noTrendingCompetitionsMessage = 2131361951;
+			// aapt resource value: 0x7f0a00a1
+			public const int noTrendingCompetitionsMessage = 2131361953;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int none = 2131361807;
@@ -2557,14 +2442,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0007
 			public const int progress_horizontal = 2131361799;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int pullDownProgressIndicator = 2131361949;
-			
 			// aapt resource value: 0x7f0a0058
 			public const int radio = 2131361880;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int registerButton = 2131361923;
+			// aapt resource value: 0x7f0a0088
+			public const int registerButton = 2131361928;
 			
 			// aapt resource value: 0x7f0a0019
 			public const int right = 2131361817;
@@ -2626,14 +2508,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002a
 			public const int showTitle = 2131361834;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int sign_in_button = 2131361924;
+			// aapt resource value: 0x7f0a0089
+			public const int sign_in_button = 2131361929;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int sign_out_and_disconnect = 2131361925;
+			// aapt resource value: 0x7f0a008a
+			public const int sign_out_and_disconnect = 2131361930;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int sign_out_button = 2131361926;
+			// aapt resource value: 0x7f0a008b
+			public const int sign_out_button = 2131361931;
 			
 			// aapt resource value: 0x7f0a0072
 			public const int snackbar_action = 2131361906;
@@ -2659,35 +2541,35 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a001a
 			public const int start = 2131361818;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int status = 2131361928;
+			// aapt resource value: 0x7f0a008d
+			public const int status = 2131361933;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int status_bar_latest_event_content = 2131361936;
+			// aapt resource value: 0x7f0a0095
+			public const int status_bar_latest_event_content = 2131361941;
 			
 			// aapt resource value: 0x7f0a0069
 			public const int submit_area = 2131361897;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int swipeRefreshLayout = 2131361917;
+			// aapt resource value: 0x7f0a0082
+			public const int swipeRefreshLayout = 2131361922;
 			
 			// aapt resource value: 0x7f0a0025
 			public const int tabMode = 2131361829;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int text = 2131361944;
+			// aapt resource value: 0x7f0a009d
+			public const int text = 2131361949;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int text2 = 2131361942;
+			// aapt resource value: 0x7f0a009b
+			public const int text2 = 2131361947;
 			
 			// aapt resource value: 0x7f0a0051
 			public const int textSpacerNoButtons = 2131361873;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int textView1 = 2131361919;
+			// aapt resource value: 0x7f0a0084
+			public const int textView1 = 2131361924;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int time = 2131361940;
+			// aapt resource value: 0x7f0a0099
+			public const int time = 2131361945;
 			
 			// aapt resource value: 0x7f0a004a
 			public const int title = 2131361866;
@@ -2695,11 +2577,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a004d
 			public const int title_template = 2131361869;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int toolbar = 2131361931;
+			// aapt resource value: 0x7f0a0090
+			public const int toolbar = 2131361936;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int toolbar_layout = 2131361930;
+			// aapt resource value: 0x7f0a008f
+			public const int toolbar_layout = 2131361935;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int top = 2131361819;
@@ -2707,8 +2589,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a004c
 			public const int topPanel = 2131361868;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int trendingCompetitionsListView = 2131361950;
+			// aapt resource value: 0x7f0a00a0
+			public const int trendingCompetitionsListView = 2131361952;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int up = 2131361801;
@@ -2716,32 +2598,35 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002b
 			public const int useLogo = 2131361835;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int videoBackdropImageView = 2131361952;
-			
-			// aapt resource value: 0x7f0a007b
-			public const int videoDescriptionTextView = 2131361915;
-			
 			// aapt resource value: 0x7f0a00a2
-			public const int videoLengthTextView = 2131361954;
+			public const int videoBackdropImageView = 2131361954;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int videoLikesDiffTextView = 2131361955;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int videoNameTextView = 2131361914;
-			
-			// aapt resource value: 0x7f0a00a1
-			public const int videoTagsTextView = 2131361953;
+			// aapt resource value: 0x7f0a007f
+			public const int videoDescriptionTextView = 2131361919;
 			
 			// aapt resource value: 0x7f0a00a4
-			public const int videoWatchCountTextView = 2131361956;
+			public const int videoLengthTextView = 2131361956;
+			
+			// aapt resource value: 0x7f0a00a5
+			public const int videoLikesDiffTextView = 2131361957;
 			
 			// aapt resource value: 0x7f0a007e
-			public const int videosListView = 2131361918;
+			public const int videoNameTextView = 2131361918;
+			
+			// aapt resource value: 0x7f0a00a3
+			public const int videoTagsTextView = 2131361955;
+			
+			// aapt resource value: 0x7f0a00a6
+			public const int videoWatchCountTextView = 2131361958;
+			
+			// aapt resource value: 0x7f0a0083
+			public const int videosListView = 2131361923;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int view_offset_helper = 2131361792;
+			
+			// aapt resource value: 0x7f0a007b
+			public const int watchlistButton = 2131361915;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int wide = 2131361851;
@@ -2953,31 +2838,28 @@ namespace FiveMin.Droid
 			public const int notification_template_part_time = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int ptrsharp_header = 2130968626;
+			public const int select_dialog_item_material = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int select_dialog_item_material = 2130968627;
+			public const int select_dialog_multichoice_material = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int select_dialog_multichoice_material = 2130968628;
+			public const int select_dialog_singlechoice_material = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int select_dialog_singlechoice_material = 2130968629;
+			public const int support_simple_spinner_dropdown_item = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int support_simple_spinner_dropdown_item = 2130968630;
+			public const int toolbar = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int toolbar = 2130968631;
+			public const int trending_fragment = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int trending_fragment = 2130968632;
+			public const int video_page_layout = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int video_page_layout = 2130968633;
-			
-			// aapt resource value: 0x7f04003a
-			public const int VideoListItemLayout = 2130968634;
+			public const int VideoListItemLayout = 2130968633;
 			
 			static Layout()
 			{
@@ -3123,11 +3005,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0011
 			public const int abc_toolbar_collapse_description = 2131427345;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int app_name = 2131427382;
+			// aapt resource value: 0x7f0b0032
+			public const int app_name = 2131427378;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int app_store_url = 2131427389;
+			// aapt resource value: 0x7f0b0039
+			public const int app_store_url = 2131427385;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int appbar_scrolling_view_behavior = 2131427328;
@@ -3225,53 +3107,41 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b002e
 			public const int common_signin_button_text_long = 2131427374;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int disconnect = 2131427388;
-			
-			// aapt resource value: 0x7f0b0043
-			public const int error_player = 2131427395;
-			
-			// aapt resource value: 0x7f0b0032
-			public const int library_name = 2131427378;
-			
-			// aapt resource value: 0x7f0b0042
-			public const int no_internet_message = 2131427394;
-			
-			// aapt resource value: 0x7f0b003a
-			public const int play_services_error_fmt = 2131427386;
-			
-			// aapt resource value: 0x7f0b0033
-			public const int ptrsharp_pull_to_refresh = 2131427379;
-			
-			// aapt resource value: 0x7f0b0035
-			public const int ptrsharp_refreshing = 2131427381;
-			
-			// aapt resource value: 0x7f0b0034
-			public const int ptrsharp_release_to_refresh = 2131427380;
-			
-			// aapt resource value: 0x7f0b0040
-			public const int share_competition_message_subject = 2131427392;
-			
-			// aapt resource value: 0x7f0b0041
-			public const int share_competition_message_text = 2131427393;
-			
-			// aapt resource value: 0x7f0b003e
-			public const int share_global_message_subject = 2131427390;
+			// aapt resource value: 0x7f0b0038
+			public const int disconnect = 2131427384;
 			
 			// aapt resource value: 0x7f0b003f
-			public const int share_global_message_text = 2131427391;
+			public const int error_player = 2131427391;
+			
+			// aapt resource value: 0x7f0b003e
+			public const int no_internet_message = 2131427390;
+			
+			// aapt resource value: 0x7f0b0036
+			public const int play_services_error_fmt = 2131427382;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int share_competition_message_subject = 2131427388;
+			
+			// aapt resource value: 0x7f0b003d
+			public const int share_competition_message_text = 2131427389;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int share_global_message_subject = 2131427386;
 			
 			// aapt resource value: 0x7f0b003b
-			public const int sign_out = 2131427387;
+			public const int share_global_message_text = 2131427387;
 			
 			// aapt resource value: 0x7f0b0037
-			public const int signed_in_fmt = 2131427383;
+			public const int sign_out = 2131427383;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int signed_out = 2131427385;
+			// aapt resource value: 0x7f0b0033
+			public const int signed_in_fmt = 2131427379;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int signing_in = 2131427384;
+			// aapt resource value: 0x7f0b0035
+			public const int signed_out = 2131427381;
+			
+			// aapt resource value: 0x7f0b0034
+			public const int signing_in = 2131427380;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int status_bar_notification_info_overflow = 2131427346;
@@ -3730,14 +3600,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f060140
 			public const int CardView_Light = 2131099968;
 			
-			// aapt resource value: 0x7f060141
-			public const int HoloProgressMedium = 2131099969;
-			
-			// aapt resource value: 0x7f060143
-			public const int MyTheme = 2131099971;
-			
 			// aapt resource value: 0x7f060142
-			public const int MyTheme_Base = 2131099970;
+			public const int MyTheme = 2131099970;
+			
+			// aapt resource value: 0x7f060141
+			public const int MyTheme_Base = 2131099969;
 			
 			// aapt resource value: 0x7f06001e
 			public const int Platform_AppCompat = 2131099678;
@@ -4021,8 +3888,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0600f5
 			public const int Theme_AppCompat_NoActionBar = 2131099893;
 			
-			// aapt resource value: 0x7f060145
-			public const int Theme_Custom = 2131099973;
+			// aapt resource value: 0x7f060144
+			public const int Theme_Custom = 2131099972;
 			
 			// aapt resource value: 0x7f0600f6
 			public const int ThemeOverlay_AppCompat = 2131099894;
@@ -4237,8 +4104,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f06013c
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131099964;
 			
-			// aapt resource value: 0x7f060144
-			public const int Widget_CardContent = 2131099972;
+			// aapt resource value: 0x7f060143
+			public const int Widget_CardContent = 2131099971;
 			
 			// aapt resource value: 0x7f060007
 			public const int Widget_Design_AppBarLayout = 2131099655;
@@ -5054,61 +4921,6 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
-			
-			public static int[] PullToRefresharpWrapper = new int[]
-			{
-					2130772255,
-					2130772256,
-					2130772257,
-					2130772258,
-					2130772259,
-					2130772260,
-					2130772261,
-					2130772262,
-					2130772263,
-					2130772264,
-					2130772265,
-					2130772266,
-					2130772267};
-			
-			// aapt resource value: 1
-			public const int PullToRefresharpWrapper_contentViewId = 1;
-			
-			// aapt resource value: 12
-			public const int PullToRefresharpWrapper_fastScrollThumbWidth = 12;
-			
-			// aapt resource value: 10
-			public const int PullToRefresharpWrapper_headerIconDrawable = 10;
-			
-			// aapt resource value: 0
-			public const int PullToRefresharpWrapper_headerId = 0;
-			
-			// aapt resource value: 9
-			public const int PullToRefresharpWrapper_headerTextColor = 9;
-			
-			// aapt resource value: 8
-			public const int PullToRefresharpWrapper_ptrHeaderBackground = 8;
-			
-			// aapt resource value: 2
-			public const int PullToRefresharpWrapper_pullDownProgressIndicatorId = 2;
-			
-			// aapt resource value: 4
-			public const int PullToRefresharpWrapper_pullDownTension = 4;
-			
-			// aapt resource value: 11
-			public const int PullToRefresharpWrapper_pullEnabled = 11;
-			
-			// aapt resource value: 5
-			public const int PullToRefresharpWrapper_pullToRefreshText = 5;
-			
-			// aapt resource value: 7
-			public const int PullToRefresharpWrapper_refreshingText = 7;
-			
-			// aapt resource value: 6
-			public const int PullToRefresharpWrapper_releaseToRefreshText = 6;
-			
-			// aapt resource value: 3
-			public const int PullToRefresharpWrapper_snapbackDuration = 3;
 			
 			public static int[] RecyclerView = new int[]
 			{

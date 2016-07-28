@@ -2,14 +2,12 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/PullToRefresharp/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Xamarin.Auth.Android/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Refractored.FloatingActionButton/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Plugin.Connectivity/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/SQLitePCL.raw/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/PullToRefresharp/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Xamarin.Auth.Android/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Refractored.FloatingActionButton/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Plugin.Connectivity/library_project_imports/assets</ResolvedAssetDirectory>
@@ -17,7 +15,6 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/PullToRefresharp.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Xamarin.Auth.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Refractored.FloatingActionButton.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Debug/__library_projects__/Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>

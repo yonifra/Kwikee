@@ -16,14 +16,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favButton"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/watchlistButton"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likeButton"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dislikeButton"
+                android:layout_weight="1" />
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Video name"
-            android:textSize="32dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:textSize="@dimen/header_font_size"
+            android:layout_margin="10dp"
             android:id="@+id/videoNameTextView" />
         <ScrollView
             android:layout_width="match_parent"
@@ -32,11 +57,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Entity full description"
-                android:textSize="16dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:textSize="@dimen/description_font_size"
+                android:layout_margin="10dp"
                 android:id="@+id/videoDescriptionTextView" />
         </ScrollView>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addToFavorite"
+            android:layout_gravity="bottom|right"
+            android:src="@mipmap/ic_favorite_white_24dp"
+            android:layout_margin="16dp" />
     </LinearLayout>
     <ProgressBar
         android:id="@+id/loadingVideoProgressBar"
@@ -47,11 +78,4 @@
         android:visibility="visible"
         android:layout_gravity="center"
         android:indeterminate="true" />
-<!--    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/addToFavorite"
-        android:layout_gravity="bottom|right"
-        android:src="@drawable/ic_thumbs_up"
-        android:layout_margin="16dp" />-->
 </FrameLayout>

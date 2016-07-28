@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Android.Content;
 using Android.Support.Design.Widget;
-using Android.Support.V7.Widget;
 using Android.Widget;
-using Square.Picasso;
 using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
-using Android;
-using Android.Webkit;
 using Android.Views;
-using System.Text.RegularExpressions;
 using Google.YouTube.Player;
 
 namespace FiveMin.Droid.Fragments
@@ -20,8 +14,6 @@ namespace FiveMin.Droid.Fragments
     public class VideoPageFragment : Android.Support.V4.App.Fragment, IYouTubePlayerProvider
     {
         private FiveMinVideo _video;
-        int _displayWidth;
-        int _displayHeight;
 
         public VideoPageFragment ()
         {
@@ -60,25 +52,19 @@ namespace FiveMin.Droid.Fragments
           
             if (video != null)
             {
-             //   FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { entityName, entityDescription, _leftVotesTextView, _rightVotesTextView });
-
                 var progressBar = view.FindViewById<ProgressBar> (Resource.Id.loadingVideoProgressBar);
                 var mainLayout = view.FindViewById<LinearLayout> (Resource.Id.mainVideoLayout);
+                var fab = view.FindViewById<FloatingActionButton> (Resource.Id.addToFavorite);
 
                 progressBar.Visibility = Android.Views.ViewStates.Gone;
                 mainLayout.Visibility = Android.Views.ViewStates.Visible;
+                fab.Visibility = ViewStates.Visible;
 
                 var videoNameTv = view.FindViewById<TextView> (Resource.Id.videoNameTextView);
-                var videoDescTv = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView);
-             //   var videoView = view.FindViewById<WebView> (Resource.Id.videoView);
+                var videoDescTv = view.FindViewById<TextView> (Resource.Id.videoDescriptionTextView);          
 
                 videoNameTv.Text = video.Name;
                 videoDescTv.Text = video.Description;
-                // TODO: Remove this!
-                if (!string.IsNullOrEmpty (video.VideoId))
-                {
-                    var metrics = Resources.DisplayMetrics;
-                }
 
                 FontsHelper.ApplyTypeface (view.Context.Assets, new List<TextView> { videoNameTv, videoDescTv });
 
