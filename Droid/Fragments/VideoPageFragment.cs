@@ -26,7 +26,7 @@ namespace FiveMin.Droid.Fragments
             videoDescription.Text = _video.Description;
         }
 
-        public override Android.Views.View OnCreateView (Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Android.OS.Bundle savedInstanceState)
+        public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Android.OS.Bundle savedInstanceState)
         {
             base.OnCreateView (inflater, container, savedInstanceState);
 
@@ -46,7 +46,7 @@ namespace FiveMin.Droid.Fragments
             return setShareIntent;
         }
 
-        async void PopulateDataAsync (Android.Views.View view)
+        async void PopulateDataAsync (View view)
         {
             var video = await FirebaseManager.Instance.GetVideo (Video.Name);
           
