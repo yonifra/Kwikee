@@ -23,22 +23,38 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/favButton"
+                android:background="?android:attr/windowBackground"
+                android:id="@+id/addToWatchListButton"
+                android:drawableTop="@mipmap/ic_timer_black_24dp"
+                android:text="Add to Watchlist"
+                android:scaleType="fitCenter"
                 android:layout_weight="1" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/watchlistButton"
+                android:id="@+id/shareButton"
+                android:background="?android:attr/windowBackground"
+                android:drawableTop="@mipmap/ic_share_black_24dp"
+                android:text="Share"
+                android:scaleType="fitCenter"
                 android:layout_weight="1" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/windowBackground"
                 android:id="@+id/likeButton"
+                android:scaleType="fitCenter"
+                android:drawableTop="@mipmap/ic_thumb_up_black_24dp"
+                android:text="Like"
                 android:layout_weight="1" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="?android:attr/windowBackground"
                 android:id="@+id/dislikeButton"
+                android:drawableTop="@mipmap/ic_thumb_down_black_24dp"
+                android:text="Dislike"
+                android:scaleType="fitCenter"
                 android:layout_weight="1" />
         </LinearLayout>
         <TextView

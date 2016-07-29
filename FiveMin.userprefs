@@ -1,47 +1,14 @@
 ﻿<Properties StartupItem="Droid/FiveMin.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Fragments/VideoPageFragment.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Droid/Fragments/VideoPageFragment.cs" Line="121" Column="170" />
-      <File FileName="Droid/Adapters/VideosListAdapter.cs" Line="30" Column="10" />
-      <File FileName="Versus.Portable/Versus.Portable/Data/FirebaseManager.cs" Line="122" Column="23" />
-      <File FileName="Versus.Portable/Versus.Portable/Entities/FiveMinVideo.cs" Line="9" Column="28" />
-      <File FileName="Droid/Resources/values/Strings.xml" Line="10" Column="50" />
-      <File FileName="shortie Status" />
-      <File FileName="Droid/Resources/values/dimens.xml" Line="10" Column="13" />
-      <File FileName="Droid/Resources/values/colors.xml" Line="5" Column="2" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="6" Column="132" />
+      <File FileName="Droid/Activities/VideoActivity.cs" Line="30" Column="44" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="FiveMin" expanded="True">
-            <Node name="FiveMin.Droid" expanded="True">
-              <Node name="Activities" expanded="True" />
-              <Node name="Adapters" expanded="True" />
-              <Node name="Fragments" expanded="True">
-                <Node name="VideoPageFragment.cs" selected="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="FiveMin.Portable" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Entities" expanded="True" />
-            </Node>
-            <Node name="Versus.WPF" expanded="True">
-              <Node name="ViewModels" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FiveMin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8E30F8B-5C8C-4128-87C6-71D480D5F7A3" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
+  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.1bc05e64" />
 </Properties>

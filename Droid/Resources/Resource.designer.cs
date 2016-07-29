@@ -2160,6 +2160,9 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0081
 			public const int addToFavorite = 2131361921;
 			
+			// aapt resource value: 0x7f0a007a
+			public const int addToWatchListButton = 2131361914;
+			
 			// aapt resource value: 0x7f0a003f
 			public const int adjust_height = 2131361855;
 			
@@ -2291,9 +2294,6 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0a0055
 			public const int expanded_menu = 2131361877;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int favButton = 2131361914;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int fill = 2131361822;
@@ -2496,6 +2496,9 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a006c
 			public const int select_dialog_listview = 2131361900;
 			
+			// aapt resource value: 0x7f0a007b
+			public const int shareButton = 2131361915;
+			
 			// aapt resource value: 0x7f0a0057
 			public const int shortcut = 2131361879;
 			
@@ -2624,9 +2627,6 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0a0000
 			public const int view_offset_helper = 2131361792;
-			
-			// aapt resource value: 0x7f0a007b
-			public const int watchlistButton = 2131361915;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int wide = 2131361851;
@@ -2856,10 +2856,7 @@ namespace FiveMin.Droid
 			public const int trending_fragment = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int video_page_layout = 2130968632;
-			
-			// aapt resource value: 0x7f040039
-			public const int VideoListItemLayout = 2130968633;
+			public const int VideoListItemLayout = 2130968632;
 			
 			static Layout()
 			{
@@ -2912,34 +2909,46 @@ namespace FiveMin.Droid
 			public const int ic_sentiment_satisfied_white_24dp = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ic_star_black_48dp = 2130903046;
+			public const int ic_share_black_24dp = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int ic_star_white_24dp = 2130903047;
+			public const int ic_star_black_48dp = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int ic_thumb_down_white_24dp = 2130903048;
+			public const int ic_star_white_24dp = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int ic_thumb_up_white_24dp = 2130903049;
+			public const int ic_thumb_down_black_24dp = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int ic_thumbs_up_down_white_24dp = 2130903050;
+			public const int ic_thumb_down_white_24dp = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int ic_timer_white_24dp = 2130903051;
+			public const int ic_thumb_up_black_24dp = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int ic_trending_up_black_48dp = 2130903052;
+			public const int ic_thumb_up_white_24dp = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int ic_view_list_black_48dp = 2130903053;
+			public const int ic_thumbs_up_down_white_24dp = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int ic_visibility_white_24dp = 2130903054;
+			public const int ic_timer_black_24dp = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int Icon = 2130903055;
+			public const int ic_timer_white_24dp = 2130903055;
+			
+			// aapt resource value: 0x7f030010
+			public const int ic_trending_up_black_48dp = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int ic_view_list_black_48dp = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int ic_visibility_white_24dp = 2130903058;
+			
+			// aapt resource value: 0x7f030013
+			public const int Icon = 2130903059;
 			
 			static Mipmap()
 			{

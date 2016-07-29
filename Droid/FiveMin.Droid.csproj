@@ -202,7 +202,6 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_person_black_48dp.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_star_black_48dp.png" />
     <AndroidResource Include="Resources\layout\category_listitem_layout.axml" />
-    <AndroidResource Include="Resources\layout\video_page_layout.axml" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_favorite_white_24dp.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_sentiment_dissatisfied_white_24dp.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_sentiment_satisfied_white_24dp.png" />
@@ -248,6 +247,26 @@
     <AndroidResource Include="Resources\mipmap-hdpi\ic_thumbs_up_down_white_24dp.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_timer_white_24dp.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_visibility_white_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_share_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_thumb_down_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_thumb_up_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_timer_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_share_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_thumb_down_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_thumb_up_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_timer_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_share_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_thumb_down_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_thumb_up_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_timer_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_share_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_thumb_down_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_thumb_up_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_timer_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_share_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_thumb_down_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_thumb_up_black_24dp.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_timer_black_24dp.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
