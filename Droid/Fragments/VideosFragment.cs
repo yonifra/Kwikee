@@ -11,6 +11,7 @@ using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
+using FiveMin.Portable.Helpers;
 using Plugin.Connectivity;
 
 namespace FiveMin.Droid.Fragments
@@ -104,11 +105,13 @@ namespace FiveMin.Droid.Fragments
                     intent.PutExtra ("VideoId", video.VideoId);
                     intent.PutExtra ("VideoName", video.Name);
                     intent.PutExtra ("VideoDescription", video.Description);
+                    intent.PutExtra ("WatchCount", video.WatchCount.ToString("N0"));
+                    intent.PutExtra ("LikesDiff", (video.Likes - video.Dislikes).ToString("N0"));
+                    intent.PutExtra ("Length", StringHelper.TimeSpanFormatter (video.Length));
                     StartActivity (intent);
                 }
             }
         }
-
         
     }
 }
