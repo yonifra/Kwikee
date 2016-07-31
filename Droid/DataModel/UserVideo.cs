@@ -27,6 +27,12 @@ namespace FiveMin.Droid.DataModel
         /// </summary>
         /// <value><c>true</c> if is in watchlist; otherwise, <c>false</c>.</value>
         public bool IsInWatchlist { get; set; }
+
+        /// <summary>
+        /// Indicates if the user liked (+1) or disliked (-1) the video
+        /// </summary>
+        /// <value>The liked.</value>
+        public short Liked { get; set; }
     }
 }
 

@@ -159,3 +159,5 @@
 /Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxxhdpi/ic_thumb_down_black_24dp.png
 /Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxxhdpi/ic_thumb_up_black_24dp.png
 /Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxxhdpi/ic_timer_black_24dp.png
+/Users/yonifra/shortie/Droid/bin/Debug/SQLitePCLPlugin_esqlite3.dll
+/Users/yonifra/shortie/Droid/bin/Debug/SQLitePCL.batteries.dll
