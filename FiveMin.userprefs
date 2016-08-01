@@ -1,7 +1,14 @@
 ﻿<Properties StartupItem="Droid/FiveMin.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="packages/Xamarin.Android.Support.Vector.Drawable.23.4.0.1/build/Xamarin.Android.Support.Vector.Drawable.targets">
     <Files>
-      <File FileName="Droid/Activities/VideoActivity.cs" Line="30" Column="44" />
+      <File FileName="Droid/Activities/VideoActivity.cs" Line="81" Column="13" />
+      <File FileName="Droid/Resources/menu/menu.xml" Line="13" Column="45" />
+      <File FileName="Droid/Activities/MainActivity.cs" Line="68" Column="9" />
+      <File FileName="shortie Status" />
+      <File FileName="Droid/Helpers/SQLiteHelper.cs" Line="35" Column="57" />
+      <File FileName="Droid/DataModel/UserVideo.cs" Line="32" Column="72" />
+      <File FileName="Droid Status" />
+      <File FileName="packages/Xamarin.Android.Support.Vector.Drawable.23.4.0.1/build/Xamarin.Android.Support.Vector.Drawable.targets" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -10,5 +17,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.1bc05e64" />
+  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
 </Properties>
