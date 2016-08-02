@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Linq;
 using UIKit;
-using FiveMin.Portable.Data;
 
 namespace FiveMin.iOS
 {
