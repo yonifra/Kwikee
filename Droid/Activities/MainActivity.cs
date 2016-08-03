@@ -9,7 +9,7 @@ using FiveMin.Droid.Fragments;
 
 namespace FiveMin.Droid.Activities
 {
-    [Activity (Label = "FiveMin", LaunchMode = LaunchMode.SingleTop, MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity (Label = "Kwikee", LaunchMode = LaunchMode.SingleTop, MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : BaseActivity
     {
         private NavigationView _navigationView;
@@ -18,9 +18,9 @@ namespace FiveMin.Droid.Activities
 
         protected override int LayoutResource => Resource.Layout.Main;
 
-        protected override void OnCreate (Bundle bundle)
+        protected override void OnCreate (Bundle savedInstanceState)
         {
-            base.OnCreate (bundle);
+            base.OnCreate (savedInstanceState);
 
             // Set our view from the "main" layout resource
             _navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);
@@ -36,13 +36,13 @@ namespace FiveMin.Droid.Activities
             };
 
             //if first time you will want to go ahead and click first item.
-            if (bundle == null)
+            if (savedInstanceState == null)
             {
                 ListItemClicked (0);
             }
         }
 
-        public override bool OnPrepareOptionsMenu (Android.Views.IMenu menu)
+        public override bool OnPrepareOptionsMenu (IMenu menu)
         {
             menu.Clear ();
 

@@ -1,15 +1,43 @@
 ﻿<Properties StartupItem="Droid/FiveMin.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Activities/VideoActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.1.2-21/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
     <Files>
-      <File FileName="Droid/Activities/VideoActivity.cs" Line="81" Column="13" />
-      <File FileName="Droid/Resources/menu/menu.xml" Line="13" Column="45" />
-      <File FileName="Droid/Activities/MainActivity.cs" Line="68" Column="9" />
-      <File FileName="Droid/Helpers/SQLiteHelper.cs" Line="91" Column="36" />
-      <File FileName="Droid/DataModel/UserVideo.cs" Line="32" Column="72" />
-      <File FileName="packages/Xamarin.Android.Support.Vector.Drawable.23.4.0.1/build/Xamarin.Android.Support.Vector.Drawable.targets" Line="1" Column="1" />
-      <File FileName="iOS/ViewController.cs" Line="1" Column="14" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="7" Column="12" />
+      <File FileName="Droid/Activities/YouTubeFailureRecoveryActivity.cs" Line="1" Column="1" />
+      <File FileName="Droid/Activities/VideoActivity.cs" Line="81" Column="1" />
+      <File FileName="../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.1.2-21/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="5" Column="45" />
+      <File FileName="Droid/Fragments/LoginFragment.cs" Line="42" Column="13" />
+      <File FileName="Droid/Fragments/TrendingVideosFragment.cs" Line="4" Column="1" />
+      <File FileName="Droid/Fragments/VideoPageFragment.cs" Line="1" Column="1" />
+      <File FileName="Droid/Fragments/VideosFragment.cs" Line="1" Column="1" />
+      <File FileName="Droid/Fragments/EndingSoonFragment.cs" Line="4" Column="1" />
+      <File FileName="Droid/Fragments/CategoriesFragment.cs" Line="3" Column="1" />
+      <File FileName="Droid/Fragments/AboutFragment.cs" Line="1" Column="1" />
+      <File FileName="Droid/Activities/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Droid/Activities/BaseActivity.cs" Line="18" Column="33" />
+      <File FileName="Droid/Helpers/SQLiteHelper.cs" Line="113" Column="56" />
+      <File FileName="Droid Status" />
+      <File FileName="../../../Library/Frameworks/Mono.framework/Versions/4.4.2/lib/mono/4.5/Microsoft.Common.targets" Line="1" Column="1" />
+      <File FileName="Versus.Portable/Versus.Portable/Data/FirebaseManager.cs" Line="25" Column="9" />
+      <File FileName="../Downloads/YouTubeAndroidPlayer-master/v1.2.1/YouTubeApi/Transforms/EnumFields.xml" Line="1" Column="1" />
+      <File FileName="../Downloads/YouTubeAndroidPlayer-master/v1.2.1/YouTubeApi/Properties/AssemblyInfo.cs" Line="24" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FiveMin" expanded="True">
+            <Node name="FiveMin.Droid" selected="True" />
+            <Node name="FiveMin.Portable" expanded="True">
+              <Node name="Data" expanded="True" />
+            </Node>
+            <Node name="YouTubeApi" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Additions" expanded="True" />
+              <Node name="Jars" expanded="True" />
+              <Node name="Transforms" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FiveMin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8E30F8B-5C8C-4128-87C6-71D480D5F7A3" />
@@ -17,5 +45,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
+  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
 </Properties>

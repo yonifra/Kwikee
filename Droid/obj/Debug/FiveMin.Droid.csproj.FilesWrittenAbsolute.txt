@@ -1,9 +1,9 @@
-/Users/yonifra/shortie/Droid/obj/Debug/MonoAndroid,Version=v5.1.AssemblyAttribute.cs
+/Users/yonifra/shortie/Droid/obj/Debug/MonoAndroid,Version=v6.0.AssemblyAttribute.cs
 /Users/yonifra/shortie/Droid/bin/Debug/FiveMin.Droid.dll.config
 /Users/yonifra/shortie/Droid/bin/Debug/FiveMin.Droid.dll.mdb
 /Users/yonifra/shortie/Droid/bin/Debug/FiveMin.Droid.dll
-/Users/yonifra/shortie/Droid/bin/Debug/com.cryptocodes.fivemin.apk
-/Users/yonifra/shortie/Droid/obj/Debug/android/bin/com.cryptocodes.fivemin.apk
+/Users/yonifra/shortie/Droid/bin/Debug/com.cryptocodes.kwikee.apk
+/Users/yonifra/shortie/Droid/obj/Debug/android/bin/com.cryptocodes.kwikee.apk
 /Users/yonifra/shortie/Droid/obj/Debug/res/layout/main.xml
 /Users/yonifra/shortie/Droid/obj/Debug/res/values/strings.xml
 /Users/yonifra/shortie/Droid/obj/Debug/res/layout/videolistitemlayout.xml
@@ -127,7 +127,7 @@
 /Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxxhdpi/ic_thumb_up_black_24dp.png
 /Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxxhdpi/ic_timer_black_24dp.png
 /Users/yonifra/shortie/Droid/obj/Debug/R.cs.flag
-/Users/yonifra/shortie/Droid/bin/Debug/com.cryptocodes.fivemin-Signed.apk
+/Users/yonifra/shortie/Droid/bin/Debug/com.cryptocodes.kwikee-Signed.apk
 /Users/yonifra/shortie/Droid/obj/Debug/uploadflags.txt
 /Users/yonifra/shortie/Droid/obj/Debug/FiveMin.Droid.dll
 /Users/yonifra/shortie/Droid/obj/Debug/FiveMin.Droid.dll.mdb

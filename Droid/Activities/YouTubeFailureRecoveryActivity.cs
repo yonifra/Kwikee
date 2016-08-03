@@ -4,8 +4,7 @@ using Android.Widget;
 using Google.YouTube.Player;
 
 namespace FiveMin.Droid.Activities
-{
-    //[Activity (Label = "YouTubeFailureRecoveryActivity")]     
+{  
     public abstract class YouTubeFailureRecoveryActivity : YouTubeBaseActivity, IYouTubePlayerOnInitializedListener
     {
         private static int RECOVERY_DIALOG_REQUEST = 1;
