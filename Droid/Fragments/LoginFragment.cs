@@ -1,6 +1,4 @@
-﻿
-using System;
-using Android;
+﻿using System;
 using Android.App;
 using Android.Content;
 using Android.Gms.Common;
@@ -165,11 +163,7 @@ namespace FiveMin.Droid.Fragments
 
             if (requestCode == RC_SIGN_IN)
             {
-                if (resultCode != (int)Result.Ok)
-                {
-                    mShouldResolve = false;
-                }
-
+                mShouldResolve &= resultCode == (int)Result.Ok;
                 mIsResolving = false;
                 mGoogleApiClient.Connect ();
             }

@@ -12,6 +12,7 @@ namespace FiveMin.Droid.Helpers
         private readonly string _path;
         private SQLiteHelper _instance;
 
+        private const string SQL_HELPER_TAG = "SQL_HELPER";
         private SQLiteHelper ()
         {
             _path = Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData);
@@ -47,12 +48,13 @@ namespace FiveMin.Droid.Helpers
             {
                 var db = new SQLiteAsyncConnection (_path);
                 if (await db.InsertAsync (data) != 0)
-                    db.UpdateAsync (data);
+                    await db.UpdateAsync (data);
                 return "Single data file inserted or updated";
             }
             catch (SQLiteException ex)
             {
-                return ex.Message;
+                Log.Error (SQL_HELPER_TAG, ex.Message);
+                return string.Empty;
             }
         }
 
@@ -71,6 +73,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
+                Log.Error (SQL_HELPER_TAG, ex.Message);
                 return -1;
             }
         }
@@ -90,6 +93,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
+                Log.Error (SQL_HELPER_TAG, ex.Message);
                 return new List<string>();
             }
         }
@@ -106,6 +110,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
+                Log.Error (SQL_HELPER_TAG, ex.Message);
                 return new List<string> ();
             }
         }

@@ -1,5 +1,4 @@
-﻿using Android;
-using Android.OS;
+﻿using Android.OS;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 
@@ -9,10 +8,10 @@ namespace FiveMin.Droid.Activities
     {
         public Toolbar Toolbar { get; set; }
 
-        protected override void OnCreate (Bundle bundle)
+        protected override void OnCreate (Bundle savedInstanceState)
         {
             //  Xamarin.Insights.Initialize (XamarinInsights.ApiKey, this);
-            base.OnCreate (bundle);
+            base.OnCreate (savedInstanceState);
             SetContentView (LayoutResource);
             Toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 

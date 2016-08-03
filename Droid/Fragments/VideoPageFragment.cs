@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Android.Content;
 using Android.Support.Design.Widget;
 using Android.Widget;
@@ -56,8 +55,8 @@ namespace FiveMin.Droid.Fragments
                 var mainLayout = view.FindViewById<LinearLayout> (Resource.Id.mainVideoLayout);
                 var fab = view.FindViewById<FloatingActionButton> (Resource.Id.addToFavorite);
 
-                progressBar.Visibility = Android.Views.ViewStates.Gone;
-                mainLayout.Visibility = Android.Views.ViewStates.Visible;
+                progressBar.Visibility = ViewStates.Gone;
+                mainLayout.Visibility = ViewStates.Visible;
                 fab.Visibility = ViewStates.Visible;
 
                 var videoNameTv = view.FindViewById<TextView> (Resource.Id.videoNameTextView);
@@ -71,11 +70,9 @@ namespace FiveMin.Droid.Fragments
             }
         }
 
-
-
         public void Initialize (string p0, IYouTubePlayerOnInitializedListener p1)
         {
-            throw new NotImplementedException ();
+            // Add initialization code here
         }
 
         public FiveMinVideo Video { get { return _video; } set{ _video = value;} }

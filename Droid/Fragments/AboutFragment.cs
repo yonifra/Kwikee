@@ -1,5 +1,4 @@
-﻿using Android;
-using Android.OS;
+﻿using Android.OS;
 using Android.Views;
 
 namespace FiveMin.Droid.Fragments

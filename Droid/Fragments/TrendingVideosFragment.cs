@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Android;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Util;
