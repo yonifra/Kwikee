@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FiveMin"
+        android:text="Kwikee"
         android:textSize="24dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 </LinearLayout>

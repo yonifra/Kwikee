@@ -40,7 +40,7 @@ namespace FiveMin.Droid.Fragments
             var setShareIntent = new Intent (Intent.ActionSend);
             setShareIntent.SetType ("text/plain");
             setShareIntent.PutExtra (Intent.ExtraSubject, GetString (Resource.String.share_competition_message_subject));
-            setShareIntent.PutExtra (Intent.ExtraText, "I just watched "+ _video.Name +". Wanna learn too? #FiveMin");
+            setShareIntent.PutExtra (Intent.ExtraText, "I just watched "+ _video.Name +". Wanna learn too? #Kwikee");
 
             return setShareIntent;
         }

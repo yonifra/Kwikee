@@ -4,7 +4,7 @@
         xmlns:viewModels="clr-namespace:FiveMin.WPF.ViewModels"
         xmlns:controls="clr-namespace:FiveMin.WPF.Controls"
         xmlns:entities1="clr-namespace:FiveMin.Portable.Entities;assembly=Versus.Portable"
-        Title="FiveMin Editor" Height="450" Width="625">
+        Title="Kwikee Editor" Height="450" Width="625">
     <Window.DataContext>
         <viewModels:MainViewModel />
     </Window.DataContext>
