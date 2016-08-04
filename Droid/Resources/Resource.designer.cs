@@ -2415,9 +2415,6 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00ab
 			public const int end_padder = 2131361963;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int endingSoonCompetitionsListView = 2131361918;
-			
 			// aapt resource value: 0x7f0a000b
 			public const int enterAlways = 2131361803;
 			
@@ -2550,14 +2547,17 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0038
 			public const int never = 2131361848;
 			
+			// aapt resource value: 0x7f0a007e
+			public const int newestVideosListView = 2131361918;
+			
 			// aapt resource value: 0x7f0a0081
 			public const int noCategoriesMessage = 2131361921;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int noEndingSoonCompetitionsMessage = 2131361919;
-			
 			// aapt resource value: 0x7f0a00ad
 			public const int noTrendingCompetitionsMessage = 2131361965;
+			
+			// aapt resource value: 0x7f0a007f
+			public const int noVideosMessageTextView = 2131361919;
 			
 			// aapt resource value: 0x7f0a0010
 			public const int none = 2131361808;
@@ -3307,6 +3307,24 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0b0043
 			public const int error_player = 2131427395;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int fragment_title_about = 2131427399;
+			
+			// aapt resource value: 0x7f0b0046
+			public const int fragment_title_categories = 2131427398;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int fragment_title_login = 2131427400;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int fragment_title_newest = 2131427397;
+			
+			// aapt resource value: 0x7f0b0044
+			public const int fragment_title_trending = 2131427396;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int fragment_title_videos = 2131427401;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int no_internet_message = 2131427394;

@@ -9,6 +9,7 @@ using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using FiveMin.Droid.Activities;
 
 namespace FiveMin.Droid.Fragments
 {
@@ -45,6 +46,14 @@ namespace FiveMin.Droid.Fragments
             //var personEmail = acct.Email;
             //var personId = acct.Id;
             //var personPhoto = acct.PhotoUrl;
+        }
+
+        public override void OnAttach (Context context)
+        {
+            base.OnAttach (context);
+            var toolbar = (context as BaseActivity)?.Toolbar;
+
+            toolbar?.SetTitle (Resource.String.fragment_title_login);
         }
 
         public void OnConnectionFailed (ConnectionResult result)

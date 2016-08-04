@@ -43,6 +43,14 @@ namespace FiveMin.Droid.Fragments
             return _view;
         }
 
+        public override void OnAttach (Context context)
+        {
+            base.OnAttach (context);
+            var toolbar = (context as BaseActivity)?.Toolbar;
+
+            toolbar?.SetTitle (Resource.String.fragment_title_videos);
+        }
+
         private async void LoadDataToGridAsync ()
         {
             if (CrossConnectivity.Current.IsConnected)

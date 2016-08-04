@@ -22,4 +22,13 @@
 
 	<string name="no_internet_message">No internet connection!</string>
 	<string name="error_player">Could not play video</string>
+
+	<!-- FRAGMENT TITLES -->
+	<string name="fragment_title_trending">Trending Videos</string>
+	<string name="fragment_title_newest">Newest Videos</string>
+	<string name="fragment_title_categories">Categories</string>
+	<string name="fragment_title_about">About</string>
+	<string name="fragment_title_login">Login</string>
+	<string name="fragment_title_videos">Videos</string>
+	
 </resources>

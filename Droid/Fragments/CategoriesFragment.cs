@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
+using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
@@ -19,6 +20,14 @@ namespace FiveMin.Droid.Fragments
         public CategoriesFragment ()
         {
             RetainInstance = true;
+        }
+
+        public override void OnAttach (Android.Content.Context context)
+        {
+            base.OnAttach (context);
+            var toolbar = (context as BaseActivity)?.Toolbar;
+
+            toolbar?.SetTitle (Resource.String.fragment_title_categories);
         }
 
         public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

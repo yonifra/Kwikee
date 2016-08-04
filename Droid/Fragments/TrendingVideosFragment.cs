@@ -6,6 +6,7 @@ using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
@@ -34,6 +35,14 @@ namespace FiveMin.Droid.Fragments
             LoadDataToGridAsync (_view);
 
             return _view;
+        }
+
+        public override void OnAttach (Android.Content.Context context)
+        {
+            base.OnAttach (context);
+            var toolbar = (context as BaseActivity)?.Toolbar;
+
+            toolbar?.SetTitle (Resource.String.fragment_title_trending);
         }
 
         private async void LoadDataToGridAsync (View view)
@@ -86,12 +95,12 @@ namespace FiveMin.Droid.Fragments
                 };
             }
             else
-                Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show();
+                Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
         private async Task GetTrendingCompetitionsAsync ()
         {
-                Log.Debug (LOG_TAG, "Fetching trending competitions");
+            Log.Debug (LOG_TAG, "Fetching trending competitions");
             var trending = await FirebaseManager.Instance.GetTrendingVideos ();
 
             _trendingVideos = trending.Values;

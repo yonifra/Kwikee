@@ -6,6 +6,7 @@ using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
@@ -15,14 +16,14 @@ namespace FiveMin.Droid.Fragments
 {
     public class EndingSoonFragment: Android.Support.V4.App.Fragment
     {
-        private const string LOG_TAG = "ENDING_COMPETITIONS_FRAGMENT";
-        private IEnumerable<FiveMinVideo> _endingSoonCompetitions;
+        private const string LOG_TAG = "NEWEST_VIDEOS_FRAGMENT";
+        private IEnumerable<FiveMinVideo> _newestVideos;
         private View _view;
 
         public EndingSoonFragment ()
         {
             RetainInstance = true;
-            _endingSoonCompetitions = new List<FiveMinVideo> ();
+            _newestVideos = new List<FiveMinVideo> ();
         }
 
         public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -36,16 +37,24 @@ namespace FiveMin.Droid.Fragments
             return _view;
         }
 
+        public override void OnAttach (Android.Content.Context context)
+        {
+            base.OnAttach (context);
+            var toolbar = (context as BaseActivity)?.Toolbar;
+
+            toolbar?.SetTitle (Resource.String.fragment_title_newest);
+        }
+
         private async void LoadDataToGridAsync ()
         {
             if (CrossConnectivity.Current.IsConnected)
             {
                 await GetEndingCompetitionsAsync ();
 
-                if (_endingSoonCompetitions != null && _endingSoonCompetitions.Any ())
+                if (_newestVideos != null && _newestVideos.Any ())
                 {
                     // Hide the text view
-                    var textView = _view.FindViewById<TextView> (Resource.Id.noEndingSoonCompetitionsMessage);
+                    var textView = _view.FindViewById<TextView> (Resource.Id.noVideosMessageTextView);
                     textView.Visibility = ViewStates.Invisible;
                 }
                 else
@@ -53,11 +62,11 @@ namespace FiveMin.Droid.Fragments
                     return;
                 }
 
-                var competitionsListView = _view.FindViewById<ListView> (Resource.Id.endingSoonCompetitionsListView);
-                competitionsListView.Visibility = ViewStates.Visible;
-                competitionsListView.Adapter = new VideosListAdapter (Activity, _endingSoonCompetitions);
+                var videosListView = _view.FindViewById<ListView> (Resource.Id.newestVideosListView);
+                videosListView.Visibility = ViewStates.Visible;
+                videosListView.Adapter = new VideosListAdapter (Activity, _newestVideos);
 
-                competitionsListView.ItemClick += (sender, e) =>
+                videosListView.ItemClick += (sender, e) =>
                 {
                     var index = e.Position;
 
@@ -87,12 +96,12 @@ namespace FiveMin.Droid.Fragments
 
         private async Task GetEndingCompetitionsAsync ()
         {
-            Log.Debug (LOG_TAG, "Fetching ending soon competitions");
+            Log.Debug (LOG_TAG, "Fetching newest videos");
             var ending = await FirebaseManager.Instance.GetNewestVideos ();
 
             if (ending != null)
             {
-                _endingSoonCompetitions = ending.Values;
+                _newestVideos = ending.Values;
             }
         }
     }

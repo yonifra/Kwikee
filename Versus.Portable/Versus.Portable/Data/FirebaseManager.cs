@@ -24,7 +24,7 @@ namespace FiveMin.Portable.Data
         private Dictionary<string, Category> _categories;
 
         // Competitions with more than the threshold vote counts will be considered "trending"
-        const int THRESHOLD = 40;
+        const int WATCH_COUNT_THRESHOLD = 10;
         private readonly TimeSpan ENDING_SOON_THRESHOLD = TimeSpan.FromDays (3);
 
 
@@ -179,7 +179,7 @@ namespace FiveMin.Portable.Data
             }
 
             _trendingVideos = _videos
-                .Where (cm => cm.Value.WatchCount > THRESHOLD && cm.Value.Likes > cm.Value.Dislikes * 2)
+                .Where (cm => cm.Value.WatchCount > WATCH_COUNT_THRESHOLD && cm.Value.Likes >= cm.Value.Dislikes * 2)
                 .ToDictionary (o => o.Key, o => o.Value);
 
             return _trendingVideos;

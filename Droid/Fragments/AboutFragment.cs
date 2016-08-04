@@ -1,5 +1,6 @@
 ﻿using Android.OS;
 using Android.Views;
+using FiveMin.Droid.Activities;
 
 namespace FiveMin.Droid.Fragments
 {
@@ -18,6 +19,14 @@ namespace FiveMin.Droid.Fragments
             var view = inflater.Inflate (Resource.Layout.about_fragment, null);
 
             return view;
+        }
+
+        public override void OnAttach (Android.Content.Context context)
+        {
+            base.OnAttach (context);
+            var toolbar = (context as BaseActivity)?.Toolbar;
+
+            toolbar?.SetTitle (Resource.String.fragment_title_about);
         }
     }
 }
