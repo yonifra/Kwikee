@@ -8,19 +8,20 @@ using Android.Views;
 using Android.Widget;
 using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
+using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
 using Plugin.Connectivity;
 
 namespace FiveMin.Droid.Fragments
 {
-    public class EndingSoonFragment: Android.Support.V4.App.Fragment
+    public class NewestVideosFragment : Android.Support.V4.App.Fragment
     {
         private const string LOG_TAG = "NEWEST_VIDEOS_FRAGMENT";
         private IEnumerable<FiveMinVideo> _newestVideos;
         private View _view;
 
-        public EndingSoonFragment ()
+        public NewestVideosFragment ()
         {
             RetainInstance = true;
             _newestVideos = new List<FiveMinVideo> ();
@@ -79,19 +80,13 @@ namespace FiveMin.Droid.Fragments
 
                         if (video != null)
                         {
-                            // Put the name of the selected category into the intent
-                            var fragment = new VideoPageFragment { Video = video };
-
-                            Activity.SupportFragmentManager.BeginTransaction ()
-                                .Replace (Resource.Id.content_frame, fragment)
-                                .AddToBackStack (fragment.Tag)
-                            .Commit ();
+                            VideoHelper.StartVideo (video, _view);
                         }
                     }
                 };
             }
             else
-                Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show();
+                Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
         private async Task GetEndingCompetitionsAsync ()

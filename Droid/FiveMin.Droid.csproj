@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>FiveMin.Droid</RootNamespace>
     <AssemblyName>FiveMin.Droid</AssemblyName>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -138,16 +138,16 @@
     <Compile Include="Fragments\CategoriesFragment.cs" />
     <Compile Include="Helpers\ConnectivityHelper.cs" />
     <Compile Include="Fragments\VideosFragment.cs" />
-    <Compile Include="Fragments\VideoPageFragment.cs" />
     <Compile Include="Fragments\AboutFragment.cs" />
     <Compile Include="Fragments\LoginFragment.cs" />
     <Compile Include="Fragments\TrendingVideosFragment.cs" />
-    <Compile Include="Fragments\EndingSoonFragment.cs" />
+    <Compile Include="Fragments\NewestVideosFragment.cs" />
     <Compile Include="Activities\VideoActivity.cs" />
     <Compile Include="Activities\YouTubeFailureRecoveryActivity.cs" />
     <Compile Include="DeveloperKey.cs" />
     <Compile Include="DataModel\UserVideo.cs" />
     <Compile Include="Helpers\SQLiteHelper.cs" />
+    <Compile Include="Helpers\VideoHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

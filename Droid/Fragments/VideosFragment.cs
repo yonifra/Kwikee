@@ -9,9 +9,9 @@ using Android.Views;
 using Android.Widget;
 using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
+using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
-using FiveMin.Portable.Helpers;
 using Plugin.Connectivity;
 
 namespace FiveMin.Droid.Fragments
@@ -106,17 +106,7 @@ namespace FiveMin.Droid.Fragments
 
                 if (video != null)
                 {
-                    FirebaseManager.Instance.UpdateWatchCount (video);
-
-                    // Put the name of the selected category into the intent
-                    var intent = new Intent (_view.Context, typeof (VideoActivity));
-                    intent.PutExtra ("VideoId", video.VideoId);
-                    intent.PutExtra ("VideoName", video.Name);
-                    intent.PutExtra ("VideoDescription", video.Description);
-                    intent.PutExtra ("WatchCount", video.WatchCount.ToString("N0"));
-                    intent.PutExtra ("LikesDiff", (video.Likes - video.Dislikes).ToString("N0"));
-                    intent.PutExtra ("Length", StringHelper.TimeSpanFormatter (video.Length));
-                    StartActivity (intent);
+                    VideoHelper.StartVideo (video, _view);
                 }
             }
         }

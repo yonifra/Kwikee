@@ -69,7 +69,7 @@ namespace FiveMin.Droid.Activities
             var setShareIntent = new Intent (Intent.ActionSend);
             setShareIntent.SetType ("text/plain");
             setShareIntent.PutExtra (Intent.ExtraSubject, GetString (Resource.String.share_global_message_subject));
-            setShareIntent.PutExtra (Intent.ExtraText, GetString(Resource.String.share_global_message_text) + " " + GetString(Resource.String.app_store_url));
+            setShareIntent.PutExtra (Intent.ExtraText, GetString (Resource.String.share_global_message_text) + " " + GetString (Resource.String.app_store_url));
 
             return setShareIntent;
         }
@@ -88,24 +88,24 @@ namespace FiveMin.Droid.Activities
             // replace the fragment with the corresponding fragment
             switch (itemId)
             {
-                case Resource.Id.nav_categories:
-                    fragment = new CategoriesFragment ();
-                    break;
-                case Resource.Id.nav_about:
-                    fragment = new AboutFragment ();
-                    break;
-                case Resource.Id.nav_logoutLogin:
-                    fragment = new LoginFragment ();
-                    break;
-                case Resource.Id.nav_trending:
-                    fragment = new TrendingVideosFragment ();
-                    break;
-                case Resource.Id.nav_endingSoon:
-                    fragment = new EndingSoonFragment ();
-                    break;
-                default:
-                    fragment = new CategoriesFragment ();
-                    break;
+            case Resource.Id.nav_categories:
+                fragment = new CategoriesFragment ();
+                break;
+            case Resource.Id.nav_about:
+                fragment = new AboutFragment ();
+                break;
+            case Resource.Id.nav_logoutLogin:
+                fragment = new LoginFragment ();
+                break;
+            case Resource.Id.nav_trending:
+                fragment = new TrendingVideosFragment ();
+                break;
+            case Resource.Id.nav_endingSoon:
+                fragment = new NewestVideosFragment ();
+                break;
+            default:
+                fragment = new CategoriesFragment ();
+                break;
             }
 
             // Make the actual change of fragments
