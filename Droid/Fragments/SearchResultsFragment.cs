@@ -16,13 +16,11 @@ using Plugin.Connectivity;
 
 namespace FiveMin.Droid.Fragments
 {
-    public class SearchResultsFragment: Android.Support.V4.App.Fragment
+    public class SearchResultsFragment : Android.Support.V4.App.Fragment
     {
         private const string LOG_TAG = "SEARCH_RESULTS_FRAGMENT";
         private IEnumerable<FiveMinVideo> _results;
-        private IEnumerable<FiveMinVideo> _allVideos;
         private View _view;
-        private SearchView _searchView;
         private ListView _resultsListView;
         private string _query;
 
@@ -38,13 +36,14 @@ namespace FiveMin.Droid.Fragments
             base.OnCreateView (inflater, container, savedInstanceState);
 
             _view = inflater.Inflate (Resource.Layout.search_results_fragment, null);
-            _searchView = _view.FindViewById<SearchView> (Resource.Id.action_search);
 
             LoadDataToGridAsync (_view);
 
             if (!string.IsNullOrEmpty (_query))
             {
-                _results = _allVideos.Where (v => v.Name.ToLower ().Contains (_query) || v.Keywords.Contains (_query.ToLower ()));
+                _results = FirebaseManager.Instance.AllVideos.Values.Where (v => v.Name.ToLower ().Contains (_query) ||
+                                             v.Keywords.Contains (_query.ToLower ()) ||
+                                             v.Categories.Any (c => c.ToLower ().Contains (_query.ToLower ())));
                 ResetAdapter ();
             }
 
@@ -79,8 +78,6 @@ namespace FiveMin.Droid.Fragments
                 _resultsListView = view.FindViewById<ListView> (Resource.Id.searchResultsListView);
                 _resultsListView.Visibility = ViewStates.Visible;
 
-                var results = await FirebaseManager.Instance.GetAllVideos ();
-                _allVideos = results.Values;
                 _results = new List<FiveMinVideo> ();
                 ResetAdapter ();
             }

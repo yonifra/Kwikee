@@ -45,29 +45,6 @@ namespace FiveMin.Droid.Activities
             }
         }
 
-        public override bool OnCreateOptionsMenu (IMenu menu)
-        {
-            MenuInflater.Inflate (Resource.Menu.menu, menu);
-            var searchItem = menu.FindItem (Resource.Id.action_search);
-            _searchView = (SearchView)MenuItemCompat.GetActionView (searchItem);
-
-            _searchView.QueryTextChange += (sender, e) => 
-            {
-                // Text has changed, apply filtering?
-            };
-
-            _searchView.QueryTextSubmit += (sender, e) => 
-            {
-                // Perform the final search
-                // Show the search fragment with 
-                SupportFragmentManager.BeginTransaction ()
-                                      .Replace (Resource.Id.content_frame, new SearchResultsFragment (e.Query))
-                                      .Commit ();
-            };
-
-            return base.OnCreateOptionsMenu (menu);
-        }
-
         public override bool OnPrepareOptionsMenu (IMenu menu)
         {
             menu.Clear ();
@@ -85,6 +62,27 @@ namespace FiveMin.Droid.Activities
                 {
                     item.SetIntent (CreateShareIntent ());
                 }
+
+                var searchItem = menu.FindItem (Resource.Id.action_search);
+                _searchView = (SearchView)MenuItemCompat.GetActionView (searchItem);
+
+                _searchView.QueryTextChange += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty (e.NewText))
+                    {
+                        // User has inputted some search text
+                        SupportFragmentManager.BeginTransaction ()
+                                                  .Replace (Resource.Id.content_frame, new SearchResultsFragment (e.NewText))
+                                                  .Commit ();
+                    }
+                    else
+                    {
+                        // No search string, so display the previous fragment
+                        SupportFragmentManager.BeginTransaction ()
+                                              .Replace (Resource.Id.content_frame, _prevFragment)
+                                              .Commit ();
+                    }
+                };
             }
 
             return base.OnPrepareOptionsMenu (menu);

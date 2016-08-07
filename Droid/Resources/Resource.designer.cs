@@ -3326,8 +3326,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0048
 			public const int fragment_title_login = 2131427400;
 			
+			// aapt resource value: 0x7f0b004b
+			public const int fragment_title_my_profile = 2131427403;
+			
 			// aapt resource value: 0x7f0b0045
 			public const int fragment_title_newest = 2131427397;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int fragment_title_search_results = 2131427402;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int fragment_title_trending = 2131427396;
@@ -3335,8 +3341,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0049
 			public const int fragment_title_videos = 2131427401;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int fragment_title_videos_category = 2131427402;
+			// aapt resource value: 0x7f0b004c
+			public const int fragment_title_videos_category = 2131427404;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int no_internet_message = 2131427394;

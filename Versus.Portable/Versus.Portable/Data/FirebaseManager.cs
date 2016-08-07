@@ -28,9 +28,9 @@ namespace FiveMin.Portable.Data
         private readonly TimeSpan ENDING_SOON_THRESHOLD = TimeSpan.FromDays (3);
 
 
-        public static FirebaseManager Instance => _instance ?? (_instance = new FirebaseManager());
+        public static FirebaseManager Instance => _instance ?? (_instance = new FirebaseManager ());
 
-        private FirebaseManager()
+        private FirebaseManager ()
         {
             var config = new FirebaseConfig
             {
@@ -38,7 +38,8 @@ namespace FiveMin.Portable.Data
                 BasePath = BasePath
             };
 
-            _client = new FirebaseClient(config);
+            _client = new FirebaseClient (config);
+            GetNewestVideos (true);
         }
 
         public FirebaseClient Client => _client;
@@ -46,15 +47,15 @@ namespace FiveMin.Portable.Data
         /// <summary>
         /// Deletes ALL the data from the server. USE WITH CAUTION!
         /// </summary>
-        private async void DeleteAllData()
+        private async void DeleteAllData ()
         {
-            await DeleteNode(CategoriesName);
-            await DeleteNode(VideosName);
+            await DeleteNode (CategoriesName);
+            await DeleteNode (VideosName);
         }
 
-        public async Task<bool> DeleteNode(string nodeName)
+        public async Task<bool> DeleteNode (string nodeName)
         {
-            var response = await _client.DeleteAsync(nodeName);
+            var response = await _client.DeleteAsync (nodeName);
 
             return response.StatusCode == HttpStatusCode.OK;
         }
@@ -73,22 +74,27 @@ namespace FiveMin.Portable.Data
             }
 
             _newestVideos = _videos
-                .OrderByDescending(v => v.Value.DateAdded)
+                .OrderByDescending (v => v.Value.DateAdded)
                 .ToDictionary (o => o.Key, o => o.Value);
 
             return _newestVideos;
         }
 
-        public async Task<bool> IsUserAuthenticatedAsync()
+        public Dictionary<string, FiveMinVideo> AllVideos
+        {
+            get { return _videos; }
+        }
+
+        public async Task<bool> IsUserAuthenticatedAsync ()
         {
             return true;
             // throw new NotImplementedException();
         }
 
-        private async void UpdateVideo(FiveMinVideo value)
+        private async void UpdateVideo (FiveMinVideo value)
         {
             var key = GetKeyForVideo (value);
-            await _client.UpdateAsync($"{VideosName}/{key}", value);
+            await _client.UpdateAsync ($"{VideosName}/{key}", value);
         }
 
         public void UpdateLikesDislikesCount (FiveMinVideo v, bool isIncrement, bool isLikes)
@@ -133,16 +139,16 @@ namespace FiveMin.Portable.Data
             return _videos.FirstOrDefault (vid => vid.Value == v).Key;
         }
 
-        public async Task<bool> AddVideo(FiveMinVideo video)
+        public async Task<bool> AddVideo (FiveMinVideo video)
         {
-            var response = await _client.PushAsync(VideosName, video);
+            var response = await _client.PushAsync (VideosName, video);
 
             return response.StatusCode == HttpStatusCode.OK;
         }
 
-        public async Task<bool> AddCategory(Category category)
+        public async Task<bool> AddCategory (Category category)
         {
-            var response = await _client.PushAsync(CategoriesName, category);
+            var response = await _client.PushAsync (CategoriesName, category);
 
             return response.StatusCode == HttpStatusCode.OK;
         }
@@ -152,14 +158,14 @@ namespace FiveMin.Portable.Data
         /// </summary>
         /// <param name="shouldRefresh">Indicates if we want to force an update of the competitions list</param>
         /// <returns>Dictionary of competitions and their keys</returns>
-        public async Task<Dictionary<string, FiveMinVideo>> GetAllVideos(bool shouldRefresh = false)
+        public async Task<Dictionary<string, FiveMinVideo>> GetAllVideos (bool shouldRefresh = false)
         {
             // if we want to force the update, or the competitions dictionary have not yet been initialized, update it!
             if (shouldRefresh || _videos == null)
             {
-                var response = await _client.GetAsync(VideosName);
+                var response = await _client.GetAsync (VideosName);
 
-                _videos = JsonConvert.DeserializeObject<Dictionary<string, FiveMinVideo>>(response.Body);
+                _videos = JsonConvert.DeserializeObject<Dictionary<string, FiveMinVideo>> (response.Body);
             }
 
             return _videos;
@@ -191,11 +197,11 @@ namespace FiveMin.Portable.Data
         /// <param name="categoryName">Name of the category we wish to get all competitions for</param>
         /// <param name="refreshBefore">Indicates whether to refresh the cache before fetching the competition</param>
         /// <returns>An enumerable of all competitions related to that category</returns>
-        public async Task<IEnumerable<FiveMinVideo>> GetVideos(string categoryName, bool refreshBefore = false)
+        public async Task<IEnumerable<FiveMinVideo>> GetVideos (string categoryName, bool refreshBefore = false)
         {
-            var dict = await GetAllVideos(refreshBefore);
+            var dict = await GetAllVideos (refreshBefore);
 
-            return dict.Values.Where(c => c.Categories.Contains(categoryName));
+            return dict.Values.Where (c => c.Categories.Contains (categoryName));
         }
 
         /// <summary>
@@ -204,20 +210,20 @@ namespace FiveMin.Portable.Data
         /// <param name="videoName">The name of the competition to look for</param>
         /// <param name="refreshBefore">Indicates whether we want to refresh the cache before searching</param>
         /// <returns>The VsCompetition entity we found</returns>
-        public async Task<FiveMinVideo> GetVideo(string videoName, bool refreshBefore = false)
+        public async Task<FiveMinVideo> GetVideo (string videoName, bool refreshBefore = false)
         {
-            var dict = await GetAllVideos(refreshBefore);
+            var dict = await GetAllVideos (refreshBefore);
 
-            return dict.Values.FirstOrDefault(c => string.Equals(c.Name, videoName, StringComparison.CurrentCultureIgnoreCase));
+            return dict.Values.FirstOrDefault (c => string.Equals (c.Name, videoName, StringComparison.CurrentCultureIgnoreCase));
         }
 
-        public async Task<Dictionary<string, Category>> GetAllCategories(bool shouldRefresh = false)
+        public async Task<Dictionary<string, Category>> GetAllCategories (bool shouldRefresh = false)
         {
             if (shouldRefresh || _categories == null)
             {
-                var response = await _client.GetAsync(CategoriesName);
+                var response = await _client.GetAsync (CategoriesName);
 
-                _categories = JsonConvert.DeserializeObject<Dictionary<string, Category>>(response.Body);
+                _categories = JsonConvert.DeserializeObject<Dictionary<string, Category>> (response.Body);
             }
 
             return _categories;
