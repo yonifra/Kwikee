@@ -3,7 +3,9 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Support.Design.Widget;
+using Android.Support.V4.View;
 using Android.Support.V4.Widget;
+using Android.Support.V7.Widget;
 using Android.Views;
 using FiveMin.Droid.Fragments;
 
@@ -14,7 +16,9 @@ namespace FiveMin.Droid.Activities
     {
         private NavigationView _navigationView;
         private DrawerLayout _drawerLayout;
-        private Android.Support.V7.Widget.Toolbar _toolbar;
+        private Toolbar _toolbar;
+        private SearchView _searchView;
+        private Android.Support.V4.App.Fragment _prevFragment;
 
         protected override int LayoutResource => Resource.Layout.Main;
 
@@ -25,8 +29,7 @@ namespace FiveMin.Droid.Activities
             // Set our view from the "main" layout resource
             _navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);
             _drawerLayout = FindViewById<DrawerLayout> (Resource.Id.drawer_layout);
-            _toolbar = FindViewById<Android.Support.V7.Widget.Toolbar> (Resource.Id.toolbar);
-
+            _toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 
             _navigationView.NavigationItemSelected += (sender, e) =>
             {
@@ -40,6 +43,29 @@ namespace FiveMin.Droid.Activities
             {
                 ListItemClicked (0);
             }
+        }
+
+        public override bool OnCreateOptionsMenu (IMenu menu)
+        {
+            MenuInflater.Inflate (Resource.Menu.menu, menu);
+            var searchItem = menu.FindItem (Resource.Id.action_search);
+            _searchView = (SearchView)MenuItemCompat.GetActionView (searchItem);
+
+            _searchView.QueryTextChange += (sender, e) => 
+            {
+                // Text has changed, apply filtering?
+            };
+
+            _searchView.QueryTextSubmit += (sender, e) => 
+            {
+                // Perform the final search
+                // Show the search fragment with 
+                SupportFragmentManager.BeginTransaction ()
+                                      .Replace (Resource.Id.content_frame, new SearchResultsFragment (e.Query))
+                                      .Commit ();
+            };
+
+            return base.OnCreateOptionsMenu (menu);
         }
 
         public override bool OnPrepareOptionsMenu (IMenu menu)
@@ -76,8 +102,6 @@ namespace FiveMin.Droid.Activities
 
         private void ListItemClicked (int itemId, bool shouldCloseDrawer = true)
         {
-            Android.Support.V4.App.Fragment fragment;
-
             // Close the drawer if item was clicked (configurable)
             if (_drawerLayout != null && shouldCloseDrawer)
             {
@@ -89,28 +113,28 @@ namespace FiveMin.Droid.Activities
             switch (itemId)
             {
             case Resource.Id.nav_categories:
-                fragment = new CategoriesFragment ();
+                _prevFragment = new CategoriesFragment ();
                 break;
             case Resource.Id.nav_about:
-                fragment = new AboutFragment ();
+                _prevFragment = new AboutFragment ();
                 break;
             case Resource.Id.nav_logoutLogin:
-                fragment = new LoginFragment ();
+                _prevFragment = new LoginFragment ();
                 break;
             case Resource.Id.nav_trending:
-                fragment = new TrendingVideosFragment ();
+                _prevFragment = new TrendingVideosFragment ();
                 break;
             case Resource.Id.nav_endingSoon:
-                fragment = new NewestVideosFragment ();
+                _prevFragment = new NewestVideosFragment ();
                 break;
             default:
-                fragment = new CategoriesFragment ();
+                _prevFragment = new CategoriesFragment ();
                 break;
             }
 
             // Make the actual change of fragments
             SupportFragmentManager.BeginTransaction ()
-                .Replace (Resource.Id.content_frame, fragment)
+                .Replace (Resource.Id.content_frame, _prevFragment)
                 .Commit ();
         }
     }

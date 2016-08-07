@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using FiveMin.Droid.Activities;
 using FiveMin.Droid.Adapters;
+using FiveMin.Droid.Helpers;
 using FiveMin.Portable.Data;
 using FiveMin.Portable.Entities;
 using Plugin.Connectivity;
@@ -79,13 +80,7 @@ namespace FiveMin.Droid.Fragments
 
                         if (video != null)
                         {
-                            // Put the name of the selected category into the intent
-                            var fragment = new VideoPageFragment { Video = video };
-
-                            Activity.SupportFragmentManager.BeginTransaction ()
-                                .Replace (Resource.Id.content_frame, fragment)
-                                .AddToBackStack (fragment.Tag)
-                                .Commit ();
+                            VideoHelper.StartVideo (video, _view);
                         }
                     }
                     else
