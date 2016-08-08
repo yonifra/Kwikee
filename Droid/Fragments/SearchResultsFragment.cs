@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Android.OS;
 using Android.Support.Design.Widget;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using FiveMin.Droid.Activities;
@@ -37,13 +34,13 @@ namespace FiveMin.Droid.Fragments
 
             _view = inflater.Inflate (Resource.Layout.search_results_fragment, null);
 
-            LoadDataToGridAsync (_view);
-
-            if (!string.IsNullOrEmpty (_query))
+            if (!string.IsNullOrEmpty (_query) && CrossConnectivity.Current.IsConnected)
             {
                 _results = FirebaseManager.Instance.AllVideos.Values.Where (v => v.Name.ToLower ().Contains (_query) ||
                                              v.Keywords.Contains (_query.ToLower ()) ||
                                              v.Categories.Any (c => c.ToLower ().Contains (_query.ToLower ())));
+
+                CheckForResultsAndUpdateUi ();
                 ResetAdapter ();
             }
 
@@ -58,28 +55,23 @@ namespace FiveMin.Droid.Fragments
             toolbar?.SetTitle (Resource.String.fragment_title_trending);
         }
 
-        private async void LoadDataToGridAsync (View view)
+        private void CheckForResultsAndUpdateUi ()
         {
             if (CrossConnectivity.Current.IsConnected)
             {
-                await GetSearchResultsAsync ();
-
                 if (_results != null && _results.Any ())
                 {
-                    var textView = view.FindViewById<TextView> (Resource.Id.noVideosFoundMessage);
+                    var textView = _view.FindViewById<TextView> (Resource.Id.noVideosFoundMessage);
                     textView.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
-                    Snackbar.Make (_view, "No videos found", Snackbar.LengthShort).Show ();
+                    Snackbar.Make (_view, "No results found", Snackbar.LengthShort).Show ();
                     return;
                 }
 
-                _resultsListView = view.FindViewById<ListView> (Resource.Id.searchResultsListView);
+                _resultsListView = _view.FindViewById<ListView> (Resource.Id.searchResultsListView);
                 _resultsListView.Visibility = ViewStates.Visible;
-
-                _results = new List<FiveMinVideo> ();
-                ResetAdapter ();
             }
             else
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
@@ -87,33 +79,37 @@ namespace FiveMin.Droid.Fragments
 
         void ResetAdapter ()
         {
+            if (_resultsListView == null) return;
+
+            _resultsListView.ItemClick -= VideoItemClick;
+
+            if (_resultsListView.Adapter != null && !_resultsListView.Adapter.IsEmpty)
+            {
+                _resultsListView.Adapter.Dispose ();
+            }
+
             _resultsListView.Adapter = new VideosListAdapter (Activity, _results);
 
-            _resultsListView.ItemClick += (sender, e) =>
-            {
-                var index = e.Position;
+            _resultsListView.ItemClick += VideoItemClick;
 
-                var lv = (sender as ListView);
-
-                if (lv != null)
-                {
-                    var videosListAdapter = lv.Adapter as VideosListAdapter;
-                    var video = videosListAdapter?.Videos [index];
-
-                    if (video != null)
-                    {
-                        VideoHelper.StartVideo (video, _view);
-                    }
-                }
-            };
         }
 
-        private async Task GetSearchResultsAsync ()
+        void VideoItemClick (object sender, AdapterView.ItemClickEventArgs e)
         {
-            Log.Debug (LOG_TAG, "Fetching search results");
-            var trending = await FirebaseManager.Instance.GetTrendingVideos ();
+            var index = e.Position;
 
-            _results = trending.Values;
+            var lv = (sender as ListView);
+
+            if (lv != null)
+            {
+                var videosListAdapter = lv.Adapter as VideosListAdapter;
+                var video = videosListAdapter?.Videos [index];
+
+                if (video != null)
+                {
+                    VideoHelper.StartVideo (video, _view);
+                }
+            }
         }
     }
 }

@@ -18,13 +18,16 @@ namespace FiveMin.Droid.Activities
             if (Toolbar != null)
             {
                 SetSupportActionBar (Toolbar);
-                //   SupportActionBar.SetDisplayHomeAsUpEnabled (true);
-                //    SupportActionBar.SetHomeButtonEnabled (true);
-                SupportActionBar.SetDisplayShowHomeEnabled (true);
+            //    SupportActionBar.SetDisplayHomeAsUpEnabled (true);
+                SupportActionBar.SetHomeButtonEnabled (true);
+             //   SupportActionBar.SetShowHideAnimationEnabled (true);
+           //     SupportActionBar.SetDefaultDisplayHomeAsUpEnabled (true);
+          //      SupportActionBar.SetLogo (Resource.Drawable.logo);
+              //  SupportActionBar.SetDisplayShowHomeEnabled (true);
                 //     SupportActionBar.SetIcon (Resource.Drawable.menu);
                 //     SupportActionBar.SetHomeAsUpIndicator (Resource.Drawable.menu);
-                SupportActionBar.SetHomeButtonEnabled (true);
-                SupportActionBar.SetDisplayShowTitleEnabled (true);
+              //  SupportActionBar.SetHomeButtonEnabled (true);
+           //     SupportActionBar.SetDisplayShowTitleEnabled (true);
                 //       SupportActionBar.SetLogo (Resource.Drawable.logo);
             }
         }
