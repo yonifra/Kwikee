@@ -62,7 +62,7 @@ namespace FiveMin.Droid.Adapters
 
             wrapper.Backdrop.SetBackgroundResource (Resource.Color.button_material_light);
             wrapper.Name.Text = video.Name;
-            wrapper.Description.Text = StringHelper.TrimText(video.Description, 90);
+            wrapper.Description.Text = StringHelper.TrimText(video.Description, 140);
             wrapper.Tags.Text = StringHelper.TagsFormatter (video.Keywords);
             wrapper.Length.Text = StringHelper.TimeSpanFormatter (video.Length);
             wrapper.WatchCount.Text = video.WatchCount.ToString ("N0");
@@ -70,7 +70,14 @@ namespace FiveMin.Droid.Adapters
 
 
             FontsHelper.ApplyTypeface (_context.Assets, 
-                                       new List<TextView> { wrapper.Name, wrapper.Description, wrapper.Length, wrapper.Tags, wrapper.WatchCount, wrapper.LikeDislikeDifference });
+                                       new List<TextView> { 
+                       wrapper.Name, 
+                       wrapper.Description, 
+                       wrapper.Length, 
+                       wrapper.Tags, 
+                       wrapper.WatchCount, 
+                       wrapper.LikeDislikeDifference 
+            });
 
             // Load the image asynchonously
             Picasso.With (_context).Load (video.ImageUrl).Into (wrapper.Backdrop);

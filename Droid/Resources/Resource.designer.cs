@@ -2775,11 +2775,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a008b
 			public const int videoDescriptionTextView = 2131361931;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int videoLengthTextView = 2131361970;
+			// aapt resource value: 0x7f0a00b1
+			public const int videoLengthTextView = 2131361969;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int videoLikesDiffTextView = 2131361971;
+			// aapt resource value: 0x7f0a00b2
+			public const int videoLikesDiffTextView = 2131361970;
 			
 			// aapt resource value: 0x7f0a008a
 			public const int videoMetadataTextView = 2131361930;
@@ -2787,11 +2787,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0089
 			public const int videoNameTextView = 2131361929;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int videoTagsTextView = 2131361969;
-			
 			// aapt resource value: 0x7f0a00b4
-			public const int videoWatchCountTextView = 2131361972;
+			public const int videoTagsTextView = 2131361972;
+			
+			// aapt resource value: 0x7f0a00b3
+			public const int videoWatchCountTextView = 2131361971;
 			
 			// aapt resource value: 0x7f0a008f
 			public const int videosListView = 2131361935;
