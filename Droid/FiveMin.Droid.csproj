@@ -149,6 +149,7 @@
     <Compile Include="Helpers\SQLiteHelper.cs" />
     <Compile Include="Helpers\VideoHelper.cs" />
     <Compile Include="Fragments\SearchResultsFragment.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -283,6 +284,8 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_thumb_up_black_24dp.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_timer_black_24dp.png" />
     <AndroidResource Include="Resources\layout\search_results_fragment.axml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\background_splash.xml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

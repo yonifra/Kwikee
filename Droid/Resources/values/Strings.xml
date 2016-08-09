@@ -22,6 +22,8 @@
 
 	<string name="no_internet_message">No internet connection!</string>
 	<string name="error_player">Could not play video</string>
+	<string name="loading_categories">Loading categories...</string>
+	<string name="no_videos">There are no videos :(</string>
 
 	<!-- FRAGMENT TITLES -->
 	<string name="fragment_title_trending">Trending Videos</string>

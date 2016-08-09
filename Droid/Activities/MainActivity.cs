@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using Android.Content;
-using Android.Content.PM;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -11,7 +10,7 @@ using FiveMin.Droid.Fragments;
 
 namespace FiveMin.Droid.Activities
 {
-    [Activity (Label = "Kwikee", LaunchMode = LaunchMode.SingleTop, MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity (Label = "Kwikee")]
     public class MainActivity : BaseActivity
     {
         private NavigationView _navigationView;
