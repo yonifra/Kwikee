@@ -3,7 +3,6 @@
 	<item android:title="Personalized" android:id="@+id/nav_personalizedGroup">
 		<menu>
 			<item android:id="@+id/nav_profile" android:title="My profile" android:icon="@mipmap/ic_person_black_48dp" />
-			<item android:id="@+id/nav_favs" android:title="My favorites" android:icon="@mipmap/ic_star_black_48dp" />
 		</menu>
 	</item>
 	

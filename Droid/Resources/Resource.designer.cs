@@ -2280,8 +2280,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0044
 			public const int action_mode_close_button = 2131361860;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int action_search = 2131361982;
+			// aapt resource value: 0x7f0a00bd
+			public const int action_search = 2131361981;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int activity_chooser_view_content = 2131361861;
@@ -2505,8 +2505,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00a2
 			public const int media_actions = 2131361954;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int menu_item_share = 2131361983;
+			// aapt resource value: 0x7f0a00be
+			public const int menu_item_share = 2131361982;
 			
 			// aapt resource value: 0x7f0a0034
 			public const int middle = 2131361844;
@@ -2517,23 +2517,20 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002e
 			public const int multiply = 2131361838;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int nav_about = 2131361981;
-			
-			// aapt resource value: 0x7f0a00b8
-			public const int nav_categories = 2131361976;
-			
-			// aapt resource value: 0x7f0a00bb
-			public const int nav_crossAppGroup = 2131361979;
-			
-			// aapt resource value: 0x7f0a00ba
-			public const int nav_endingSoon = 2131361978;
+			// aapt resource value: 0x7f0a00bc
+			public const int nav_about = 2131361980;
 			
 			// aapt resource value: 0x7f0a00b7
-			public const int nav_favs = 2131361975;
+			public const int nav_categories = 2131361975;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int nav_logoutLogin = 2131361980;
+			// aapt resource value: 0x7f0a00ba
+			public const int nav_crossAppGroup = 2131361978;
+			
+			// aapt resource value: 0x7f0a00b9
+			public const int nav_endingSoon = 2131361977;
+			
+			// aapt resource value: 0x7f0a00bb
+			public const int nav_logoutLogin = 2131361979;
 			
 			// aapt resource value: 0x7f0a00b5
 			public const int nav_personalizedGroup = 2131361973;
@@ -2541,8 +2538,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00b6
 			public const int nav_profile = 2131361974;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int nav_trending = 2131361977;
+			// aapt resource value: 0x7f0a00b8
+			public const int nav_trending = 2131361976;
 			
 			// aapt resource value: 0x7f0a009e
 			public const int nav_view = 2131361950;
@@ -2988,64 +2985,67 @@ namespace FiveMin.Droid
 			public const int fragment_categories = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int fragment_videoPage = 2130968618;
+			public const int fragment_profile = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int fragment_videos = 2130968619;
+			public const int fragment_videoPage = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int login_fragment = 2130968620;
+			public const int fragment_videos = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int Main = 2130968621;
+			public const int login_fragment = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_media_action = 2130968622;
+			public const int Main = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_media_cancel_action = 2130968623;
+			public const int notification_media_action = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_template_big_media = 2130968624;
+			public const int notification_media_cancel_action = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_template_big_media_narrow = 2130968625;
+			public const int notification_template_big_media = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_lines = 2130968626;
+			public const int notification_template_big_media_narrow = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_media = 2130968627;
+			public const int notification_template_lines = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_part_chronometer = 2130968628;
+			public const int notification_template_media = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_part_time = 2130968629;
+			public const int notification_template_part_chronometer = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int search_results_fragment = 2130968630;
+			public const int notification_template_part_time = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int select_dialog_item_material = 2130968631;
+			public const int search_results_fragment = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int select_dialog_multichoice_material = 2130968632;
+			public const int select_dialog_item_material = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_singlechoice_material = 2130968633;
+			public const int select_dialog_multichoice_material = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int support_simple_spinner_dropdown_item = 2130968634;
+			public const int select_dialog_singlechoice_material = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int toolbar = 2130968635;
+			public const int support_simple_spinner_dropdown_item = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int trending_fragment = 2130968636;
+			public const int toolbar = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int VideoListItemLayout = 2130968637;
+			public const int trending_fragment = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int VideoListItemLayout = 2130968638;
 			
 			static Layout()
 			{
@@ -3323,32 +3323,32 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int error_player = 2131427395;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int fragment_title_about = 2131427401;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int fragment_title_categories = 2131427400;
-			
 			// aapt resource value: 0x7f0b004a
-			public const int fragment_title_login = 2131427402;
+			public const int fragment_title_about = 2131427402;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int fragment_title_my_profile = 2131427405;
-			
-			// aapt resource value: 0x7f0b0047
-			public const int fragment_title_newest = 2131427399;
-			
-			// aapt resource value: 0x7f0b004c
-			public const int fragment_title_search_results = 2131427404;
-			
-			// aapt resource value: 0x7f0b0046
-			public const int fragment_title_trending = 2131427398;
+			// aapt resource value: 0x7f0b0049
+			public const int fragment_title_categories = 2131427401;
 			
 			// aapt resource value: 0x7f0b004b
-			public const int fragment_title_videos = 2131427403;
+			public const int fragment_title_login = 2131427403;
 			
 			// aapt resource value: 0x7f0b004e
-			public const int fragment_title_videos_category = 2131427406;
+			public const int fragment_title_my_profile = 2131427406;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int fragment_title_newest = 2131427400;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int fragment_title_search_results = 2131427405;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int fragment_title_trending = 2131427399;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int fragment_title_videos = 2131427404;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int fragment_title_videos_category = 2131427407;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int loading_categories = 2131427396;
@@ -3358,6 +3358,9 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f0b0045
 			public const int no_videos = 2131427397;
+			
+			// aapt resource value: 0x7f0b0046
+			public const int no_videos_found = 2131427398;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int play_services_error_fmt = 2131427386;

@@ -126,6 +126,9 @@
     <Reference Include="SQLitePCL.batteries">
       <HintPath>..\packages\SQLitePCL.bundle_green.0.9.3\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
     </Reference>
+    <Reference Include="RoundedImageView">
+      <HintPath>..\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -150,6 +153,7 @@
     <Compile Include="Helpers\VideoHelper.cs" />
     <Compile Include="Fragments\SearchResultsFragment.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
+    <Compile Include="Fragments\ProfileFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -286,6 +290,7 @@
     <AndroidResource Include="Resources\layout\search_results_fragment.axml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\drawable\background_splash.xml" />
+    <AndroidResource Include="Resources\layout\fragment_profile.axml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -319,6 +324,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="sqlite-net">
       <Version>1.0.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="RoundedImageView">
+      <Version>2.2.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

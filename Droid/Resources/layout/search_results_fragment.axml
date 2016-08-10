@@ -7,12 +7,14 @@
         android:id="@+id/searchResultsListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
         android:visibility="invisible" />
     <TextView
         android:id="@+id/noVideosFoundMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="No videos found :q"
+        android:text="@string/no_videos_found"
         android:visibility="visible" />
 </FrameLayout>

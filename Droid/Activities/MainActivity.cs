@@ -109,6 +109,9 @@ namespace FiveMin.Droid.Activities
             // replace the fragment with the corresponding fragment
             switch (itemId)
             {
+            case Resource.Id.nav_profile:
+                _prevFragment = new ProfileFragment ();
+                break;
             case Resource.Id.nav_categories:
                 _prevFragment = new CategoriesFragment ();
                 break;
