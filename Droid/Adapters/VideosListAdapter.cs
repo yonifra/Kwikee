@@ -62,7 +62,7 @@ namespace FiveMin.Droid.Adapters
 
             wrapper.Backdrop.SetBackgroundResource (Resource.Color.button_material_light);
             wrapper.Name.Text = video.Name;
-            wrapper.Description.Text = StringHelper.TrimText(video.Description, 140);
+            wrapper.Description.Text = StringHelper.TrimText(video.Description, 100);
             wrapper.Tags.Text = StringHelper.TagsFormatter (video.Keywords);
             wrapper.Length.Text = StringHelper.TimeSpanFormatter (video.Length);
             wrapper.WatchCount.Text = video.WatchCount.ToString ("N0");
