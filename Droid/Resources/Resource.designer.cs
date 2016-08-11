@@ -535,23 +535,23 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f01001e
 			public const int fabSize = 2130771998;
 			
-			// aapt resource value: 0x7f01012d
-			public const int fab_colorDisabled = 2130772269;
+			// aapt resource value: 0x7f010139
+			public const int fab_colorDisabled = 2130772281;
 			
-			// aapt resource value: 0x7f01012c
-			public const int fab_colorNormal = 2130772268;
+			// aapt resource value: 0x7f010138
+			public const int fab_colorNormal = 2130772280;
 			
-			// aapt resource value: 0x7f01012b
-			public const int fab_colorPressed = 2130772267;
+			// aapt resource value: 0x7f010137
+			public const int fab_colorPressed = 2130772279;
 			
-			// aapt resource value: 0x7f01012e
-			public const int fab_colorRipple = 2130772270;
+			// aapt resource value: 0x7f01013a
+			public const int fab_colorRipple = 2130772282;
 			
-			// aapt resource value: 0x7f01012f
-			public const int fab_shadow = 2130772271;
+			// aapt resource value: 0x7f01013b
+			public const int fab_shadow = 2130772283;
 			
-			// aapt resource value: 0x7f010130
-			public const int fab_size = 2130772272;
+			// aapt resource value: 0x7f01013c
+			public const int fab_size = 2130772284;
 			
 			// aapt resource value: 0x7f010022
 			public const int foregroundInsidePadding = 2130772002;
@@ -783,6 +783,42 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f01001d
 			public const int rippleColor = 2130771997;
+			
+			// aapt resource value: 0x7f010131
+			public const int riv_border_color = 2130772273;
+			
+			// aapt resource value: 0x7f010130
+			public const int riv_border_width = 2130772272;
+			
+			// aapt resource value: 0x7f01012b
+			public const int riv_corner_radius = 2130772267;
+			
+			// aapt resource value: 0x7f01012e
+			public const int riv_corner_radius_bottom_left = 2130772270;
+			
+			// aapt resource value: 0x7f01012f
+			public const int riv_corner_radius_bottom_right = 2130772271;
+			
+			// aapt resource value: 0x7f01012c
+			public const int riv_corner_radius_top_left = 2130772268;
+			
+			// aapt resource value: 0x7f01012d
+			public const int riv_corner_radius_top_right = 2130772269;
+			
+			// aapt resource value: 0x7f010132
+			public const int riv_mutate_background = 2130772274;
+			
+			// aapt resource value: 0x7f010133
+			public const int riv_oval = 2130772275;
+			
+			// aapt resource value: 0x7f010134
+			public const int riv_tile_mode = 2130772276;
+			
+			// aapt resource value: 0x7f010135
+			public const int riv_tile_mode_x = 2130772277;
+			
+			// aapt resource value: 0x7f010136
+			public const int riv_tile_mode_y = 2130772278;
 			
 			// aapt resource value: 0x7f010127
 			public const int scopeUris = 2130772263;
@@ -2190,37 +2226,40 @@ namespace FiveMin.Droid
 			public const int fab_shadow_mini = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_plusone_medium_off_client = 2130837627;
+			public const int ic_arrow_forward_24dp = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_plusone_small_off_client = 2130837628;
+			public const int ic_plusone_medium_off_client = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_plusone_standard_off_client = 2130837629;
+			public const int ic_plusone_small_off_client = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_plusone_tall_off_client = 2130837630;
+			public const int ic_plusone_standard_off_client = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_share_white = 2130837631;
+			public const int ic_plusone_tall_off_client = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_thumbs_up = 2130837632;
+			public const int ic_share_white = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int logo = 2130837633;
+			public const int ic_thumbs_up = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int menu = 2130837634;
+			public const int logo = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int nav_header_background = 2130837635;
-			
-			// aapt resource value: 0x7f020085
-			public const int notification_template_icon_bg = 2130837637;
+			public const int menu = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int splash = 2130837636;
+			public const int nav_header_background = 2130837636;
+			
+			// aapt resource value: 0x7f020086
+			public const int notification_template_icon_bg = 2130837638;
+			
+			// aapt resource value: 0x7f020085
+			public const int splash = 2130837637;
 			
 			static Drawable()
 			{
@@ -2235,35 +2274,35 @@ namespace FiveMin.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a009f
-			public const int action0 = 2131361951;
+			// aapt resource value: 0x7f0a00a2
+			public const int action0 = 2131361954;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int action_bar = 2131361890;
+			// aapt resource value: 0x7f0a0065
+			public const int action_bar = 2131361893;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int action_bar_activity_content = 2131361793;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int action_bar_container = 2131361889;
+			// aapt resource value: 0x7f0a0064
+			public const int action_bar_container = 2131361892;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int action_bar_root = 2131361885;
+			// aapt resource value: 0x7f0a0060
+			public const int action_bar_root = 2131361888;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int action_bar_spinner = 2131361794;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int action_bar_subtitle = 2131361859;
+			// aapt resource value: 0x7f0a0046
+			public const int action_bar_subtitle = 2131361862;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int action_bar_title = 2131361858;
+			// aapt resource value: 0x7f0a0045
+			public const int action_bar_title = 2131361861;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int action_context_bar = 2131361891;
+			// aapt resource value: 0x7f0a0066
+			public const int action_context_bar = 2131361894;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int action_divider = 2131361955;
+			// aapt resource value: 0x7f0a00a6
+			public const int action_divider = 2131361958;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2271,26 +2310,26 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0004
 			public const int action_menu_presenter = 2131361796;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int action_mode_bar = 2131361887;
+			// aapt resource value: 0x7f0a0062
+			public const int action_mode_bar = 2131361890;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int action_mode_bar_stub = 2131361886;
+			// aapt resource value: 0x7f0a0061
+			public const int action_mode_bar_stub = 2131361889;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int action_mode_close_button = 2131361860;
+			// aapt resource value: 0x7f0a0047
+			public const int action_mode_close_button = 2131361863;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int action_search = 2131361981;
+			// aapt resource value: 0x7f0a00c0
+			public const int action_search = 2131361984;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int activity_chooser_view_content = 2131361861;
+			// aapt resource value: 0x7f0a0048
+			public const int activity_chooser_view_content = 2131361864;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int addToFavorite = 2131361933;
+			// aapt resource value: 0x7f0a0090
+			public const int addToFavorite = 2131361936;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int addToWatchListButton = 2131361925;
+			// aapt resource value: 0x7f0a0088
+			public const int addToWatchListButton = 2131361928;
 			
 			// aapt resource value: 0x7f0a0040
 			public const int adjust_height = 2131361856;
@@ -2298,8 +2337,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0041
 			public const int adjust_width = 2131361857;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int alertTitle = 2131361873;
+			// aapt resource value: 0x7f0a0054
+			public const int alertTitle = 2131361876;
 			
 			// aapt resource value: 0x7f0a0035
 			public const int always = 2131361845;
@@ -2313,26 +2352,26 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0013
 			public const int bottom = 2131361811;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int buttonPanel = 2131361868;
+			// aapt resource value: 0x7f0a004f
+			public const int buttonPanel = 2131361871;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int cancel_action = 2131361952;
-			
-			// aapt resource value: 0x7f0a0071
-			public const int catBackdropImageView = 2131361905;
-			
-			// aapt resource value: 0x7f0a0073
-			public const int catDescriptionTextView = 2131361907;
-			
-			// aapt resource value: 0x7f0a0072
-			public const int catNameTextView = 2131361906;
+			// aapt resource value: 0x7f0a00a3
+			public const int cancel_action = 2131361955;
 			
 			// aapt resource value: 0x7f0a0074
-			public const int catTagsTextView = 2131361908;
+			public const int catBackdropImageView = 2131361908;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int categoriesListView = 2131361920;
+			// aapt resource value: 0x7f0a0076
+			public const int catDescriptionTextView = 2131361910;
+			
+			// aapt resource value: 0x7f0a0075
+			public const int catNameTextView = 2131361909;
+			
+			// aapt resource value: 0x7f0a0077
+			public const int catTagsTextView = 2131361911;
+			
+			// aapt resource value: 0x7f0a0083
+			public const int categoriesListView = 2131361923;
 			
 			// aapt resource value: 0x7f0a0014
 			public const int center = 2131361812;
@@ -2343,11 +2382,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0016
 			public const int center_vertical = 2131361814;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int checkbox = 2131361882;
+			// aapt resource value: 0x7f0a005d
+			public const int checkbox = 2131361885;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int chronometer = 2131361958;
+			// aapt resource value: 0x7f0a00a9
+			public const int chronometer = 2131361961;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int clamp = 2131361858;
 			
 			// aapt resource value: 0x7f0a001d
 			public const int clip_horizontal = 2131361821;
@@ -2358,68 +2400,68 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0036
 			public const int collapseActionView = 2131361846;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int contentPanel = 2131361874;
+			// aapt resource value: 0x7f0a0055
+			public const int contentPanel = 2131361877;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int content_frame = 2131361949;
+			// aapt resource value: 0x7f0a00a0
+			public const int content_frame = 2131361952;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int custom = 2131361880;
+			// aapt resource value: 0x7f0a005b
+			public const int custom = 2131361883;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int customPanel = 2131361879;
+			// aapt resource value: 0x7f0a005a
+			public const int customPanel = 2131361882;
 			
 			// aapt resource value: 0x7f0a003e
 			public const int dark = 2131361854;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int decor_content_parent = 2131361888;
+			// aapt resource value: 0x7f0a0063
+			public const int decor_content_parent = 2131361891;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int default_activity_button = 2131361864;
+			// aapt resource value: 0x7f0a004b
+			public const int default_activity_button = 2131361867;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int design_bottom_sheet = 2131361910;
+			// aapt resource value: 0x7f0a0079
+			public const int design_bottom_sheet = 2131361913;
+			
+			// aapt resource value: 0x7f0a0080
+			public const int design_menu_item_action_area = 2131361920;
+			
+			// aapt resource value: 0x7f0a007f
+			public const int design_menu_item_action_area_stub = 2131361919;
+			
+			// aapt resource value: 0x7f0a007e
+			public const int design_menu_item_text = 2131361918;
 			
 			// aapt resource value: 0x7f0a007d
-			public const int design_menu_item_action_area = 2131361917;
-			
-			// aapt resource value: 0x7f0a007c
-			public const int design_menu_item_action_area_stub = 2131361916;
-			
-			// aapt resource value: 0x7f0a007b
-			public const int design_menu_item_text = 2131361915;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int design_navigation_view = 2131361914;
+			public const int design_navigation_view = 2131361917;
 			
 			// aapt resource value: 0x7f0a0027
 			public const int disableHome = 2131361831;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int disconnect_button = 2131361944;
+			// aapt resource value: 0x7f0a009b
+			public const int disconnect_button = 2131361947;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int dislikeButton = 2131361928;
+			// aapt resource value: 0x7f0a008b
+			public const int dislikeButton = 2131361931;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int drawer_layout = 2131361946;
+			// aapt resource value: 0x7f0a009d
+			public const int drawer_layout = 2131361949;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int editTextPassword = 2131361938;
+			// aapt resource value: 0x7f0a0095
+			public const int editTextPassword = 2131361941;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int editTextUsername = 2131361937;
+			// aapt resource value: 0x7f0a0094
+			public const int editTextUsername = 2131361940;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int edit_query = 2131361892;
+			// aapt resource value: 0x7f0a0067
+			public const int edit_query = 2131361895;
 			
 			// aapt resource value: 0x7f0a0017
 			public const int end = 2131361815;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int end_padder = 2131361963;
+			// aapt resource value: 0x7f0a00ae
+			public const int end_padder = 2131361966;
 			
 			// aapt resource value: 0x7f0a000b
 			public const int enterAlways = 2131361803;
@@ -2430,11 +2472,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a000d
 			public const int exitUntilCollapsed = 2131361805;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int expand_activities_button = 2131361862;
+			// aapt resource value: 0x7f0a0049
+			public const int expand_activities_button = 2131361865;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int expanded_menu = 2131361881;
+			// aapt resource value: 0x7f0a005c
+			public const int expanded_menu = 2131361884;
 			
 			// aapt resource value: 0x7f0a001f
 			public const int fill = 2131361823;
@@ -2454,8 +2496,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0028
 			public const int homeAsUp = 2131361832;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int icon = 2131361866;
+			// aapt resource value: 0x7f0a004d
+			public const int icon = 2131361869;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int icon_only = 2131361850;
@@ -2463,11 +2505,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0037
 			public const int ifRoom = 2131361847;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int image = 2131361863;
+			// aapt resource value: 0x7f0a004a
+			public const int image = 2131361866;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int info = 2131361962;
+			// aapt resource value: 0x7f0a00ad
+			public const int info = 2131361965;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int item_touch_helper_previous_elevation = 2131361802;
@@ -2478,35 +2520,35 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a003f
 			public const int light = 2131361855;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int likeButton = 2131361927;
+			// aapt resource value: 0x7f0a008a
+			public const int likeButton = 2131361930;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int line1 = 2131361956;
+			// aapt resource value: 0x7f0a00a7
+			public const int line1 = 2131361959;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int line3 = 2131361960;
+			// aapt resource value: 0x7f0a00ab
+			public const int line3 = 2131361963;
 			
 			// aapt resource value: 0x7f0a0025
 			public const int listMode = 2131361829;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int list_item = 2131361865;
+			// aapt resource value: 0x7f0a004c
+			public const int list_item = 2131361868;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int loadingVideoProgressBar = 2131361932;
+			// aapt resource value: 0x7f0a008f
+			public const int loadingVideoProgressBar = 2131361935;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int loginButton = 2131361939;
+			// aapt resource value: 0x7f0a0096
+			public const int loginButton = 2131361942;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int mainVideoLayout = 2131361923;
+			// aapt resource value: 0x7f0a0086
+			public const int mainVideoLayout = 2131361926;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int media_actions = 2131361954;
+			// aapt resource value: 0x7f0a00a5
+			public const int media_actions = 2131361957;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int menu_item_share = 2131361982;
+			// aapt resource value: 0x7f0a00c1
+			public const int menu_item_share = 2131361985;
 			
 			// aapt resource value: 0x7f0a0034
 			public const int middle = 2131361844;
@@ -2514,56 +2556,59 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0021
 			public const int mini = 2131361825;
 			
+			// aapt resource value: 0x7f0a0043
+			public const int mirror = 2131361859;
+			
 			// aapt resource value: 0x7f0a002e
 			public const int multiply = 2131361838;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int nav_about = 2131361980;
-			
-			// aapt resource value: 0x7f0a00b7
-			public const int nav_categories = 2131361975;
+			// aapt resource value: 0x7f0a00bf
+			public const int nav_about = 2131361983;
 			
 			// aapt resource value: 0x7f0a00ba
-			public const int nav_crossAppGroup = 2131361978;
+			public const int nav_categories = 2131361978;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int nav_endingSoon = 2131361977;
+			// aapt resource value: 0x7f0a00bd
+			public const int nav_crossAppGroup = 2131361981;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int nav_logoutLogin = 2131361979;
+			// aapt resource value: 0x7f0a00bc
+			public const int nav_endingSoon = 2131361980;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int nav_personalizedGroup = 2131361973;
-			
-			// aapt resource value: 0x7f0a00b6
-			public const int nav_profile = 2131361974;
+			// aapt resource value: 0x7f0a00be
+			public const int nav_logoutLogin = 2131361982;
 			
 			// aapt resource value: 0x7f0a00b8
-			public const int nav_trending = 2131361976;
+			public const int nav_personalizedGroup = 2131361976;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int nav_view = 2131361950;
+			// aapt resource value: 0x7f0a00b9
+			public const int nav_profile = 2131361977;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int navigation_header_container = 2131361913;
+			// aapt resource value: 0x7f0a00bb
+			public const int nav_trending = 2131361979;
+			
+			// aapt resource value: 0x7f0a00a1
+			public const int nav_view = 2131361953;
+			
+			// aapt resource value: 0x7f0a007c
+			public const int navigation_header_container = 2131361916;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int never = 2131361848;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int newestVideosListView = 2131361918;
-			
 			// aapt resource value: 0x7f0a0081
-			public const int noCategoriesMessage = 2131361921;
+			public const int newestVideosListView = 2131361921;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int noTrendingCompetitionsMessage = 2131361967;
+			// aapt resource value: 0x7f0a0084
+			public const int noCategoriesMessage = 2131361924;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int noVideosFoundMessage = 2131361965;
+			// aapt resource value: 0x7f0a00b2
+			public const int noTrendingCompetitionsMessage = 2131361970;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int noVideosMessageTextView = 2131361919;
+			// aapt resource value: 0x7f0a00b0
+			public const int noVideosFoundMessage = 2131361968;
+			
+			// aapt resource value: 0x7f0a0082
+			public const int noVideosMessageTextView = 2131361922;
 			
 			// aapt resource value: 0x7f0a0010
 			public const int none = 2131361808;
@@ -2574,11 +2619,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0011
 			public const int parallax = 2131361809;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int parentLayout = 2131361922;
+			// aapt resource value: 0x7f0a0085
+			public const int parentLayout = 2131361925;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int parentPanel = 2131361870;
+			// aapt resource value: 0x7f0a0051
+			public const int parentPanel = 2131361873;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int pin = 2131361810;
@@ -2589,11 +2634,14 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0007
 			public const int progress_horizontal = 2131361799;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int radio = 2131361884;
+			// aapt resource value: 0x7f0a005f
+			public const int radio = 2131361887;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int registerButton = 2131361940;
+			// aapt resource value: 0x7f0a0097
+			public const int registerButton = 2131361943;
+			
+			// aapt resource value: 0x7f0a0044
+			public const int repeat = 2131361860;
 			
 			// aapt resource value: 0x7f0a001a
 			public const int right = 2131361818;
@@ -2604,59 +2652,59 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a000e
 			public const int scroll = 2131361806;
 			
+			// aapt resource value: 0x7f0a0059
+			public const int scrollIndicatorDown = 2131361881;
+			
 			// aapt resource value: 0x7f0a0056
-			public const int scrollIndicatorDown = 2131361878;
+			public const int scrollIndicatorUp = 2131361878;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int scrollIndicatorUp = 2131361875;
-			
-			// aapt resource value: 0x7f0a0054
-			public const int scrollView = 2131361876;
+			// aapt resource value: 0x7f0a0057
+			public const int scrollView = 2131361879;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int scrollable = 2131361828;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int searchResultsListView = 2131361964;
-			
-			// aapt resource value: 0x7f0a0066
-			public const int search_badge = 2131361894;
-			
-			// aapt resource value: 0x7f0a0065
-			public const int search_bar = 2131361893;
-			
-			// aapt resource value: 0x7f0a0067
-			public const int search_button = 2131361895;
-			
-			// aapt resource value: 0x7f0a006c
-			public const int search_close_btn = 2131361900;
-			
-			// aapt resource value: 0x7f0a0068
-			public const int search_edit_frame = 2131361896;
-			
-			// aapt resource value: 0x7f0a006e
-			public const int search_go_btn = 2131361902;
+			// aapt resource value: 0x7f0a00af
+			public const int searchResultsListView = 2131361967;
 			
 			// aapt resource value: 0x7f0a0069
-			public const int search_mag_icon = 2131361897;
+			public const int search_badge = 2131361897;
+			
+			// aapt resource value: 0x7f0a0068
+			public const int search_bar = 2131361896;
 			
 			// aapt resource value: 0x7f0a006a
-			public const int search_plate = 2131361898;
-			
-			// aapt resource value: 0x7f0a006b
-			public const int search_src_text = 2131361899;
+			public const int search_button = 2131361898;
 			
 			// aapt resource value: 0x7f0a006f
-			public const int search_voice_btn = 2131361903;
+			public const int search_close_btn = 2131361903;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int select_dialog_listview = 2131361904;
+			// aapt resource value: 0x7f0a006b
+			public const int search_edit_frame = 2131361899;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int shareButton = 2131361926;
+			// aapt resource value: 0x7f0a0071
+			public const int search_go_btn = 2131361905;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int shortcut = 2131361883;
+			// aapt resource value: 0x7f0a006c
+			public const int search_mag_icon = 2131361900;
+			
+			// aapt resource value: 0x7f0a006d
+			public const int search_plate = 2131361901;
+			
+			// aapt resource value: 0x7f0a006e
+			public const int search_src_text = 2131361902;
+			
+			// aapt resource value: 0x7f0a0072
+			public const int search_voice_btn = 2131361906;
+			
+			// aapt resource value: 0x7f0a0073
+			public const int select_dialog_listview = 2131361907;
+			
+			// aapt resource value: 0x7f0a0089
+			public const int shareButton = 2131361929;
+			
+			// aapt resource value: 0x7f0a005e
+			public const int shortcut = 2131361886;
 			
 			// aapt resource value: 0x7f0a0029
 			public const int showCustom = 2131361833;
@@ -2667,26 +2715,26 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002b
 			public const int showTitle = 2131361835;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int sign_in_button = 2131361941;
+			// aapt resource value: 0x7f0a0098
+			public const int sign_in_button = 2131361944;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int sign_out_and_disconnect = 2131361942;
+			// aapt resource value: 0x7f0a0099
+			public const int sign_out_and_disconnect = 2131361945;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int sign_out_button = 2131361943;
+			// aapt resource value: 0x7f0a009a
+			public const int sign_out_button = 2131361946;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int snackbar_action = 2131361912;
+			// aapt resource value: 0x7f0a007b
+			public const int snackbar_action = 2131361915;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int snackbar_text = 2131361911;
+			// aapt resource value: 0x7f0a007a
+			public const int snackbar_text = 2131361914;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int snap = 2131361807;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int spacer = 2131361869;
+			// aapt resource value: 0x7f0a0050
+			public const int spacer = 2131361872;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int split_action_bar = 2131361800;
@@ -2706,59 +2754,59 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a001b
 			public const int start = 2131361819;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int status = 2131361945;
+			// aapt resource value: 0x7f0a009c
+			public const int status = 2131361948;
 			
-			// aapt resource value: 0x7f0a00a1
-			public const int status_bar_latest_event_content = 2131361953;
+			// aapt resource value: 0x7f0a00a4
+			public const int status_bar_latest_event_content = 2131361956;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int submit_area = 2131361901;
+			// aapt resource value: 0x7f0a0070
+			public const int submit_area = 2131361904;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int swipeRefreshLayout = 2131361934;
+			// aapt resource value: 0x7f0a0091
+			public const int swipeRefreshLayout = 2131361937;
 			
 			// aapt resource value: 0x7f0a0026
 			public const int tabMode = 2131361830;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int text = 2131361961;
+			// aapt resource value: 0x7f0a00ac
+			public const int text = 2131361964;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int text2 = 2131361959;
+			// aapt resource value: 0x7f0a00aa
+			public const int text2 = 2131361962;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int textSpacerNoButtons = 2131361877;
+			// aapt resource value: 0x7f0a0058
+			public const int textSpacerNoButtons = 2131361880;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int textView1 = 2131361936;
+			// aapt resource value: 0x7f0a0093
+			public const int textView1 = 2131361939;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int time = 2131361957;
+			// aapt resource value: 0x7f0a00a8
+			public const int time = 2131361960;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int title = 2131361867;
+			// aapt resource value: 0x7f0a004e
+			public const int title = 2131361870;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int title_template = 2131361872;
+			// aapt resource value: 0x7f0a0053
+			public const int title_template = 2131361875;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int toolbar = 2131361948;
+			// aapt resource value: 0x7f0a009f
+			public const int toolbar = 2131361951;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int toolbar_layout = 2131361947;
+			// aapt resource value: 0x7f0a009e
+			public const int toolbar_layout = 2131361950;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int top = 2131361820;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int topPanel = 2131361871;
+			// aapt resource value: 0x7f0a0052
+			public const int topPanel = 2131361874;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int touch_outside = 2131361909;
+			// aapt resource value: 0x7f0a0078
+			public const int touch_outside = 2131361912;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int trendingCompetitionsListView = 2131361966;
+			// aapt resource value: 0x7f0a00b1
+			public const int trendingCompetitionsListView = 2131361969;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int up = 2131361801;
@@ -2766,32 +2814,32 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002c
 			public const int useLogo = 2131361836;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int videoBackdropImageView = 2131361968;
+			// aapt resource value: 0x7f0a00b3
+			public const int videoBackdropImageView = 2131361971;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int videoDescriptionTextView = 2131361931;
-			
-			// aapt resource value: 0x7f0a00b1
-			public const int videoLengthTextView = 2131361969;
-			
-			// aapt resource value: 0x7f0a00b2
-			public const int videoLikesDiffTextView = 2131361970;
-			
-			// aapt resource value: 0x7f0a008a
-			public const int videoMetadataTextView = 2131361930;
-			
-			// aapt resource value: 0x7f0a0089
-			public const int videoNameTextView = 2131361929;
+			// aapt resource value: 0x7f0a008e
+			public const int videoDescriptionTextView = 2131361934;
 			
 			// aapt resource value: 0x7f0a00b4
-			public const int videoTagsTextView = 2131361972;
+			public const int videoLengthTextView = 2131361972;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int videoWatchCountTextView = 2131361971;
+			// aapt resource value: 0x7f0a00b5
+			public const int videoLikesDiffTextView = 2131361973;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int videosListView = 2131361935;
+			// aapt resource value: 0x7f0a008d
+			public const int videoMetadataTextView = 2131361933;
+			
+			// aapt resource value: 0x7f0a008c
+			public const int videoNameTextView = 2131361932;
+			
+			// aapt resource value: 0x7f0a00b7
+			public const int videoTagsTextView = 2131361975;
+			
+			// aapt resource value: 0x7f0a00b6
+			public const int videoWatchCountTextView = 2131361974;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int videosListView = 2131361938;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int view_offset_helper = 2131361792;
@@ -2805,8 +2853,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002d
 			public const int wrap_content = 2131361837;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int youtube_fragment = 2131361924;
+			// aapt resource value: 0x7f0a0087
+			public const int youtube_fragment = 2131361927;
 			
 			static Id()
 			{
@@ -3209,11 +3257,11 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0015
 			public const int abc_toolbar_collapse_description = 2131427349;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int app_name = 2131427382;
+			// aapt resource value: 0x7f0b0040
+			public const int app_name = 2131427392;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int app_store_url = 2131427389;
+			// aapt resource value: 0x7f0b0047
+			public const int app_store_url = 2131427399;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int appbar_scrolling_view_behavior = 2131427328;
@@ -3317,77 +3365,107 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0032
 			public const int common_signin_button_text_long = 2131427378;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int disconnect = 2131427388;
-			
-			// aapt resource value: 0x7f0b0043
-			public const int error_player = 2131427395;
-			
-			// aapt resource value: 0x7f0b004a
-			public const int fragment_title_about = 2131427402;
-			
-			// aapt resource value: 0x7f0b0049
-			public const int fragment_title_categories = 2131427401;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int fragment_title_login = 2131427403;
-			
-			// aapt resource value: 0x7f0b004e
-			public const int fragment_title_my_profile = 2131427406;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int fragment_title_newest = 2131427400;
-			
-			// aapt resource value: 0x7f0b004d
-			public const int fragment_title_search_results = 2131427405;
-			
-			// aapt resource value: 0x7f0b0047
-			public const int fragment_title_trending = 2131427399;
-			
-			// aapt resource value: 0x7f0b004c
-			public const int fragment_title_videos = 2131427404;
-			
-			// aapt resource value: 0x7f0b004f
-			public const int fragment_title_videos_category = 2131427407;
-			
-			// aapt resource value: 0x7f0b0044
-			public const int loading_categories = 2131427396;
-			
-			// aapt resource value: 0x7f0b0042
-			public const int no_internet_message = 2131427394;
-			
-			// aapt resource value: 0x7f0b0045
-			public const int no_videos = 2131427397;
+			// aapt resource value: 0x7f0b0036
+			public const int define_roundedimageview = 2131427382;
 			
 			// aapt resource value: 0x7f0b0046
-			public const int no_videos_found = 2131427398;
+			public const int disconnect = 2131427398;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int play_services_error_fmt = 2131427386;
+			// aapt resource value: 0x7f0b004d
+			public const int error_player = 2131427405;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int share_competition_message_subject = 2131427392;
+			// aapt resource value: 0x7f0b0054
+			public const int fragment_title_about = 2131427412;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int share_competition_message_text = 2131427393;
+			// aapt resource value: 0x7f0b0053
+			public const int fragment_title_categories = 2131427411;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int share_global_message_subject = 2131427390;
+			// aapt resource value: 0x7f0b0055
+			public const int fragment_title_login = 2131427413;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int share_global_message_text = 2131427391;
+			// aapt resource value: 0x7f0b0058
+			public const int fragment_title_my_profile = 2131427416;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int sign_out = 2131427387;
+			// aapt resource value: 0x7f0b0052
+			public const int fragment_title_newest = 2131427410;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int fragment_title_search_results = 2131427415;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int fragment_title_trending = 2131427409;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int fragment_title_videos = 2131427414;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int fragment_title_videos_category = 2131427417;
 			
 			// aapt resource value: 0x7f0b0037
-			public const int signed_in_fmt = 2131427383;
-			
-			// aapt resource value: 0x7f0b0039
-			public const int signed_out = 2131427385;
+			public const int library_roundedimageview_author = 2131427383;
 			
 			// aapt resource value: 0x7f0b0038
-			public const int signing_in = 2131427384;
+			public const int library_roundedimageview_authorWebsite = 2131427384;
+			
+			// aapt resource value: 0x7f0b0039
+			public const int library_roundedimageview_isOpenSource = 2131427385;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int library_roundedimageview_libraryDescription = 2131427386;
+			
+			// aapt resource value: 0x7f0b003b
+			public const int library_roundedimageview_libraryName = 2131427387;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int library_roundedimageview_libraryVersion = 2131427388;
+			
+			// aapt resource value: 0x7f0b003d
+			public const int library_roundedimageview_libraryWebsite = 2131427389;
+			
+			// aapt resource value: 0x7f0b003e
+			public const int library_roundedimageview_licenseId = 2131427390;
+			
+			// aapt resource value: 0x7f0b003f
+			public const int library_roundedimageview_repositoryLink = 2131427391;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int loading_categories = 2131427406;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int no_internet_message = 2131427404;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int no_videos = 2131427407;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int no_videos_found = 2131427408;
+			
+			// aapt resource value: 0x7f0b0044
+			public const int play_services_error_fmt = 2131427396;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int share_competition_message_subject = 2131427402;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int share_competition_message_text = 2131427403;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int share_global_message_subject = 2131427400;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int share_global_message_text = 2131427401;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int sign_out = 2131427397;
+			
+			// aapt resource value: 0x7f0b0041
+			public const int signed_in_fmt = 2131427393;
+			
+			// aapt resource value: 0x7f0b0043
+			public const int signed_out = 2131427395;
+			
+			// aapt resource value: 0x7f0b0042
+			public const int signing_in = 2131427394;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int status_bar_notification_info_overflow = 2131427350;
@@ -4182,8 +4260,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f06010b
 			public const int Theme_AppCompat_NoActionBar = 2131099915;
 			
-			// aapt resource value: 0x7f06015f
-			public const int Theme_Custom = 2131099999;
+			// aapt resource value: 0x7f060160
+			public const int Theme_Custom = 2131100000;
 			
 			// aapt resource value: 0x7f06000a
 			public const int Theme_Design = 2131099658;
@@ -4217,6 +4295,9 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 0x7f060110
 			public const int ThemeOverlay_AppCompat_Light = 2131099920;
+			
+			// aapt resource value: 0x7f06015f
+			public const int ToolBarWithNavigationBack = 2131099999;
 			
 			// aapt resource value: 0x7f060111
 			public const int Widget_AppCompat_ActionBar = 2131099921;
@@ -5417,12 +5498,12 @@ namespace FiveMin.Droid
 					2130772063,
 					2130772244,
 					2130772245,
-					2130772267,
-					2130772268,
-					2130772269,
-					2130772270,
-					2130772271,
-					2130772272};
+					2130772279,
+					2130772280,
+					2130772281,
+					2130772282,
+					2130772283,
+					2130772284};
 			
 			// aapt resource value: 6
 			public const int FloatingActionButton_backgroundTint = 6;
@@ -5781,6 +5862,61 @@ namespace FiveMin.Droid
 			
 			// aapt resource value: 4
 			public const int RecyclerView_stackFromEnd = 4;
+			
+			public static int[] RoundedImageView = new int[]
+			{
+					16843037,
+					2130772267,
+					2130772268,
+					2130772269,
+					2130772270,
+					2130772271,
+					2130772272,
+					2130772273,
+					2130772274,
+					2130772275,
+					2130772276,
+					2130772277,
+					2130772278};
+			
+			// aapt resource value: 0
+			public const int RoundedImageView_android_scaleType = 0;
+			
+			// aapt resource value: 7
+			public const int RoundedImageView_riv_border_color = 7;
+			
+			// aapt resource value: 6
+			public const int RoundedImageView_riv_border_width = 6;
+			
+			// aapt resource value: 1
+			public const int RoundedImageView_riv_corner_radius = 1;
+			
+			// aapt resource value: 4
+			public const int RoundedImageView_riv_corner_radius_bottom_left = 4;
+			
+			// aapt resource value: 5
+			public const int RoundedImageView_riv_corner_radius_bottom_right = 5;
+			
+			// aapt resource value: 2
+			public const int RoundedImageView_riv_corner_radius_top_left = 2;
+			
+			// aapt resource value: 3
+			public const int RoundedImageView_riv_corner_radius_top_right = 3;
+			
+			// aapt resource value: 8
+			public const int RoundedImageView_riv_mutate_background = 8;
+			
+			// aapt resource value: 9
+			public const int RoundedImageView_riv_oval = 9;
+			
+			// aapt resource value: 10
+			public const int RoundedImageView_riv_tile_mode = 10;
+			
+			// aapt resource value: 11
+			public const int RoundedImageView_riv_tile_mode_x = 11;
+			
+			// aapt resource value: 12
+			public const int RoundedImageView_riv_tile_mode_y = 12;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[]
 			{

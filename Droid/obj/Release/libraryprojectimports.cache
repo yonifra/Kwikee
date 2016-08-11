@@ -7,6 +7,7 @@
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCLPlugin_esqlite3/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCL.raw/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCL.batteries/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/RoundedImageView/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Refractored.FloatingActionButton/library_project_imports/assets</ResolvedAssetDirectory>
@@ -14,6 +15,7 @@
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCLPlugin_esqlite3/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCL.raw/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCL.batteries/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/RoundedImageView/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -22,5 +24,6 @@
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCLPlugin_esqlite3.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCL.raw.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCL.batteries.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/RoundedImageView.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

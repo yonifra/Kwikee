@@ -166,3 +166,7 @@
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll.mdb
 /Users/yonifra/shortie/Droid/obj/Debug/res/layout/fragment_profile.xml
+/Users/yonifra/shortie/Droid/bin/Debug/RoundedImageView.dll
+/Users/yonifra/shortie/Droid/obj/Debug/res/drawable/material_flat.png
+/Users/yonifra/shortie/Droid/obj/Debug/res/drawable/user_avatar.png
+/Users/yonifra/shortie/Droid/obj/Debug/res/drawable/ic_arrow_forward_24dp.xml

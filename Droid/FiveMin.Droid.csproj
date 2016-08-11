@@ -291,6 +291,7 @@
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\drawable\background_splash.xml" />
     <AndroidResource Include="Resources\layout\fragment_profile.axml" />
+    <AndroidResource Include="Resources\drawable\ic_arrow_forward_24dp.xml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
