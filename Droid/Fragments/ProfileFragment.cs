@@ -23,10 +23,10 @@ namespace FiveMin.Droid.Fragments
 
         public override void OnAttach (Android.Content.Context context)
         {
-            base.OnAttach (context);
-            var toolbar = (context as BaseActivity)?.Toolbar;
+            //base.OnAttach (context);
+            //var toolbar = (context as BaseActivity)?.Toolbar;
 
-            toolbar?.SetTitle (Resource.String.fragment_title_my_profile);
+            //toolbar?.SetTitle (Resource.String.fragment_title_my_profile);
         }
     }
 }
