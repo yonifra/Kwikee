@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using GalaSoft.MvvmLight;
 
@@ -58,6 +58,5 @@ namespace FiveMin.WPF.ViewModels
         }
 
         public List<string> KeywordsFormatted => _keywordsFormatted; 
-        
     }
 }
