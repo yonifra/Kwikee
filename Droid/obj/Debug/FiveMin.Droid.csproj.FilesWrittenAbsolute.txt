@@ -129,6 +129,7 @@
 /Users/yonifra/shortie/Droid/obj/Debug/res/layout/search_results_fragment.xml
 /Users/yonifra/shortie/Droid/obj/Debug/res/drawable/splash.png
 /Users/yonifra/shortie/Droid/obj/Debug/res/drawable/background_splash.xml
+/Users/yonifra/shortie/Droid/obj/Debug/res/layout/fragment_profile.xml
 /Users/yonifra/shortie/Droid/obj/Debug/R.cs.flag
 /Users/yonifra/shortie/Droid/bin/Debug/com.cryptocodes.kwikee-Signed.apk
 /Users/yonifra/shortie/Droid/obj/Debug/uploadflags.txt
@@ -161,12 +162,8 @@
 /Users/yonifra/shortie/Droid/bin/Debug/SQLitePCLPlugin_esqlite3.dll
 /Users/yonifra/shortie/Droid/bin/Debug/SQLitePCL.raw.dll
 /Users/yonifra/shortie/Droid/bin/Debug/SQLitePCL.batteries.dll
+/Users/yonifra/shortie/Droid/bin/Debug/RoundedImageView.dll
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll.mdb
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll.mdb
-/Users/yonifra/shortie/Droid/obj/Debug/res/layout/fragment_profile.xml
-/Users/yonifra/shortie/Droid/bin/Debug/RoundedImageView.dll
-/Users/yonifra/shortie/Droid/obj/Debug/res/drawable/material_flat.png
-/Users/yonifra/shortie/Droid/obj/Debug/res/drawable/user_avatar.png
-/Users/yonifra/shortie/Droid/obj/Debug/res/drawable/ic_arrow_forward_24dp.xml

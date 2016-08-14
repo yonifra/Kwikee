@@ -2226,40 +2226,37 @@ namespace FiveMin.Droid
 			public const int fab_shadow_mini = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_arrow_forward_24dp = 2130837627;
+			public const int ic_plusone_medium_off_client = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_plusone_medium_off_client = 2130837628;
+			public const int ic_plusone_small_off_client = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_plusone_small_off_client = 2130837629;
+			public const int ic_plusone_standard_off_client = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_plusone_standard_off_client = 2130837630;
+			public const int ic_plusone_tall_off_client = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_plusone_tall_off_client = 2130837631;
+			public const int ic_share_white = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_share_white = 2130837632;
+			public const int ic_thumbs_up = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_thumbs_up = 2130837633;
+			public const int logo = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int logo = 2130837634;
+			public const int menu = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int menu = 2130837635;
-			
-			// aapt resource value: 0x7f020084
-			public const int nav_header_background = 2130837636;
-			
-			// aapt resource value: 0x7f020086
-			public const int notification_template_icon_bg = 2130837638;
+			public const int nav_header_background = 2130837635;
 			
 			// aapt resource value: 0x7f020085
-			public const int splash = 2130837637;
+			public const int notification_template_icon_bg = 2130837637;
+			
+			// aapt resource value: 0x7f020084
+			public const int splash = 2130837636;
 			
 			static Drawable()
 			{
