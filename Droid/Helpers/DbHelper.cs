@@ -7,23 +7,23 @@ using SQLite;
 
 namespace FiveMin.Droid.Helpers
 {
-    public class SQLiteHelper
+    public class DbHelper
     {
         private readonly string _path;
-        private SQLiteHelper _instance;
+        private DbHelper _instance;
 
         private const string SQL_HELPER_TAG = "SQL_HELPER";
-        private SQLiteHelper ()
+        private DbHelper ()
         {
             _path = Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData);
             CreateDatabase ();
         }
 
-        public SQLiteHelper Instance
+        public DbHelper Instance
         {
             get
             {
-                _instance = _instance ?? new SQLiteHelper ();
+                _instance = _instance ?? new DbHelper ();
                 return _instance;
             }
         }
