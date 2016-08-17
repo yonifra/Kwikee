@@ -12,7 +12,7 @@ namespace FiveMin.Droid.Helpers
         private readonly string _path;
         private DbHelper _instance;
 
-        private const string SQL_HELPER_TAG = "SQL_HELPER";
+        private const string TAG = "DB_HELPER";
         private DbHelper ()
         {
             _path = Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData);
@@ -38,7 +38,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
-                Log.Error("SQLiteHelper", ex.Message);
+                Log.Error(TAG, ex.Message);
             }
         }
 
@@ -53,7 +53,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
-                Log.Error (SQL_HELPER_TAG, ex.Message);
+                Log.Error (TAG, ex.Message);
                 return string.Empty;
             }
         }
@@ -73,7 +73,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
-                Log.Error (SQL_HELPER_TAG, ex.Message);
+                Log.Error (TAG, ex.Message);
                 return -1;
             }
         }
@@ -93,7 +93,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
-                Log.Error (SQL_HELPER_TAG, ex.Message);
+                Log.Error (TAG, ex.Message);
                 return new List<string>();
             }
         }
@@ -110,7 +110,7 @@ namespace FiveMin.Droid.Helpers
             }
             catch (SQLiteException ex)
             {
-                Log.Error (SQL_HELPER_TAG, ex.Message);
+                Log.Error (TAG, ex.Message);
                 return new List<string> ();
             }
         }
