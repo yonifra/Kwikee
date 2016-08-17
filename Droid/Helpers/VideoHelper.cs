@@ -16,6 +16,7 @@ namespace FiveMin.Droid.Helpers
             // Put the name of the selected category into the intent
             var intent = new Intent (view.Context, typeof (VideoActivity));
             intent.PutExtra ("VideoId", video.VideoId);
+            intent.PutExtra ("VideoKey", video.Key);
             intent.PutExtra ("VideoName", video.Name);
             intent.PutExtra ("VideoDescription", video.Description);
             intent.PutExtra ("WatchCount", video.WatchCount.ToString ("N0"));

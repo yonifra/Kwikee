@@ -149,11 +149,12 @@
     <Compile Include="Activities\YouTubeFailureRecoveryActivity.cs" />
     <Compile Include="DeveloperKey.cs" />
     <Compile Include="DataModel\UserVideo.cs" />
-    <Compile Include="Helpers\SQLiteHelper.cs" />
+    <Compile Include="Helpers\DbHelper.cs" />
     <Compile Include="Helpers\VideoHelper.cs" />
     <Compile Include="Fragments\SearchResultsFragment.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\ProfileFragment.cs" />
+    <Compile Include="Helpers\SharedPreferencesHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

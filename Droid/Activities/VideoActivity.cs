@@ -14,7 +14,10 @@ namespace FiveMin.Droid.Activities
     [Activity (Label = "Video")]
     public class VideoActivity : YouTubeFailureRecoveryActivity
     {
-        private string _videoId;
+        private string _videoYouTubeId;
+        private string _videoKey;  // The UID of the video (not YouTube ID)
+        private LinearLayout _mainLayout;
+
         protected override IYouTubePlayerProvider GetYouTubePlayerProvider ()
         {
             return FragmentManager.FindFragmentById<YouTubePlayerFragment> (Resource.Id.youtube_fragment);
@@ -26,7 +29,8 @@ namespace FiveMin.Droid.Activities
 
             SetContentView (Resource.Layout.fragment_videoPage);
 
-            _videoId = Intent.GetStringExtra  ("VideoId");
+            _videoYouTubeId = Intent.GetStringExtra  ("VideoId");
+            _videoKey = Intent.GetStringExtra ("VideoKey");
             var videoName = Intent.GetStringExtra  ("VideoName");
             var videoDescription = Intent.GetStringExtra  ("VideoDescription");
             var watchCount = Intent.GetStringExtra  ("WatchCount");
@@ -41,17 +45,19 @@ namespace FiveMin.Droid.Activities
             videoNameTextView.Text = videoName;
             descriptionTextView.Text = videoDescription;
 
-            var mainLayout = FindViewById<LinearLayout> (Resource.Id.mainVideoLayout);
+            _mainLayout = FindViewById<LinearLayout> (Resource.Id.mainVideoLayout);
             var progressBar = FindViewById<ProgressBar> (Resource.Id.loadingVideoProgressBar);
             var fab = FindViewById<FloatingActionButton> (Resource.Id.addToFavorite);
+
+            fab.Click += Fab_Click;
 
             var youTubePlayerFragment = FragmentManager.FindFragmentById<YouTubePlayerFragment> (Resource.Id.youtube_fragment);
             youTubePlayerFragment.Initialize (DeveloperKey.Key, this);
 
-            FontsHelper.ApplyTypeface (Assets, new List<TextView> { videoMetadata, videoNameTextView, descriptionTextView });
+           // FontsHelper.ApplyTypeface (Assets, new List<TextView> { videoMetadata, videoNameTextView, descriptionTextView });
 
             progressBar.Visibility = ViewStates.Invisible;
-            mainLayout.Visibility = ViewStates.Visible;
+            _mainLayout.Visibility = ViewStates.Visible;
             fab.Visibility = ViewStates.Visible;
         }
 
@@ -59,8 +65,15 @@ namespace FiveMin.Droid.Activities
         {
             if (!wasRestored)
             {
-                player.CueVideo (_videoId);
+                player.CueVideo (_videoYouTubeId);
             }
+        }
+
+        void Fab_Click (object sender, System.EventArgs e)
+        {
+            SharedPreferencesHelper.Instance.AddFavoriteVideo (_videoKey);
+
+            Snackbar.Make (_mainLayout, "Added to favorites", Snackbar.LengthLong).Show ();
         }
     }
 }

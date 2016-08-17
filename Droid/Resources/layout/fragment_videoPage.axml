@@ -59,36 +59,60 @@
                 android:scaleType="fitCenter"
                 android:layout_weight="1" />
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Video name"
-            android:textSize="24dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="3dp"
-            android:id="@+id/videoNameTextView" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="1 views, +12 likesdiff, 4:34 minutes"
-            android:textSize="14dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/videoMetadataTextView" />
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="10dp">
-            <TextView
+            android:layout_gravity="center_horizontal"
+            fab:cardElevation="2dp"
+            fab:cardCornerRadius="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Entity full description"
-                android:textSize="16dp"
-                android:id="@+id/videoDescriptionTextView" />
-        </ScrollView>
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:text="Video name"
+                    android:textSize="24dp"
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/videoNameTextView" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:text="1 views, +12 likesdiff, 4:34 minutes"
+                    android:textSize="14dp"
+                    android:id="@+id/videoMetadataTextView" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            fab:cardElevation="2dp"
+            fab:cardCornerRadius="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entity full description"
+                    android:textSize="14dp"
+                    android:id="@+id/videoDescriptionTextView" />
+            </ScrollView>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
     <ProgressBar
         android:id="@+id/loadingVideoProgressBar"

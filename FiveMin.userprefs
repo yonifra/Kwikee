@@ -1,49 +1,15 @@
 ﻿<Properties StartupItem="Droid/FiveMin.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.1.2-21/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/drawable/background_splash.xml">
     <Files>
-      <File FileName="Droid/Activities/YouTubeFailureRecoveryActivity.cs" Line="1" Column="1" />
-      <File FileName="Droid/Activities/VideoActivity.cs" Line="81" Column="1" />
-      <File FileName="../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.1.2-21/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="5" Column="45" />
-      <File FileName="Droid/Fragments/LoginFragment.cs" Line="42" Column="13" />
-      <File FileName="Droid/Fragments/TrendingVideosFragment.cs" Line="4" Column="1" />
-      <File FileName="Droid/Fragments/VideoPageFragment.cs" Line="1" Column="1" />
-      <File FileName="Droid/Fragments/VideosFragment.cs" Line="1" Column="1" />
-      <File FileName="Droid/Fragments/EndingSoonFragment.cs" Line="4" Column="1" />
-      <File FileName="Droid/Fragments/CategoriesFragment.cs" Line="3" Column="1" />
-      <File FileName="Droid/Fragments/AboutFragment.cs" Line="1" Column="1" />
-      <File FileName="Droid/Activities/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="Droid/Activities/BaseActivity.cs" Line="18" Column="33" />
-      <File FileName="Droid/Helpers/SQLiteHelper.cs" Line="113" Column="56" />
+      <File FileName="Droid/Activities/VideoActivity.cs" Line="20" Column="7" />
       <File FileName="Droid Status" />
-      <File FileName="../../../Library/Frameworks/Mono.framework/Versions/4.4.2/lib/mono/4.5/Microsoft.Common.targets" Line="1" Column="1" />
-      <File FileName="Versus.Portable/Versus.Portable/Data/FirebaseManager.cs" Line="25" Column="9" />
-      <File FileName="../Downloads/YouTubeAndroidPlayer-master/v1.2.1/YouTubeApi/Transforms/EnumFields.xml" Line="1" Column="1" />
-      <File FileName="../Downloads/YouTubeAndroidPlayer-master/v1.2.1/YouTubeApi/Properties/AssemblyInfo.cs" Line="24" Column="1" />
+      <File FileName="Activities Status" />
+      <File FileName="Droid/Resources/drawable/background_splash.xml" Line="13" Column="14" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="FiveMin" expanded="True">
-            <Node name="FiveMin.Droid" selected="True" />
-            <Node name="FiveMin.Portable" expanded="True">
-              <Node name="Data" expanded="True" />
-            </Node>
-            <Node name="YouTubeApi" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Additions" expanded="True" />
-              <Node name="Jars" expanded="True" />
-              <Node name="Transforms" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FiveMin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8E30F8B-5C8C-4128-87C6-71D480D5F7A3" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
+  <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.1bc05e64" />
 </Properties>
