@@ -36,5 +36,8 @@
 	<string name="fragment_title_search_results">Search Results</string>
 	<string name="fragment_title_my_profile">Profile</string>
 	<string name="fragment_title_videos_category">{0} Videos</string>
+
+	<!-- Fabric Related -->
+	<string name="com.crashlytics.android.build_id">0.2</string>
 	
 </resources>

@@ -3278,6 +3278,9 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0b0002
 			public const int character_counter_pattern = 2131427330;
 			
+			// aapt resource value: 0x7f0b005a
+			public const int com_crashlytics_android_build_id = 2131427418;
+			
 			// aapt resource value: 0x7f0b002c
 			public const int common_google_play_services_api_unavailable_text = 2131427372;
 			

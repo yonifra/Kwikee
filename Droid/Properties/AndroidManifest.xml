@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cryptocodes.kwikee" android:versionName="0.1" android:versionCode="1">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cryptocodes.kwikee" android:versionName="0.2" android:versionCode="2">
 	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
+	<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a3a165bb3f5d5f38bf92970aa35dd90e942eb3c9" />
 	<application android:theme="@style/MyTheme" android:icon="@mipmap/icon" android:hardwareAccelerated="true" android:label="Kwikee"></application>
 </manifest>

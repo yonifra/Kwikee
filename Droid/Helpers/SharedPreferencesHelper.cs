@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Android.App;
 using Android.Content;
-using FiveMin.Portable.Entities;
+using FiveMin.Portable.Enums;
 
 namespace FiveMin.Droid.Helpers
 {
@@ -29,32 +28,56 @@ namespace FiveMin.Droid.Helpers
             get { return _instance ?? (_instance = new SharedPreferencesHelper ()); }
         }
 
-        public void AddFavoriteVideo (string videoKey)
+        public void AddVideoToSharedPreferences (string videoKey, SharedPreferenceType type)
         {
-            var key = _favPrefs.GetString (videoKey, string.Empty);
+            var sharedPref = GetSharedPreferernceByType (type);
+            var key = sharedPref.GetString (videoKey, string.Empty);
 
             if (key == string.Empty)
             {
                 // Not in favorites, add it
-                _favPrefs.Edit ().PutString (key, videoKey);
+                sharedPref.Edit ().PutString (key, videoKey);
             }
         }
 
-        public void RemoveFavoriteVideo (string videoKey)
+        public void RemoveVideoFromSharedPreferences (string videoKey, SharedPreferenceType type)
         {
-            var key = _favPrefs.GetString (videoKey, string.Empty);
+            var sharedPref = GetSharedPreferernceByType (type);
+
+            var key = sharedPref.GetString (videoKey, string.Empty);
 
             if (key != string.Empty)
             {
                 // Video is in favorites, remove it
-                _favPrefs.Edit ().Remove (key);
+                sharedPref.Edit ().Remove (key);
             }
         }
 
-        public List<string> GetAllFavorites ()
+        public List<string> GetAllVideos (SharedPreferenceType type)
         {
-            return (List<string>)_favPrefs.All.Values;
+            var sharedPref = GetSharedPreferernceByType (type);
+            return (List<string>)sharedPref.All.Values;
+        }
+
+        private ISharedPreferences GetSharedPreferernceByType (SharedPreferenceType type)
+        {
+            switch (type)
+            {
+            case SharedPreferenceType.Favorites:
+                return _favPrefs;
+            case SharedPreferenceType.Liked:
+                return _likedVidsPrefs;
+            case SharedPreferenceType.Disliked:
+                return _dislikedVidsPrefs;
+            case SharedPreferenceType.Watchlist:
+                return _watchListPrefs;
+            case SharedPreferenceType.Watched:
+                return _watchedVidsPrefs;
+            }
+
+            return _favPrefs;
         }
     }
 }
+
 
