@@ -3,8 +3,6 @@
 	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="a3a165bb3f5d5f38bf92970aa35dd90e942eb3c9" />
+	<meta-data android:name="io.fabric.ApiKey" android:value="a3a165bb3f5d5f38bf92970aa35dd90e942eb3c9" />
 	<application android:theme="@style/MyTheme" android:icon="@mipmap/icon" android:hardwareAccelerated="true" android:label="Kwikee"></application>
 </manifest>

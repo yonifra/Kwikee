@@ -129,6 +129,9 @@
     <Reference Include="RoundedImageView">
       <HintPath>..\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
     </Reference>
+    <Reference Include="Crashlytics.Droid">
+      <HintPath>..\packages\Crashlytics.Droid.Binding.1.2.1\lib\MonoAndroid\Crashlytics.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />

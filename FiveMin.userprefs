@@ -1,15 +1,41 @@
 ﻿<Properties StartupItem="Droid/FiveMin.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/drawable/background_splash.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Activities/MainActivity.cs">
     <Files>
-      <File FileName="Droid/Activities/VideoActivity.cs" Line="20" Column="7" />
-      <File FileName="Droid Status" />
-      <File FileName="Activities Status" />
-      <File FileName="Droid/Resources/drawable/background_splash.xml" Line="13" Column="14" />
+      <File FileName="Droid/Activities/VideoActivity.cs" Line="108" Column="13" />
+      <File FileName="Droid/Helpers/SharedPreferencesHelper.cs" Line="4" Column="1" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="2" Column="151" />
+      <File FileName="Droid/Resources/values/Strings.xml" Line="41" Column="53" />
+      <File FileName="Droid/Activities/MainActivity.cs" Line="25" Column="10" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FiveMin" expanded="True">
+            <Node name="FiveMin.Droid" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Activities" expanded="True">
+                <Node name="MainActivity.cs" selected="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="FiveMin.Portable" expanded="True">
+              <Node name="Enums" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FiveMin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8E30F8B-5C8C-4128-87C6-71D480D5F7A3" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.FiveMin.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.1bc05e64" />
 </Properties>

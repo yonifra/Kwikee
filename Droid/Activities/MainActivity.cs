@@ -25,6 +25,8 @@ namespace FiveMin.Droid.Activities
         {
             base.OnCreate (savedInstanceState);
 
+            IO.Fabric.Sdk.Android.Fabric.With (this, new Com.Crashlytics.Android.Crashlytics ());
+
             // Set our view from the "main" layout resource
             _navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);
             _drawerLayout = FindViewById<DrawerLayout> (Resource.Id.drawer_layout);

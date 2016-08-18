@@ -167,3 +167,4 @@
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll.mdb
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll.mdb
+/Users/yonifra/shortie/Droid/bin/Debug/Crashlytics.Droid.dll

@@ -6,6 +6,11 @@
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
+    <Jar>obj/Release/__library_projects__/Crashlytics.Droid/library_project_imports/__reference__answers-1.3.8.jar</Jar>
+    <Jar>obj/Release/__library_projects__/Crashlytics.Droid/library_project_imports/__reference__beta-1.2.1.jar</Jar>
+    <Jar>obj/Release/__library_projects__/Crashlytics.Droid/library_project_imports/crashlytics-2.6.1.jar</Jar>
+    <Jar>obj/Release/__library_projects__/Crashlytics.Droid/library_project_imports/crashlytics-core-2.3.10.jar</Jar>
+    <Jar>obj/Release/__library_projects__/Crashlytics.Droid/library_project_imports/fabric-1.3.12.jar</Jar>
     <Jar>obj/Release/__library_projects__/RoundedImageView/library_project_imports/bin/classes.jar</Jar>
     <Jar>obj/Release/__library_projects__/Square.OkHttp/library_project_imports/okhttp.jar</Jar>
     <Jar>obj/Release/__library_projects__/Square.OkIO/library_project_imports/okio.jar</Jar>
