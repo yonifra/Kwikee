@@ -18,6 +18,8 @@ namespace FiveMin.Droid.Activities
         private string _videoYouTubeId;
         private string _videoKey;  // The UID of the video (not YouTube ID)
         private LinearLayout _mainLayout;
+        private bool _isWatchlistClicked = false;
+        private bool _isFavoriteClicked = false;
 
         protected override IYouTubePlayerProvider GetYouTubePlayerProvider ()
         {
@@ -80,32 +82,46 @@ namespace FiveMin.Droid.Activities
 
         void Fab_Click (object sender, System.EventArgs e)
         {
-            SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Favorites);
+            if (_isFavoriteClicked)
+            {
+                SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Favorites);
+                Snackbar.Make (_mainLayout, "Removed from favorites", Snackbar.LengthLong).Show ();
+            }
+            else
+            {
+                SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Favorites);
+                Snackbar.Make (_mainLayout, "Added to favorites", Snackbar.LengthLong).Show ();
+            }
 
-            Snackbar.Make (_mainLayout, "Added to favorites", Snackbar.LengthLong).Show ();
+            _isFavoriteClicked = !_isFavoriteClicked;
         }
 
         void WatchlistButton_Click (object sender, System.EventArgs e)
         {
-            SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Watchlist);
+            if (_isWatchlistClicked)
+            {
+                SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Watchlist);
+                Snackbar.Make (_mainLayout, "Removed from watchlist", Snackbar.LengthLong).Show ();
+            }
+            else
+            {
+                SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Watchlist);
+                Snackbar.Make (_mainLayout, "Added to watchlist", Snackbar.LengthLong).Show ();
+            }
 
-            Snackbar.Make (_mainLayout, "Added to watchlist", Snackbar.LengthLong).Show ();
+            _isWatchlistClicked = !_isWatchlistClicked;
         }
 
         void Disliked_Click (object sender, System.EventArgs e)
         {
             SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Disliked);
+            SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Liked);
         }
 
         void Liked_Click (object sender, System.EventArgs e)
         {
-            var all = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Liked);
-
-            if (!all.Contains (_videoKey))
-            {
-                SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Liked);
-            }
-
+            SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Liked);
+            SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Disliked);
         }
     }
 }
