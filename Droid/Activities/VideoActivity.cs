@@ -64,6 +64,8 @@ namespace FiveMin.Droid.Activities
             var youTubePlayerFragment = FragmentManager.FindFragmentById<YouTubePlayerFragment> (Resource.Id.youtube_fragment);
             youTubePlayerFragment.Initialize (DeveloperKey.Key, this);
 
+            SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Watched);
+
            // FontsHelper.ApplyTypeface (Assets, new List<TextView> { videoMetadata, videoNameTextView, descriptionTextView });
 
             progressBar.Visibility = ViewStates.Invisible;
