@@ -1,4 +1,5 @@
 ﻿using Android.OS;
+using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Widget;
 using FiveMin.Droid.Activities;
@@ -41,6 +42,12 @@ namespace FiveMin.Droid.Fragments
             _disliked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Disliked).Count.ToString ();
             _favs.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Favorites).Count.ToString ();
             _watched.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watched).Count.ToString ();
+        }
+
+        public override void OnResume ()
+        {
+            base.OnResume ();
+            UpdateData ();
         }
 
         void FetchViews ()
