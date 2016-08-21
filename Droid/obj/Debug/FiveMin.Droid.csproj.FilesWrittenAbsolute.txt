@@ -163,8 +163,8 @@
 /Users/yonifra/shortie/Droid/bin/Debug/SQLitePCL.raw.dll
 /Users/yonifra/shortie/Droid/bin/Debug/SQLitePCL.batteries.dll
 /Users/yonifra/shortie/Droid/bin/Debug/RoundedImageView.dll
+/Users/yonifra/shortie/Droid/bin/Debug/Crashlytics.Droid.dll
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll.mdb
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll.mdb
-/Users/yonifra/shortie/Droid/bin/Debug/Crashlytics.Droid.dll

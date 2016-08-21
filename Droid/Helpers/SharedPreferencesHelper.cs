@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Android.App;
 using Android.Content;
 using FiveMin.Portable.Enums;
@@ -36,7 +37,7 @@ namespace FiveMin.Droid.Helpers
             if (key == string.Empty)
             {
                 // Not in favorites, add it
-                sharedPref.Edit ().PutString (key, videoKey);
+                sharedPref.Edit ().PutString (key, videoKey).Apply ();
             }
         }
 
@@ -49,14 +50,20 @@ namespace FiveMin.Droid.Helpers
             if (key != string.Empty)
             {
                 // Video is in favorites, remove it
-                sharedPref.Edit ().Remove (key);
+                sharedPref.Edit ().Remove (key).Apply ();
             }
         }
 
         public List<string> GetAllVideos (SharedPreferenceType type)
         {
             var sharedPref = GetSharedPreferernceByType (type);
-            return (List<string>)sharedPref.All.Values;
+            return sharedPref.All.Keys.ToList();
+        }
+
+        public int GetCount (SharedPreferenceType type)
+        {
+            var sharedPref = GetSharedPreferernceByType (type);
+            return sharedPref.All.Keys.Count;
         }
 
         private ISharedPreferences GetSharedPreferernceByType (SharedPreferenceType type)

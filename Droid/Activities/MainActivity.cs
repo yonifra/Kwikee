@@ -23,16 +23,16 @@ namespace FiveMin.Droid.Activities
 
         protected override void OnCreate (Bundle savedInstanceState)
         {
-            base.OnCreate (savedInstanceState);
-
             IO.Fabric.Sdk.Android.Fabric.With (this, new Com.Crashlytics.Android.Crashlytics ());
+
+            base.OnCreate (savedInstanceState);
 
             // Set our view from the "main" layout resource
             _navigationView = FindViewById<NavigationView> (Resource.Id.nav_view);
             _drawerLayout = FindViewById<DrawerLayout> (Resource.Id.drawer_layout);
             _toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 
-            _navigationView.NavigationItemSelected += (sender, e) =>
+             _navigationView.NavigationItemSelected += (sender, e) =>
             {
                 e.MenuItem.SetChecked (true);
 
