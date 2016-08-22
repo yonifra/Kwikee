@@ -9,6 +9,11 @@ namespace FiveMin.Droid.Helpers
 {
     public static class VideoHelper
     {
+        /// <summary>
+        /// Given a video object, starts an activity with the video ready to be played
+        /// </summary>
+        /// <param name="video">The video to play.</param>
+        /// <param name="view">The view from which this is called.</param>
         public static void StartVideo (FiveMinVideo video, View view)
         {
             FirebaseManager.Instance.UpdateWatchCount (video);

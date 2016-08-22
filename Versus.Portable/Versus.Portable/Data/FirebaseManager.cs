@@ -176,7 +176,7 @@ namespace FiveMin.Portable.Data
         /// </summary>
         /// <returns>The all competitions.</returns>
         /// <param name="shouldRefresh">If set to <c>true</c> should refresh.</param>
-        public async Task<Dictionary<string, FiveMinVideo>> GetTrendingVideos (int maxCompetitions = 20, bool shouldRefresh = false)
+        public async Task<Dictionary<string, FiveMinVideo>> GetTrendingVideos (int maxVideos = 20, bool shouldRefresh = false)
         {
             if (_trendingVideos == null || (_videos == null || shouldRefresh))
             {
@@ -192,11 +192,11 @@ namespace FiveMin.Portable.Data
         }
 
         /// <summary>
-        /// Gets a list of competitions by their category name
+        /// Gets a list of videos by their category name
         /// </summary>
-        /// <param name="categoryName">Name of the category we wish to get all competitions for</param>
-        /// <param name="refreshBefore">Indicates whether to refresh the cache before fetching the competition</param>
-        /// <returns>An enumerable of all competitions related to that category</returns>
+        /// <param name="categoryName">Name of the category we wish to get all videos for</param>
+        /// <param name="refreshBefore">Indicates whether to refresh the cache before fetching the videos</param>
+        /// <returns>An enumerable of all videos related to that category</returns>
         public async Task<IEnumerable<FiveMinVideo>> GetVideos (string categoryName, bool refreshBefore = false)
         {
             var dict = await GetAllVideos (refreshBefore);

@@ -2611,7 +2611,7 @@ namespace FiveMin.Droid
 			public const int noCategoriesMessage = 2131361924;
 			
 			// aapt resource value: 0x7f0a00b7
-			public const int noTrendingCompetitionsMessage = 2131361975;
+			public const int noTrendingVideosMessage = 2131361975;
 			
 			// aapt resource value: 0x7f0a00b5
 			public const int noVideosFoundMessage = 2131361973;
@@ -2815,7 +2815,7 @@ namespace FiveMin.Droid
 			public const int touch_outside = 2131361912;
 			
 			// aapt resource value: 0x7f0a00b6
-			public const int trendingCompetitionsListView = 2131361974;
+			public const int trendingVideosListView = 2131361974;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int up = 2131361801;

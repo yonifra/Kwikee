@@ -50,7 +50,7 @@ namespace FiveMin.Droid.Fragments
         {
             if (CrossConnectivity.Current.IsConnected)
             {
-                await GetEndingCompetitionsAsync ();
+                await GetEndingVideosAsync ();
 
                 if (_newestVideos != null && _newestVideos.Any ())
                 {
@@ -89,7 +89,7 @@ namespace FiveMin.Droid.Fragments
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
-        private async Task GetEndingCompetitionsAsync ()
+        private async Task GetEndingVideosAsync ()
         {
             Log.Debug (LOG_TAG, "Fetching newest videos");
             var ending = await FirebaseManager.Instance.GetNewestVideos ();

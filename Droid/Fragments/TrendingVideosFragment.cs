@@ -50,11 +50,11 @@ namespace FiveMin.Droid.Fragments
         {
             if (CrossConnectivity.Current.IsConnected)
             {
-                await GetTrendingCompetitionsAsync ();
+                await GetTrendingVideosAsync ();
 
                 if (_trendingVideos != null && _trendingVideos.Any ())
                 {
-                    var textView = view.FindViewById<TextView> (Resource.Id.noTrendingCompetitionsMessage);
+                    var textView = view.FindViewById<TextView> (Resource.Id.noTrendingVideosMessage);
                     textView.Visibility = ViewStates.Invisible;
                 }
                 else
@@ -63,7 +63,7 @@ namespace FiveMin.Droid.Fragments
                     return;
                 }
 
-                var videosListView = view.FindViewById<ListView> (Resource.Id.trendingCompetitionsListView);
+                var videosListView = view.FindViewById<ListView> (Resource.Id.trendingVideosListView);
                 videosListView.Visibility = ViewStates.Visible;
                 videosListView.Adapter = new VideosListAdapter (Activity, _trendingVideos);
 
@@ -83,19 +83,15 @@ namespace FiveMin.Droid.Fragments
                             VideoHelper.StartVideo (video, _view);
                         }
                     }
-                    else
-                    {
-                        Snackbar.Make (_view, "Item " + e.Position + " clicked", Snackbar.LengthShort).Show ();
-                    }
                 };
             }
             else
                 Snackbar.Make (_view, Resource.String.no_internet_message, Snackbar.LengthLong).Show ();
         }
 
-        private async Task GetTrendingCompetitionsAsync ()
+        private async Task GetTrendingVideosAsync ()
         {
-            Log.Debug (LOG_TAG, "Fetching trending competitions");
+            Log.Debug (LOG_TAG, "Fetching trending videos");
             var trending = await FirebaseManager.Instance.GetTrendingVideos ();
 
             _trendingVideos = trending.Values;
