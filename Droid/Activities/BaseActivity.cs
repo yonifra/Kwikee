@@ -2,7 +2,7 @@
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 
-namespace FiveMin.Droid.Activities
+namespace Kwikee.Droid.Activities
 {
     public abstract class BaseActivity : AppCompatActivity
     {

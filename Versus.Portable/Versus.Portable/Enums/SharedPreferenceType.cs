@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FiveMin.Portable.Enums
+namespace Kwikee.Portable.Enums
 {
     public enum SharedPreferenceType
     {

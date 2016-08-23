@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace FiveMin.iOS
+namespace Kwikee.iOS
 {
     public class Application
     {

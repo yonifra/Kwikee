@@ -1,4 +1,4 @@
-﻿namespace FiveMin.WPF.Controls
+﻿namespace Kwikee.WPF.Controls
 {
     /// <summary>
     /// Interaction logic for AddVideoControl.xaml

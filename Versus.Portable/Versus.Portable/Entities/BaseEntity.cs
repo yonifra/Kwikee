@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FiveMin.Portable.Entities
+namespace Kwikee.Portable.Entities
 {
     public class BaseEntity
     {

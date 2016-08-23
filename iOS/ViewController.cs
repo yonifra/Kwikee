@@ -1,7 +1,7 @@
 ﻿using System;
 using UIKit;
 
-namespace FiveMin.iOS
+namespace Kwikee.iOS
 {
     public partial class ViewController : UIViewController
     {

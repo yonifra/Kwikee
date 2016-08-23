@@ -9,9 +9,9 @@ using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using FiveMin.Droid.Activities;
+using Kwikee.Droid.Activities;
 
-namespace FiveMin.Droid.Fragments
+namespace Kwikee.Droid.Fragments
 {
     public class LoginFragment : Android.Support.V4.App.Fragment, View.IOnClickListener,
         GoogleApiClient.IConnectionCallbacks, GoogleApiClient.IOnConnectionFailedListener

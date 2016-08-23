@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using FireSharp;
 using FireSharp.Config;
 using Newtonsoft.Json;
-using FiveMin.Portable.Entities;
+using Kwikee.Portable.Entities;
 
-namespace FiveMin.Portable.Data
+namespace Kwikee.Portable.Data
 {
     public class FirebaseManager
     {
@@ -186,6 +186,7 @@ namespace FiveMin.Portable.Data
 
             _trendingVideos = _videos
                 .Where (cm => cm.Value.WatchCount > WATCH_COUNT_THRESHOLD && cm.Value.Likes >= cm.Value.Dislikes * 2)
+                .OrderByDescending(c => c.Value.WatchCount)
                 .ToDictionary (o => o.Key, o => o.Value);
 
             return _trendingVideos;

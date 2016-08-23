@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FiveMin.Droid
+namespace Kwikee.Droid
 {
     public static class DeveloperKey
     {

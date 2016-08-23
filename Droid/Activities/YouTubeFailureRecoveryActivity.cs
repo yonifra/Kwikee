@@ -3,7 +3,7 @@ using Android.Content;
 using Android.Widget;
 using Google.YouTube.Player;
 
-namespace FiveMin.Droid.Activities
+namespace Kwikee.Droid.Activities
 {  
     public abstract class YouTubeFailureRecoveryActivity : YouTubeBaseActivity, IYouTubePlayerOnInitializedListener
     {

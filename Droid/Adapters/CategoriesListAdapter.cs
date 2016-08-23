@@ -4,11 +4,11 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 using Square.Picasso;
-using FiveMin.Droid.Helpers;
-using FiveMin.Portable.Entities;
-using FiveMin.Portable.Helpers;
+using Kwikee.Droid.Helpers;
+using Kwikee.Portable.Entities;
+using Kwikee.Portable.Helpers;
 
-namespace FiveMin.Droid.Adapters
+namespace Kwikee.Droid.Adapters
 {
     internal class CategoryAdapterWrapper : Java.Lang.Object
     {

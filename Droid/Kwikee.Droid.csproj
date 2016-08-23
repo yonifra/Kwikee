@@ -6,8 +6,8 @@
     <ProjectGuid>{5CE58BAA-DBDA-49FC-8111-86C049302D53}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>FiveMin.Droid</RootNamespace>
-    <AssemblyName>FiveMin.Droid</AssemblyName>
+    <RootNamespace>Kwikee.Droid</RootNamespace>
+    <AssemblyName>Kwikee.Droid</AssemblyName>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -16,6 +16,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <ReleaseVersion>1.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -357,13 +358,13 @@
     <AndroidAsset Include="Assets\Fonts\Slabo.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Versus.Portable\Versus.Portable\FiveMin.Portable.csproj">
-      <Project>{D6B90F97-9F49-45DB-8801-26C2D72738BC}</Project>
-      <Name>FiveMin.Portable</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Downloads\YouTubeAndroidPlayer-master\v1.2.1\YouTubeApi\YouTubeApi.csproj">
       <Project>{A4CA43B8-7140-4483-96BA-6AFC8E935470}</Project>
       <Name>YouTubeApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Versus.Portable\Versus.Portable\Kwikee.Portable.csproj">
+      <Project>{D6B90F97-9F49-45DB-8801-26C2D72738BC}</Project>
+      <Name>Kwikee.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

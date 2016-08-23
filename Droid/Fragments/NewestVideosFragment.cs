@@ -6,14 +6,14 @@ using Android.Support.Design.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using FiveMin.Droid.Activities;
-using FiveMin.Droid.Adapters;
-using FiveMin.Droid.Helpers;
-using FiveMin.Portable.Data;
-using FiveMin.Portable.Entities;
+using Kwikee.Droid.Activities;
+using Kwikee.Droid.Adapters;
+using Kwikee.Droid.Helpers;
+using Kwikee.Portable.Data;
+using Kwikee.Portable.Entities;
 using Plugin.Connectivity;
 
-namespace FiveMin.Droid.Fragments
+namespace Kwikee.Droid.Fragments
 {
     public class NewestVideosFragment : Android.Support.V4.App.Fragment
     {

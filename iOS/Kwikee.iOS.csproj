@@ -6,9 +6,10 @@
     <ProjectGuid>{00DC1AA2-A1A4-43EA-A8D8-A5034455E12D}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FiveMin.iOS</RootNamespace>
+    <RootNamespace>Kwikee.iOS</RootNamespace>
     <AssemblyName>VersusiOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>1.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -116,7 +117,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Versus.Portable\Versus.Portable\Versus.Portable.csproj">
       <Project>{d6b90f97-9f49-45db-8801-26c2d72738bc}</Project>
-      <Name>FiveMin.Portable</Name>
+      <Name>Kwikee.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\Versus\Versus.projitems" Label="Shared" Condition="Exists('..\Versus\Versus.projitems')" />

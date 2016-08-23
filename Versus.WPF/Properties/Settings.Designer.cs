@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FiveMin.WPF.Properties
+namespace Kwikee.WPF.Properties
 {
 
 

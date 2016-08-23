@@ -2,9 +2,9 @@
 using System.Linq;
 using Android.App;
 using Android.Content;
-using FiveMin.Portable.Enums;
+using Kwikee.Portable.Enums;
 
-namespace FiveMin.Droid.Helpers
+namespace Kwikee.Droid.Helpers
 {
     public class SharedPreferencesHelper
     {

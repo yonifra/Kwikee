@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FiveMin
+namespace Kwikee
 {
     public class MyClass
     {

@@ -1,4 +1,4 @@
-﻿namespace FiveMin.WPF
+﻿namespace Kwikee.WPF
 {
     /// <summary>
     /// Interaction logic for App.xaml

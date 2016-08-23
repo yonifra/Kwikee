@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FiveMin.Portable.Helpers
+namespace Kwikee.Portable.Helpers
 {
     public static class StringHelper
     {

@@ -1,9 +1,9 @@
-﻿<Window x:Class="FiveMin.WPF.MainWindow"
+﻿<Window x:Class="Kwikee.WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:viewModels="clr-namespace:FiveMin.WPF.ViewModels"
-        xmlns:controls="clr-namespace:FiveMin.WPF.Controls"
-        xmlns:entities1="clr-namespace:FiveMin.Portable.Entities;assembly=Versus.Portable"
+        xmlns:viewModels="clr-namespace:Kwikee.WPF.ViewModels"
+        xmlns:controls="clr-namespace:Kwikee.WPF.Controls"
+        xmlns:entities1="clr-namespace:Kwikee.Portable.Entities;assembly=Kwikee.Portable"
         Title="Kwikee Editor" Height="450" Width="625">
     <Window.DataContext>
         <viewModels:MainViewModel />

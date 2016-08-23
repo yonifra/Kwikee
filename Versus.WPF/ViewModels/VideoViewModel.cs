@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using GalaSoft.MvvmLight;
 
-namespace FiveMin.WPF.ViewModels
+namespace Kwikee.WPF.ViewModels
 {
     public class VideoViewModel : ViewModelBase
     {

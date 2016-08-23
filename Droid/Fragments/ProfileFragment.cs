@@ -2,11 +2,11 @@
 using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Widget;
-using FiveMin.Droid.Activities;
-using FiveMin.Droid.Helpers;
-using FiveMin.Portable.Enums;
+using Kwikee.Droid.Activities;
+using Kwikee.Droid.Helpers;
+using Kwikee.Portable.Enums;
 
-namespace FiveMin.Droid.Fragments
+namespace Kwikee.Droid.Fragments
 {
     public class ProfileFragment : Android.Support.V4.App.Fragment
     {

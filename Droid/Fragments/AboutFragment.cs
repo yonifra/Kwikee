@@ -1,8 +1,8 @@
 ﻿using Android.OS;
 using Android.Views;
-using FiveMin.Droid.Activities;
+using Kwikee.Droid.Activities;
 
-namespace FiveMin.Droid.Fragments
+namespace Kwikee.Droid.Fragments
 {
     public class AboutFragment : Android.Support.V4.App.Fragment
     {

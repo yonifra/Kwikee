@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using FiveMin.Portable.Data;
-using FiveMin.Portable.Entities;
+using Kwikee.Portable.Data;
+using Kwikee.Portable.Entities;
 
-namespace FiveMin.WPF.ViewModels
+namespace Kwikee.WPF.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {

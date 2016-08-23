@@ -6,11 +6,11 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
-using FiveMin.Droid.Helpers;
-using FiveMin.Portable.Enums;
+using Kwikee.Droid.Helpers;
+using Kwikee.Portable.Enums;
 using Google.YouTube.Player;
 
-namespace FiveMin.Droid.Activities
+namespace Kwikee.Droid.Activities
 {
     [Activity (Label = "Video")]
     public class VideoActivity : YouTubeFailureRecoveryActivity

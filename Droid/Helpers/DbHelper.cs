@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Android.Util;
-using FiveMin.Droid.DataModel;
+using Kwikee.Droid.DataModel;
 using SQLite;
 
-namespace FiveMin.Droid.Helpers
+namespace Kwikee.Droid.Helpers
 {
     public class DbHelper
     {

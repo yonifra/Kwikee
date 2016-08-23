@@ -2,7 +2,7 @@
 using Foundation;
 using UIKit;
 
-namespace FiveMin.iOS
+namespace Kwikee.iOS
 {
     public class CompetitionSource : UITableViewSource
     {

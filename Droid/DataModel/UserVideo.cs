@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FiveMin.Droid.DataModel
+namespace Kwikee.Droid.DataModel
 {
     public class UserVideo
     {
@@ -15,14 +15,14 @@ namespace FiveMin.Droid.DataModel
         public string Id { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this <see cref="T:FiveMin.Droid.DataModel.FavVideoDataModel"/>
+        /// Gets or sets a value indicating whether this <see cref="T:Kwikee.Droid.DataModel.FavVideoDataModel"/>
         /// is a favorite video.
         /// </summary>
         /// <value><c>true</c> if is favorite; otherwise, <c>false</c>.</value>
         public bool IsFavorite { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this <see cref="T:FiveMin.Droid.DataModel.FavVideoDataModel"/>
+        /// Gets or sets a value indicating whether this <see cref="T:Kwikee.Droid.DataModel.FavVideoDataModel"/>
         /// is in the user's watchlist.
         /// </summary>
         /// <value><c>true</c> if is in watchlist; otherwise, <c>false</c>.</value>

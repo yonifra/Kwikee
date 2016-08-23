@@ -5,7 +5,7 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Support.V7.App;
 
-namespace FiveMin.Droid.Activities
+namespace Kwikee.Droid.Activities
 {
     [Activity (Label = "Kwikee", LaunchMode = LaunchMode.SingleTop, MainLauncher = true, Icon = "@mipmap/icon", Theme= "@style/SplashTheme")]
     public class SplashActivity : AppCompatActivity

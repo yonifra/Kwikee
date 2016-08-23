@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Net;
 
-namespace FiveMin.Droid
+namespace Kwikee.Droid
 {
     public static class ConnectivityHelper
     {

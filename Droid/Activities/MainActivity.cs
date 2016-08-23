@@ -6,9 +6,9 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.Widget;
 using Android.Views;
-using FiveMin.Droid.Fragments;
+using Kwikee.Droid.Fragments;
 
-namespace FiveMin.Droid.Activities
+namespace Kwikee.Droid.Activities
 {
     [Activity (Label = "Kwikee")]
     public class MainActivity : BaseActivity

@@ -1,4 +1,4 @@
-﻿namespace FiveMin.Portable.Enums
+﻿namespace Kwikee.Portable.Enums
 {
     public enum VoteType
     {

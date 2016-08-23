@@ -1,11 +1,11 @@
 ﻿using Android.Content;
 using Android.Views;
-using FiveMin.Droid.Activities;
-using FiveMin.Portable.Data;
-using FiveMin.Portable.Entities;
-using FiveMin.Portable.Helpers;
+using Kwikee.Droid.Activities;
+using Kwikee.Portable.Data;
+using Kwikee.Portable.Entities;
+using Kwikee.Portable.Helpers;
 
-namespace FiveMin.Droid.Helpers
+namespace Kwikee.Droid.Helpers
 {
     public static class VideoHelper
     {

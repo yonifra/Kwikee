@@ -3,7 +3,7 @@ using Android.Content.Res;
 using Android.Graphics;
 using Android.Widget;
 
-namespace FiveMin.Droid.Helpers
+namespace Kwikee.Droid.Helpers
 {
     public static class FontsHelper
     {
