@@ -2574,20 +2574,20 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00c2
 			public const int nav_about = 2131361986;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int nav_categories = 2131361982;
-			
 			// aapt resource value: 0x7f0a00bd
-			public const int nav_crossAppGroup = 2131361981;
+			public const int nav_categories = 2131361981;
 			
 			// aapt resource value: 0x7f0a00c0
-			public const int nav_endingSoon = 2131361984;
+			public const int nav_crossAppGroup = 2131361984;
+			
+			// aapt resource value: 0x7f0a00bf
+			public const int nav_endingSoon = 2131361983;
 			
 			// aapt resource value: 0x7f0a00c1
 			public const int nav_profile = 2131361985;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int nav_trending = 2131361983;
+			// aapt resource value: 0x7f0a00be
+			public const int nav_trending = 2131361982;
 			
 			// aapt resource value: 0x7f0a00a6
 			public const int nav_view = 2131361958;

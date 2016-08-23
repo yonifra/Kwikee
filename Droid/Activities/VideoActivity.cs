@@ -66,7 +66,7 @@ namespace FiveMin.Droid.Activities
 
             SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Watched);
 
-           // FontsHelper.ApplyTypeface (Assets, new List<TextView> { videoMetadata, videoNameTextView, descriptionTextView });
+            FontsHelper.ApplyTypeface (Assets, new List<TextView> { videoMetadata, videoNameTextView, descriptionTextView });
 
             progressBar.Visibility = ViewStates.Invisible;
             _mainLayout.Visibility = ViewStates.Visible;
