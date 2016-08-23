@@ -120,9 +120,9 @@ namespace FiveMin.Droid.Activities
             case Resource.Id.nav_about:
                 _prevFragment = new AboutFragment ();
                 break;
-            case Resource.Id.nav_logoutLogin:
-                _prevFragment = new LoginFragment ();
-                break;
+            //case Resource.Id.nav_logoutLogin:
+            //    _prevFragment = new LoginFragment ();
+            //    break;
             case Resource.Id.nav_trending:
                 _prevFragment = new TrendingVideosFragment ();
                 break;

@@ -2319,8 +2319,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a0047
 			public const int action_mode_close_button = 2131361863;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int action_search = 2131361989;
+			// aapt resource value: 0x7f0a00c3
+			public const int action_search = 2131361987;
 			
 			// aapt resource value: 0x7f0a0048
 			public const int activity_chooser_view_content = 2131361864;
@@ -2556,8 +2556,8 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a00aa
 			public const int media_actions = 2131361962;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int menu_item_share = 2131361990;
+			// aapt resource value: 0x7f0a00c4
+			public const int menu_item_share = 2131361988;
 			
 			// aapt resource value: 0x7f0a0034
 			public const int middle = 2131361844;
@@ -2571,29 +2571,23 @@ namespace FiveMin.Droid
 			// aapt resource value: 0x7f0a002e
 			public const int multiply = 2131361838;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int nav_about = 2131361988;
-			
-			// aapt resource value: 0x7f0a00bf
-			public const int nav_categories = 2131361983;
-			
 			// aapt resource value: 0x7f0a00c2
-			public const int nav_crossAppGroup = 2131361986;
-			
-			// aapt resource value: 0x7f0a00c1
-			public const int nav_endingSoon = 2131361985;
-			
-			// aapt resource value: 0x7f0a00c3
-			public const int nav_logoutLogin = 2131361987;
-			
-			// aapt resource value: 0x7f0a00bd
-			public const int nav_personalizedGroup = 2131361981;
+			public const int nav_about = 2131361986;
 			
 			// aapt resource value: 0x7f0a00be
-			public const int nav_profile = 2131361982;
+			public const int nav_categories = 2131361982;
+			
+			// aapt resource value: 0x7f0a00bd
+			public const int nav_crossAppGroup = 2131361981;
 			
 			// aapt resource value: 0x7f0a00c0
-			public const int nav_trending = 2131361984;
+			public const int nav_endingSoon = 2131361984;
+			
+			// aapt resource value: 0x7f0a00c1
+			public const int nav_profile = 2131361985;
+			
+			// aapt resource value: 0x7f0a00bf
+			public const int nav_trending = 2131361983;
 			
 			// aapt resource value: 0x7f0a00a6
 			public const int nav_view = 2131361958;
@@ -3152,55 +3146,58 @@ namespace FiveMin.Droid
 			public const int ic_google = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int ic_person_black_48dp = 2130903043;
+			public const int ic_info_black_48dp = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int ic_sentiment_dissatisfied_white_24dp = 2130903044;
+			public const int ic_person_black_48dp = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int ic_sentiment_satisfied_white_24dp = 2130903045;
+			public const int ic_sentiment_dissatisfied_white_24dp = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ic_share_black_24dp = 2130903046;
+			public const int ic_sentiment_satisfied_white_24dp = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int ic_star_black_48dp = 2130903047;
+			public const int ic_share_black_24dp = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int ic_star_white_24dp = 2130903048;
+			public const int ic_star_black_48dp = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int ic_thumb_down_black_24dp = 2130903049;
+			public const int ic_star_white_24dp = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int ic_thumb_down_white_24dp = 2130903050;
+			public const int ic_thumb_down_black_24dp = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int ic_thumb_up_black_24dp = 2130903051;
+			public const int ic_thumb_down_white_24dp = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int ic_thumb_up_white_24dp = 2130903052;
+			public const int ic_thumb_up_black_24dp = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int ic_thumbs_up_down_white_24dp = 2130903053;
+			public const int ic_thumb_up_white_24dp = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int ic_timer_black_24dp = 2130903054;
+			public const int ic_thumbs_up_down_white_24dp = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int ic_timer_white_24dp = 2130903055;
+			public const int ic_timer_black_24dp = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int ic_trending_up_black_48dp = 2130903056;
+			public const int ic_timer_white_24dp = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int ic_view_list_black_48dp = 2130903057;
+			public const int ic_trending_up_black_48dp = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int ic_visibility_white_24dp = 2130903058;
+			public const int ic_view_list_black_48dp = 2130903058;
 			
 			// aapt resource value: 0x7f030013
-			public const int Icon = 2130903059;
+			public const int ic_visibility_white_24dp = 2130903059;
+			
+			// aapt resource value: 0x7f030014
+			public const int Icon = 2130903060;
 			
 			static Mipmap()
 			{
