@@ -39,7 +39,7 @@ namespace Kwikee.Droid.Helpers
             if (key == string.Empty)
             {
                 // Not in favorites, add it
-                sharedPref.Edit ().PutString (key, videoKey).Apply ();
+                sharedPref.Edit ().PutString (videoKey, videoKey).Apply ();
             }
         }
 

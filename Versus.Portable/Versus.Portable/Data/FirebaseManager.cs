@@ -166,6 +166,12 @@ namespace Kwikee.Portable.Data
                 var response = await _client.GetAsync (VideosName);
 
                 _videos = JsonConvert.DeserializeObject<Dictionary<string, FiveMinVideo>> (response.Body);
+
+                // Add the keys to the FiveMinVideo objects
+                for (var i = 0; i < _videos.Count; i++)
+                {
+                    _videos.Values.ElementAt(i).Key = _videos.Keys.ElementAt(i);
+                }
             }
 
             return _videos;
