@@ -31,6 +31,8 @@ namespace Kwikee.Droid.Helpers
 
         public void AddVideoToSharedPreferences (string videoKey, SharedPreferenceType type)
         {
+            if (videoKey == null) return;
+
             var sharedPref = GetSharedPreferernceByType (type);
             var key = sharedPref.GetString (videoKey, string.Empty);
 
@@ -43,8 +45,9 @@ namespace Kwikee.Droid.Helpers
 
         public void RemoveVideoFromSharedPreferences (string videoKey, SharedPreferenceType type)
         {
-            var sharedPref = GetSharedPreferernceByType (type);
+            if (videoKey == null) return;
 
+            var sharedPref = GetSharedPreferernceByType (type);
             var key = sharedPref.GetString (videoKey, string.Empty);
 
             if (key != string.Empty)

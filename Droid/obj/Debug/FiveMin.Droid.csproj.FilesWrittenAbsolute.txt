@@ -168,3 +168,8 @@
 /Users/yonifra/shortie/Droid/bin/Debug/Versus.Portable.dll.mdb
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll
 /Users/yonifra/shortie/Droid/bin/Debug/YouTubeApi.dll.mdb
+/Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-hdpi/ic_info_black_48dp.png
+/Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-mdpi/ic_info_black_48dp.png
+/Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xhdpi/ic_info_black_48dp.png
+/Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxhdpi/ic_info_black_48dp.png
+/Users/yonifra/shortie/Droid/obj/Debug/res/mipmap-xxxhdpi/ic_info_black_48dp.png
