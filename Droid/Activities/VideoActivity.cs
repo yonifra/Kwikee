@@ -9,6 +9,7 @@ using Android.Widget;
 using Kwikee.Droid.Helpers;
 using Kwikee.Portable.Enums;
 using Google.YouTube.Player;
+using System;
 
 namespace Kwikee.Droid.Activities
 {
@@ -20,6 +21,10 @@ namespace Kwikee.Droid.Activities
         private LinearLayout _mainLayout;
         private bool _isWatchlistClicked = false;
         private bool _isFavoriteClicked = false;
+        private int _likesDiff;
+        private string _length;
+        private string _watchCount;
+        private TextView _metadata;
 
         protected override IYouTubePlayerProvider GetYouTubePlayerProvider ()
         {
@@ -36,15 +41,15 @@ namespace Kwikee.Droid.Activities
             _videoKey = Intent.GetStringExtra ("VideoKey");
             var videoName = Intent.GetStringExtra  ("VideoName");
             var videoDescription = Intent.GetStringExtra  ("VideoDescription");
-            var watchCount = Intent.GetStringExtra  ("WatchCount");
-            var likesDiff = Intent.GetStringExtra  ("LikesDiff");
-            var length = Intent.GetStringExtra  ("Length");
+            _watchCount = Intent.GetStringExtra  ("WatchCount");
+            _likesDiff = int.Parse (Intent.GetStringExtra ("LikesDiff"));
+            _length = Intent.GetStringExtra  ("Length");
 
             var videoNameTextView = FindViewById<TextView> (Resource.Id.videoNameTextView);
-            var videoMetadata = FindViewById<TextView> (Resource.Id.videoMetadataTextView);
+            _metadata = FindViewById<TextView> (Resource.Id.videoMetadataTextView);
             var descriptionTextView = FindViewById<TextView> (Resource.Id.videoDescriptionTextView);
 
-            videoMetadata.Text = watchCount + " views, " + likesDiff + " likesdiff, " + length + " minutes";
+            UpdateVideoStats ();
             videoNameTextView.Text = videoName;
             descriptionTextView.Text = videoDescription;
 
@@ -66,7 +71,7 @@ namespace Kwikee.Droid.Activities
 
             SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Watched);
 
-            FontsHelper.ApplyTypeface (Assets, new List<TextView> { videoMetadata, videoNameTextView, descriptionTextView });
+            FontsHelper.ApplyTypeface (Assets, new List<TextView> { _metadata, videoNameTextView, descriptionTextView });
 
             progressBar.Visibility = ViewStates.Invisible;
             _mainLayout.Visibility = ViewStates.Visible;
@@ -114,16 +119,29 @@ namespace Kwikee.Droid.Activities
             _isWatchlistClicked = !_isWatchlistClicked;
         }
 
-        void Disliked_Click (object sender, System.EventArgs e)
+        void Disliked_Click (object sender, EventArgs e)
         {
-            SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Disliked);
-            SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Liked);
+            if (SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Disliked))
+            {
+                SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Liked);
+                _likesDiff--;
+                UpdateVideoStats ();
+            }
         }
 
-        void Liked_Click (object sender, System.EventArgs e)
+        void Liked_Click (object sender, EventArgs e)
         {
-            SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Liked);
-            SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Disliked);
+            if (SharedPreferencesHelper.Instance.AddVideoToSharedPreferences (_videoKey, SharedPreferenceType.Liked))
+            {
+                SharedPreferencesHelper.Instance.RemoveVideoFromSharedPreferences (_videoKey, SharedPreferenceType.Disliked);
+                _likesDiff++;
+                UpdateVideoStats ();
+            }
+        }
+
+        private void UpdateVideoStats ()
+        {
+            _metadata.Text = _watchCount + " views, " + _likesDiff + " likesdiff, " + _length + " minutes";
         }
     }
 }

@@ -29,9 +29,9 @@ namespace Kwikee.Droid.Helpers
             get { return _instance ?? (_instance = new SharedPreferencesHelper ()); }
         }
 
-        public void AddVideoToSharedPreferences (string videoKey, SharedPreferenceType type)
+        public bool AddVideoToSharedPreferences (string videoKey, SharedPreferenceType type)
         {
-            if (videoKey == null) return;
+            if (videoKey == null) return false;
 
             var sharedPref = GetSharedPreferernceByType (type);
             var key = sharedPref.GetString (videoKey, string.Empty);
@@ -40,12 +40,15 @@ namespace Kwikee.Droid.Helpers
             {
                 // Not in favorites, add it
                 sharedPref.Edit ().PutString (videoKey, videoKey).Apply ();
+                return true;
             }
+
+            return false;
         }
 
-        public void RemoveVideoFromSharedPreferences (string videoKey, SharedPreferenceType type)
+        public bool RemoveVideoFromSharedPreferences (string videoKey, SharedPreferenceType type)
         {
-            if (videoKey == null) return;
+            if (videoKey == null) return false;
 
             var sharedPref = GetSharedPreferernceByType (type);
             var key = sharedPref.GetString (videoKey, string.Empty);
@@ -54,7 +57,10 @@ namespace Kwikee.Droid.Helpers
             {
                 // Video is in favorites, remove it
                 sharedPref.Edit ().Remove (key).Apply ();
+                return true;
             }
+
+            return false;
         }
 
         public List<string> GetAllVideos (SharedPreferenceType type)
