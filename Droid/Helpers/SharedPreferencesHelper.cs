@@ -9,11 +9,11 @@ namespace Kwikee.Droid.Helpers
     public class SharedPreferencesHelper
     {
         private static SharedPreferencesHelper _instance;
-        private ISharedPreferences _favPrefs;
-        private ISharedPreferences _watchListPrefs;
-        private ISharedPreferences _likedVidsPrefs;
-        private ISharedPreferences _dislikedVidsPrefs;
-        private ISharedPreferences _watchedVidsPrefs;
+        private readonly ISharedPreferences _favPrefs;
+        private readonly ISharedPreferences _watchListPrefs;
+        private readonly ISharedPreferences _likedVidsPrefs;
+        private readonly ISharedPreferences _dislikedVidsPrefs;
+        private readonly ISharedPreferences _watchedVidsPrefs;
 
         private SharedPreferencesHelper ()
         {

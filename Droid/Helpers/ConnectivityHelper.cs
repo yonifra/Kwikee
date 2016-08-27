@@ -1,7 +1,4 @@
-﻿using Android.App;
-using Android.Net;
-
-namespace Kwikee.Droid
+﻿namespace Kwikee.Droid
 {
     public static class ConnectivityHelper
     {
