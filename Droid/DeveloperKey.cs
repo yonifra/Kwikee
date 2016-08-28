@@ -1,5 +1,4 @@
-﻿using System;
-namespace Kwikee.Droid
+﻿namespace Kwikee.Droid
 {
     public static class DeveloperKey
     {
