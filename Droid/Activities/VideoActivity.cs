@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using Android.App;
 using Android.Content;
@@ -6,25 +7,24 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
+using Google.YouTube.Player;
 using Kwikee.Droid.Helpers;
 using Kwikee.Portable.Enums;
-using Google.YouTube.Player;
-using System;
 
 namespace Kwikee.Droid.Activities
 {
     [Activity (Label = "Video")]
     public class VideoActivity : YouTubeFailureRecoveryActivity
     {
-        private string _videoYouTubeId;
-        private string _videoKey;  // The UID of the video (not YouTube ID)
-        private LinearLayout _mainLayout;
-        private bool _isWatchlistClicked = false;
-        private bool _isFavoriteClicked = false;
-        private int _likesDiff;
-        private string _length;
-        private string _watchCount;
-        private TextView _metadata;
+        string _videoYouTubeId;
+        string _videoKey;  // The UID of the video (not YouTube ID)
+        LinearLayout _mainLayout;
+        bool _isWatchlistClicked;
+        bool _isFavoriteClicked;
+        int _likesDiff;
+        string _length;
+        string _watchCount;
+        TextView _metadata;
 
         protected override IYouTubePlayerProvider GetYouTubePlayerProvider ()
         {
@@ -37,13 +37,13 @@ namespace Kwikee.Droid.Activities
 
             SetContentView (Resource.Layout.fragment_videoPage);
 
-            _videoYouTubeId = Intent.GetStringExtra  ("VideoId");
+            _videoYouTubeId = Intent.GetStringExtra ("VideoId");
             _videoKey = Intent.GetStringExtra ("VideoKey");
-            var videoName = Intent.GetStringExtra  ("VideoName");
-            var videoDescription = Intent.GetStringExtra  ("VideoDescription");
-            _watchCount = Intent.GetStringExtra  ("WatchCount");
+            var videoName = Intent.GetStringExtra ("VideoName");
+            var videoDescription = Intent.GetStringExtra ("VideoDescription");
+            _watchCount = Intent.GetStringExtra ("WatchCount");
             _likesDiff = int.Parse (Intent.GetStringExtra ("LikesDiff"));
-            _length = Intent.GetStringExtra  ("Length");
+            _length = Intent.GetStringExtra ("Length");
 
             var videoNameTextView = FindViewById<TextView> (Resource.Id.videoNameTextView);
             _metadata = FindViewById<TextView> (Resource.Id.videoMetadataTextView);
@@ -87,7 +87,7 @@ namespace Kwikee.Droid.Activities
             }
         }
 
-        void Fab_Click (object sender, System.EventArgs e)
+        void Fab_Click (object sender, EventArgs e)
         {
             if (_isFavoriteClicked)
             {
@@ -103,7 +103,7 @@ namespace Kwikee.Droid.Activities
             _isFavoriteClicked = !_isFavoriteClicked;
         }
 
-        void WatchlistButton_Click (object sender, System.EventArgs e)
+        void WatchlistButton_Click (object sender, EventArgs e)
         {
             if (_isWatchlistClicked)
             {
