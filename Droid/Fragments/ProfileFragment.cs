@@ -29,6 +29,12 @@ namespace Kwikee.Droid.Fragments
 
             _mainView = inflater.Inflate (Resource.Layout.fragment_profile, null);
 
+            var profileImage = _mainView.FindViewById<ImageView> (Resource.Id.profile_image);
+            var profileToolbar = _mainView.FindViewById<Toolbar> (Resource.Id.profile_toolbar);
+
+            profileImage.SetImageDrawable (Resources.GetDrawable(Resource.Drawable.menu));
+            profileToolbar.Title = "Yoni Fraimorice";
+
             FetchViews ();
             UpdateData ();
 
