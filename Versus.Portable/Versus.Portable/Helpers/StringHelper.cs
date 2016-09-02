@@ -8,7 +8,7 @@ namespace Kwikee.Portable.Helpers
     {
         public static string TimeSpanFormatter (TimeSpan ts)
         {
-            return string.Format ("{0:D}:{1:D2}", ts.Hours, ts.Minutes);
+            return $"{ts.Hours:D}:{ts.Minutes:D2}";
         }
 
         public static string TagsFormatter (List<string> stringsList)

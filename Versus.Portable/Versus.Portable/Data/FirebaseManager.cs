@@ -25,9 +25,7 @@ namespace Kwikee.Portable.Data
 
         // Competitions with more than the threshold vote counts will be considered "trending"
         const int WATCH_COUNT_THRESHOLD = 10;
-        private readonly TimeSpan ENDING_SOON_THRESHOLD = TimeSpan.FromDays (3);
-
-
+        
         public static FirebaseManager Instance => _instance ?? (_instance = new FirebaseManager ());
 
         private FirebaseManager ()
@@ -39,7 +37,7 @@ namespace Kwikee.Portable.Data
             };
 
             _client = new FirebaseClient (config);
-            GetNewestVideos (true);
+            GetNewestVideos(true);
         }
 
         public FirebaseClient Client => _client;
@@ -80,10 +78,7 @@ namespace Kwikee.Portable.Data
             return _newestVideos;
         }
 
-        public Dictionary<string, FiveMinVideo> AllVideos
-        {
-            get { return _videos; }
-        }
+        public Dictionary<string, FiveMinVideo> AllVideos => _videos;
 
         public async Task<bool> IsUserAuthenticatedAsync ()
         {
@@ -181,6 +176,7 @@ namespace Kwikee.Portable.Data
         /// Gets all the currently trending competitions
         /// </summary>
         /// <returns>The all competitions.</returns>
+        /// <param name="maxVideos">Max videos to get</param>
         /// <param name="shouldRefresh">If set to <c>true</c> should refresh.</param>
         public async Task<Dictionary<string, FiveMinVideo>> GetTrendingVideos (int maxVideos = 20, bool shouldRefresh = false)
         {

@@ -1,5 +1,4 @@
-﻿using System;
-namespace Kwikee.Portable.Enums
+﻿namespace Kwikee.Portable.Enums
 {
     public enum SharedPreferenceType
     {
