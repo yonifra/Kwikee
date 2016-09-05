@@ -110,7 +110,6 @@ namespace Kwikee.Droid.Fragments
                 }
             }
         }
-        
     }
 }
 

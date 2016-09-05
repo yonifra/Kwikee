@@ -11,8 +11,8 @@ namespace Kwikee.Droid.Helpers
     {
         private readonly string _path;
         private DbHelper _instance;
-
         private const string TAG = "DB_HELPER";
+
         private DbHelper ()
         {
             _path = Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData);

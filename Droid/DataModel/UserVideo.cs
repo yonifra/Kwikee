@@ -1,13 +1,7 @@
-﻿using System;
-
-namespace Kwikee.Droid.DataModel
+﻿namespace Kwikee.Droid.DataModel
 {
     public class UserVideo
     {
-        public UserVideo ()
-        {
-        }
-
         /// <summary>
         /// The Firebase key
         /// </summary>
