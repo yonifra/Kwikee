@@ -25,6 +25,7 @@
 	<string name="loading_categories">Loading categories...</string>
 	<string name="no_videos">There are no videos :(</string>
 	<string name="no_videos_found">No videos found :\</string>
+	<string name="profile_page_header">My videos</string>
 
 	<!-- FRAGMENT TITLES -->
 	<string name="fragment_title_trending">Trending Videos</string>

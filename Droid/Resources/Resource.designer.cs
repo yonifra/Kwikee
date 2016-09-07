@@ -2255,11 +2255,14 @@ namespace Kwikee.Droid
 			// aapt resource value: 0x7f020083
 			public const int nav_header_background = 2130837635;
 			
-			// aapt resource value: 0x7f020085
-			public const int notification_template_icon_bg = 2130837637;
+			// aapt resource value: 0x7f020086
+			public const int notification_template_icon_bg = 2130837638;
 			
 			// aapt resource value: 0x7f020084
 			public const int splash = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int video = 2130837637;
 			
 			static Drawable()
 			{
@@ -3302,8 +3305,8 @@ namespace Kwikee.Droid
 			// aapt resource value: 0x7f0b0002
 			public const int character_counter_pattern = 2131427330;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int com_crashlytics_android_build_id = 2131427418;
+			// aapt resource value: 0x7f0b005b
+			public const int com_crashlytics_android_build_id = 2131427419;
 			
 			// aapt resource value: 0x7f0b002c
 			public const int common_google_play_services_api_unavailable_text = 2131427372;
@@ -3401,32 +3404,32 @@ namespace Kwikee.Droid
 			// aapt resource value: 0x7f0b004d
 			public const int error_player = 2131427405;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int fragment_title_about = 2131427412;
-			
-			// aapt resource value: 0x7f0b0053
-			public const int fragment_title_categories = 2131427411;
-			
 			// aapt resource value: 0x7f0b0055
-			public const int fragment_title_login = 2131427413;
+			public const int fragment_title_about = 2131427413;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int fragment_title_my_profile = 2131427416;
-			
-			// aapt resource value: 0x7f0b0052
-			public const int fragment_title_newest = 2131427410;
-			
-			// aapt resource value: 0x7f0b0057
-			public const int fragment_title_search_results = 2131427415;
-			
-			// aapt resource value: 0x7f0b0051
-			public const int fragment_title_trending = 2131427409;
+			// aapt resource value: 0x7f0b0054
+			public const int fragment_title_categories = 2131427412;
 			
 			// aapt resource value: 0x7f0b0056
-			public const int fragment_title_videos = 2131427414;
+			public const int fragment_title_login = 2131427414;
 			
 			// aapt resource value: 0x7f0b0059
-			public const int fragment_title_videos_category = 2131427417;
+			public const int fragment_title_my_profile = 2131427417;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int fragment_title_newest = 2131427411;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int fragment_title_search_results = 2131427416;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int fragment_title_trending = 2131427410;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int fragment_title_videos = 2131427415;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int fragment_title_videos_category = 2131427418;
 			
 			// aapt resource value: 0x7f0b0037
 			public const int library_roundedimageview_author = 2131427383;
@@ -3469,6 +3472,9 @@ namespace Kwikee.Droid
 			
 			// aapt resource value: 0x7f0b0044
 			public const int play_services_error_fmt = 2131427396;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int profile_page_header = 2131427409;
 			
 			// aapt resource value: 0x7f0b004a
 			public const int share_competition_message_subject = 2131427402;
