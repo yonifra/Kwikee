@@ -1,14 +1,15 @@
 ﻿using Android.OS;
-using Android.Support.V4.Widget;
+using Android.Support.V4.App;
+using Android.Support.V4.View;
 using Android.Views;
 using Android.Widget;
-using Kwikee.Droid.Activities;
+using Kwikee.Droid.Adapters;
 using Kwikee.Droid.Helpers;
 using Kwikee.Portable.Enums;
 
 namespace Kwikee.Droid.Fragments
 {
-    public class ProfileFragment : Android.Support.V4.App.Fragment
+    public class ProfileFragment : Fragment
     {
         private TextView _liked;
         private TextView _watchlist;
@@ -16,6 +17,7 @@ namespace Kwikee.Droid.Fragments
         private TextView _favs;
         private TextView _watched;
         private View _mainView;
+        private MyPagerAdapter _adapterViewPager;
 
         public ProfileFragment ()
         {
@@ -32,22 +34,26 @@ namespace Kwikee.Droid.Fragments
             var profileImage = _mainView.FindViewById<ImageView> (Resource.Id.profile_image);
             var profileToolbar = _mainView.FindViewById<Android.Support.V7.Widget.Toolbar> (Resource.Id.profile_toolbar);
 
-            profileImage.SetImageDrawable (Resources.GetDrawable(Resource.Drawable.video));
-            profileToolbar.Title = Resources.GetString(Resource.String.profile_page_header);
+            profileImage.SetImageResource (Resource.Drawable.video);
+            profileToolbar.Title = Resources.GetString (Resource.String.profile_page_header);
 
             FetchViews ();
             UpdateData ();
+
+            var vpPager = (ViewPager)_mainView.FindViewById (Resource.Id.viewpager);
+            _adapterViewPager = new MyPagerAdapter (Activity.SupportFragmentManager);
+            vpPager.Adapter = _adapterViewPager;
 
             return _mainView;
         }
 
         void UpdateData ()
         {
-            _liked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Liked).Count.ToString ();
-            _watchlist.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watchlist).Count.ToString ();
-            _disliked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Disliked).Count.ToString ();
-            _favs.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Favorites).Count.ToString ();
-            _watched.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watched).Count.ToString ();
+      //      _liked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Liked).Count.ToString ();
+       //     _watchlist.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watchlist).Count.ToString ();
+       //     _disliked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Disliked).Count.ToString ();
+       //     _favs.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Favorites).Count.ToString ();
+       //     _watched.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watched).Count.ToString ();
         }
 
         public override void OnResume ()
@@ -60,11 +66,11 @@ namespace Kwikee.Droid.Fragments
         {
             if (_mainView != null)
             {
-                _disliked = _mainView.FindViewById<TextView> (Resource.Id.dislikedTextView);
-                _liked = _mainView.FindViewById<TextView> (Resource.Id.likedTextView);
-                _watchlist = _mainView.FindViewById<TextView> (Resource.Id.watchListTextView);
-                _favs = _mainView.FindViewById<TextView> (Resource.Id.favTextView);
-                _watched = _mainView.FindViewById<TextView> (Resource.Id.watchedTextView);
+                //_disliked = _mainView.FindViewById<TextView> (Resource.Id.dislikedTextView);
+                //_liked = _mainView.FindViewById<TextView> (Resource.Id.likedTextView);
+                //_watchlist = _mainView.FindViewById<TextView> (Resource.Id.watchListTextView);
+                //_favs = _mainView.FindViewById<TextView> (Resource.Id.favTextView);
+                //_watched = _mainView.FindViewById<TextView> (Resource.Id.watchedTextView);
             }
         }
 

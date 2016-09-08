@@ -161,6 +161,8 @@
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\ProfileFragment.cs" />
     <Compile Include="Helpers\SharedPreferencesHelper.cs" />
+    <Compile Include="Adapters\MyPagerAdapter.cs" />
+    <Compile Include="Fragments\ProfileFragments\ProfileFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -356,6 +358,7 @@
     <Folder Include="Resources\style\" />
     <Folder Include="Resources\mipmap-xhdpi\" />
     <Folder Include="DataModel\" />
+    <Folder Include="Fragments\ProfileFragments\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Fonts\Slabo.ttf" />
