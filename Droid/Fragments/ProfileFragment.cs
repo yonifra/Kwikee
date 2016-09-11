@@ -4,8 +4,6 @@ using Android.Support.V4.View;
 using Android.Views;
 using Android.Widget;
 using Kwikee.Droid.Adapters;
-using Kwikee.Droid.Helpers;
-using Kwikee.Portable.Enums;
 
 namespace Kwikee.Droid.Fragments
 {
@@ -49,11 +47,11 @@ namespace Kwikee.Droid.Fragments
 
         void UpdateData ()
         {
-      //      _liked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Liked).Count.ToString ();
-       //     _watchlist.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watchlist).Count.ToString ();
-       //     _disliked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Disliked).Count.ToString ();
-       //     _favs.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Favorites).Count.ToString ();
-       //     _watched.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watched).Count.ToString ();
+            //      _liked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Liked).Count.ToString ();
+            //     _watchlist.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watchlist).Count.ToString ();
+            //     _disliked.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Disliked).Count.ToString ();
+            //     _favs.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Favorites).Count.ToString ();
+            //     _watched.Text = SharedPreferencesHelper.Instance.GetAllVideos (SharedPreferenceType.Watched).Count.ToString ();
         }
 
         public override void OnResume ()
