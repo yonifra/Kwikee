@@ -24,13 +24,14 @@ namespace Kwikee.Droid.Activities
 
         public virtual void OnInitializationSuccess (IYouTubePlayerProvider provider, IYouTubePlayer player, bool wasRestored)
         {
-            //throw new NotImplementedException ();   
         }
 
         protected override void OnActivityResult (int requestCode, Result resultCode, Intent data)
-        {    //base.OnActivityResult (requestCode, resultCode, data);    
+        {
             if (requestCode == RECOVERY_DIALOG_REQUEST)
+            {
                 GetYouTubePlayerProvider ().Initialize (DeveloperKey.Key, this);
+            }
         }
 
         protected abstract IYouTubePlayerProvider GetYouTubePlayerProvider ();
