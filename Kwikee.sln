@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveMin.WPF", "Versus.WPF\FiveMin.WPF.csproj", "{050F544F-0933-47D8-AC32-FEAFB36673D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveMin.WPF", "Kwikee.WPF\FiveMin.WPF.csproj", "{050F544F-0933-47D8-AC32-FEAFB36673D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kwikee.Droid", "Droid\Kwikee.Droid.csproj", "{5CE58BAA-DBDA-49FC-8111-86C049302D53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kwikee.Portable", "Versus.Portable\Versus.Portable\Kwikee.Portable.csproj", "{D6B90F97-9F49-45DB-8801-26C2D72738BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kwikee.Portable", "Kwikee.Portable\Kwikee.Portable\Kwikee.Portable.csproj", "{D6B90F97-9F49-45DB-8801-26C2D72738BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeApi", "..\Downloads\YouTubeAndroidPlayer-master\v1.2.1\YouTubeApi\YouTubeApi.csproj", "{A4CA43B8-7140-4483-96BA-6AFC8E935470}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Kwikee.iOS", "iOS\Kwikee.iO
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Versus\Versus.projitems*{00dc1aa2-a1a4-43ea-a8d8-a5034455e12d}*SharedItemsImports = 4
+		Kwikee\Kwikee.projitems*{00dc1aa2-a1a4-43ea-a8d8-a5034455e12d}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
