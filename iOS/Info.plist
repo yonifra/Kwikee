@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>Versus</string>
+	<string>Kwikee</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.cryptocodes.kwikee</string>
 	<key>CFBundleShortVersionString</key>
