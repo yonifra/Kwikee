@@ -7,12 +7,12 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.Widget;
 using Android.Widget;
 using Square.Picasso;
-using Versus.Droid.Helpers;
-using Versus.Portable.Data;
-using Versus.Portable.Entities;
+using Kwikee.Droid.Helpers;
+using Kwikee.Portable.Data;
+using Kwikee.Portable.Entities;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
-namespace Versus.Droid.Activities
+namespace Kwikee.Droid.Activities
 {
     [Activity(Label = "Competition Page")]
     public class CompetitionPageActivity : BaseActivity
@@ -26,7 +26,5 @@ namespace Versus.Droid.Activities
             base.OnCreate(savedInstanceState);
 
         }
-
-
     }
 }
