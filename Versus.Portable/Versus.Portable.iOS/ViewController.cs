@@ -2,7 +2,7 @@
 
 using UIKit;
 
-namespace Versus.Portable.iOS
+namespace Kwikee.Portable.iOS
 {
 	public partial class ViewController : UIViewController
 	{
