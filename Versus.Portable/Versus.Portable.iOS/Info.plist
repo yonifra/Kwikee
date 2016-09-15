@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Versus.Portable.iOS</string>
+	<string>Kwikee.Portable.iOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.your-company.Versus.Portable.iOS</string>
+	<string>com.cryoticides.Kwikee.Portable.iOS</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
