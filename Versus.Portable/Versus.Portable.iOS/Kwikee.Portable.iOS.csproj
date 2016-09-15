@@ -6,9 +6,9 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>8c8cc26a-648a-469e-a42c-8352628f22ee</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Versus.Portable.iOS</RootNamespace>
+    <RootNamespace>Kwikee.Portable.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>VersusPortableiOS</AssemblyName>
+    <AssemblyName>KwikeePortableiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,8 +67,8 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Versus.Portable\Versus.Portable.csproj">
-      <Name>Versus.Portable</Name>
+    <ProjectReference Include="..\Kwikee.Portable\Kwikee.Portable.csproj">
+      <Name>Kwikee.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
