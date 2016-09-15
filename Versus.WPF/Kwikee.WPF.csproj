@@ -7,8 +7,8 @@
     <ProjectGuid>{050F544F-0933-47D8-AC32-FEAFB36673D2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Versus.WPF</RootNamespace>
-    <AssemblyName>Versus.WPF</AssemblyName>
+    <RootNamespace>Kwikee.WPF</RootNamespace>
+    <AssemblyName>Kwikee.WPF</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -220,7 +220,7 @@
     <Resource Include="Themes\Metro\HowToApplyTheme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Versus.Portable\Versus.Portable\FiveMin.Portable.csproj">
+    <ProjectReference Include="..\Kwikee.Portable\Kwikee.Portable\Kwikee.Portable.csproj">
       <Project>{d6b90f97-9f49-45db-8801-26c2d72738bc}</Project>
       <Name>FiveMin.Portable</Name>
     </ProjectReference>
