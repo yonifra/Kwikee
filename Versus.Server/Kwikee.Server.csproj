@@ -7,8 +7,8 @@
     <ProjectGuid>{43F1D7D4-0625-4108-ACD2-9904C86DD8FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Versus.Server</RootNamespace>
-    <AssemblyName>Versus.Server</AssemblyName>
+    <RootNamespace>Kwikee.Server</RootNamespace>
+    <AssemblyName>Kwikee.Server</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
