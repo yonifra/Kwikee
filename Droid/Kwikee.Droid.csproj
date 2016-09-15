@@ -368,7 +368,7 @@
       <Project>{A4CA43B8-7140-4483-96BA-6AFC8E935470}</Project>
       <Name>YouTubeApi</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Versus.Portable\Versus.Portable\Kwikee.Portable.csproj">
+    <ProjectReference Include="..\Kwikee.Portable\Kwikee.Portable\Kwikee.Portable.csproj">
       <Project>{D6B90F97-9F49-45DB-8801-26C2D72738BC}</Project>
       <Name>Kwikee.Portable</Name>
     </ProjectReference>
