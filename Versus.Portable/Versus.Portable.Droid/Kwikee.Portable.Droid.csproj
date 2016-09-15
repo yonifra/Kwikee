@@ -6,7 +6,7 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>2eabd3d8-ebae-46d0-954d-4336f34f16bb</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Versus.Portable.Droid</RootNamespace>
+    <RootNamespace>Kwikee.Portable.Droid</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -14,7 +14,7 @@
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
-    <AssemblyName>Versus.Portable.Droid</AssemblyName>
+    <AssemblyName>Kwikee.Portable.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,8 +44,8 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Versus.Portable\Versus.Portable.csproj">
-      <Name>Versus.Portable</Name>
+    <ProjectReference Include="..\Kwikee.Portable\Kwikee.Portable.csproj">
+      <Name>Kwikee.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
