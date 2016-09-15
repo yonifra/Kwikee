@@ -6,7 +6,7 @@
     <SharedGUID>{2F120480-6937-4B0B-9150-56AC574F38B0}</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Versus</Import_RootNamespace>
+    <Import_RootNamespace>Kwikee</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
