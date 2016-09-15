@@ -7,9 +7,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace Versus.Portable.Droid
+namespace Kwikee.Portable.Droid
 {
-	[Activity (Label = "Versus.Portable.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "Kwikee.Portable.Droid", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
 		int count = 1;
