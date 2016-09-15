@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Versus.Portable.iOS
+namespace Kwikee.Portable.iOS
 {
 	public class Application
 	{
