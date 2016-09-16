@@ -83,7 +83,6 @@ namespace Kwikee.Portable.Data
         public async Task<bool> IsUserAuthenticatedAsync ()
         {
             return true;
-            // throw new NotImplementedException();
         }
 
         private async void UpdateVideo (FiveMinVideo value)
