@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -16,7 +16,6 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <ReleaseVersion>1.1.1</ReleaseVersion>
     <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -87,9 +86,6 @@
     <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
       <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Auth.Android">
-      <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
@@ -129,11 +125,14 @@
     <Reference Include="SQLitePCL.batteries">
       <HintPath>..\packages\SQLitePCL.bundle_green.0.9.3\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
     </Reference>
-    <Reference Include="RoundedImageView">
-      <HintPath>..\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
-    </Reference>
     <Reference Include="Crashlytics.Droid">
       <HintPath>..\packages\Crashlytics.Droid.Binding.1.2.1\lib\MonoAndroid\Crashlytics.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>..\..\Kwikee\Components\xamarin.auth-1.2.3.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="RoundedImageView">
+      <HintPath>..\..\Kwikee\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -364,13 +363,21 @@
     <AndroidAsset Include="Assets\Fonts\Slabo.ttf" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <ProjectReference Include="..\..\Downloads\YouTubeAndroidPlayer-master\v1.2.1\YouTubeApi\YouTubeApi.csproj">
       <Project>{A4CA43B8-7140-4483-96BA-6AFC8E935470}</Project>
       <Name>YouTubeApi</Name>
     </ProjectReference>
     <ProjectReference Include="..\Kwikee.Portable\Kwikee.Portable\Kwikee.Portable.csproj">
+=======
+    <ProjectReference Include="..\Versus.Portable\Versus.Portable\Kwikee.Portable.csproj">
+>>>>>>> Stashed changes
       <Project>{D6B90F97-9F49-45DB-8801-26C2D72738BC}</Project>
       <Name>Kwikee.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Downloads\YouTubeAndroidPlayer-master\v1.2.1\YouTubeApi\YouTubeApi.csproj">
+      <Project>{A4CA43B8-7140-4483-96BA-6AFC8E935470}</Project>
+      <Name>YouTubeApi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
