@@ -47,8 +47,10 @@ namespace Kwikee.Droid.Helpers
             try
             {
                 var db = new SQLiteAsyncConnection (_path);
+
                 if (await db.InsertAsync (data) != 0)
                     await db.UpdateAsync (data);
+                
                 return "Single data file inserted or updated";
             }
             catch (SQLiteException ex)
@@ -63,6 +65,7 @@ namespace Kwikee.Droid.Helpers
             try
             {
                 var db = new SQLiteAsyncConnection (_path);
+
                 // this counts all records in the database, it can be slow depending on the size of the database
                 var count = await db.ExecuteScalarAsync<int> ("SELECT Count(*) FROM FavVideoDataModel");
 
