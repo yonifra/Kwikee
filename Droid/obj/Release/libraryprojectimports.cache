@@ -2,7 +2,6 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Xamarin.Auth.Android/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Refractored.FloatingActionButton/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Plugin.Connectivity/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCLPlugin_esqlite3/library_project_imports/res</ResolvedResourceDirectory>
@@ -11,17 +10,14 @@
     <ResolvedResourceDirectory>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/RoundedImageView/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/Xamarin.Auth.Android/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/__library_projects__/Refractored.FloatingActionButton/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/__library_projects__/Plugin.Connectivity/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/__library_projects__/SQLitePCLPlugin_esqlite3/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/__library_projects__/SQLitePCL.raw/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Release/__library_projects__/SQLitePCL.batteries/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Release/__library_projects__/RoundedImageView/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Xamarin.Auth.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Refractored.FloatingActionButton.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/yonifra/shortie/Droid/obj/Release/__library_projects__/SQLitePCLPlugin_esqlite3.stamp</ResolvedResourceDirectoryStamp>

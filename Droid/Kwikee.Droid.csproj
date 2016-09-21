@@ -129,11 +129,11 @@
     <Reference Include="SQLitePCL.batteries">
       <HintPath>..\packages\SQLitePCL.bundle_green.0.9.3\lib\MonoAndroid\SQLitePCL.batteries.dll</HintPath>
     </Reference>
-    <Reference Include="RoundedImageView">
-      <HintPath>..\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
-    </Reference>
     <Reference Include="Crashlytics.Droid">
       <HintPath>..\packages\Crashlytics.Droid.Binding.1.2.1\lib\MonoAndroid\Crashlytics.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="RoundedImageView">
+      <HintPath>..\Components\RoundedImageView-2.2.1\lib\android\RoundedImageView.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
