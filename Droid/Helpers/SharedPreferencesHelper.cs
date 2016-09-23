@@ -79,16 +79,16 @@ namespace Kwikee.Droid.Helpers
         {
             switch (type)
             {
-            case SharedPreferenceType.Favorites:
-                return _favPrefs;
-            case SharedPreferenceType.Liked:
-                return _likedVidsPrefs;
-            case SharedPreferenceType.Disliked:
-                return _dislikedVidsPrefs;
-            case SharedPreferenceType.Watchlist:
-                return _watchListPrefs;
-            case SharedPreferenceType.Watched:
-                return _watchedVidsPrefs;
+                case SharedPreferenceType.Favorites:
+                    return _favPrefs;
+                case SharedPreferenceType.Liked:
+                    return _likedVidsPrefs;
+                case SharedPreferenceType.Disliked:
+                    return _dislikedVidsPrefs;
+                case SharedPreferenceType.Watchlist:
+                    return _watchListPrefs;
+                case SharedPreferenceType.Watched:
+                    return _watchedVidsPrefs;
             }
 
             return _favPrefs;
